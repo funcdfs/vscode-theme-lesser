@@ -1,46 +1,45 @@
-import { useState } from 'react'
-import Editor from '@monaco-editor/react'
+import { useState, useRef, useEffect } from 'react'
+import Editor, { loader } from '@monaco-editor/react'
 import { lesserTheme } from './theme'
 import { leftSamples, rightSamples } from './samples'
 
 const leftLangs = Object.keys(leftSamples)
 const rightLangs = Object.keys(rightSamples)
 
-export default function App() {
-  const [leftLang, setLeftLang] = useState('dart')
-  const [rightLang, setRightLang] = useState('typescript')
+// 预先定义主题
+loader.init().then((monaco) => {
+  monaco.editor.defineTheme('lesser', lesserTheme)
+})
 
-  const handleEditorMount = (_, monaco) => {
-    monaco.editor.defineTheme('lesser', lesserTheme)
-    monaco.editor.setTheme('lesser')
-  }
+const LangButtons = ({ langs, current, onChange }) => (
+  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 12 }}>
+    {langs.map((l) => (
+      <button
+        key={l}
+        onClick={() => onChange(l)}
+        style={{
+          padding: '6px 14px',
+          fontSize: 12,
+          fontWeight: 500,
+          background: current === l ? 'linear-gradient(135deg, #9370DB, #7B68EE)' : '#1a171d',
+          color: current === l ? '#fff' : '#abb2bf',
+          border: current === l ? 'none' : '1px solid #3d434f',
+          borderRadius: 6,
+          cursor: 'pointer',
+          transition: 'all 0.2s',
+          boxShadow: current === l ? '0 2px 8px rgba(147, 112, 219, 0.3)' : 'none',
+        }}
+      >
+        {l}
+      </button>
+    ))}
+  </div>
+)
 
-  const LangButtons = ({ langs, current, onChange }) => (
-    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 12 }}>
-      {langs.map((l) => (
-        <button
-          key={l}
-          onClick={() => onChange(l)}
-          style={{
-            padding: '6px 14px',
-            fontSize: 12,
-            fontWeight: 500,
-            background: current === l ? 'linear-gradient(135deg, #9370DB, #7B68EE)' : '#1a171d',
-            color: current === l ? '#fff' : '#abb2bf',
-            border: current === l ? 'none' : '1px solid #3d434f',
-            borderRadius: 6,
-            cursor: 'pointer',
-            transition: 'all 0.2s',
-            boxShadow: current === l ? '0 2px 8px rgba(147, 112, 219, 0.3)' : 'none',
-          }}
-        >
-          {l}
-        </button>
-      ))}
-    </div>
-  )
+const EditorPanel = ({ langs, samples, current }) => {
+  const editorsRef = useRef({})
 
-  const EditorPanel = ({ lang, value }) => (
+  return (
     <div
       style={{
         border: '1px solid #3d434f',
@@ -66,38 +65,56 @@ export default function App() {
           <span style={{ width: 12, height: 12, borderRadius: '50%', background: '#FFBD2E' }} />
           <span style={{ width: 12, height: 12, borderRadius: '50%', background: '#27CA40' }} />
         </span>
-        <span style={{ marginLeft: 8 }}>{lang}</span>
+        <span style={{ marginLeft: 8 }}>{current}</span>
       </div>
-      <Editor
-        height="460px"
-        language={lang === 'dart' ? 'dart' : lang}
-        value={value}
-        onMount={handleEditorMount}
-        options={{
-          fontSize: 13,
-          minimap: { enabled: false },
-          scrollBeyondLastLine: false,
-          padding: { top: 12 },
-          readOnly: true,
-          lineNumbers: 'on',
-          renderLineHighlight: 'none',
-          scrollbar: { vertical: 'hidden', horizontal: 'hidden' },
-        }}
-      />
+      <div style={{ position: 'relative', height: 460 }}>
+        {langs.map((lang) => (
+          <div
+            key={lang}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              visibility: current === lang ? 'visible' : 'hidden',
+              zIndex: current === lang ? 1 : 0,
+            }}
+          >
+            <Editor
+              height="460px"
+              language={lang}
+              value={samples[lang]}
+              theme="lesser"
+              onMount={(editor) => {
+                editorsRef.current[lang] = editor
+              }}
+              options={{
+                fontSize: 13,
+                minimap: { enabled: false },
+                scrollBeyondLastLine: false,
+                padding: { top: 12 },
+                readOnly: true,
+                lineNumbers: 'on',
+                renderLineHighlight: 'none',
+                scrollbar: { vertical: 'hidden', horizontal: 'hidden' },
+              }}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   )
+}
+
+export default function App() {
+  const [leftLang, setLeftLang] = useState('dart')
+  const [rightLang, setRightLang] = useState('typescript')
 
   return (
     <div style={{ padding: '32px 0', width: '80%', margin: '0 auto' }}>
       <header style={{ textAlign: 'center', marginBottom: 40 }}>
-        <h1
-          style={{
-            fontSize: 32,
-            marginBottom: 8,
-            color: '#eeeeee',
-            fontWeight: 600,
-          }}
-        >
+        <h1 style={{ fontSize: 32, marginBottom: 8, color: '#eeeeee', fontWeight: 600 }}>
           🌈 lesser
         </h1>
         <p style={{ fontSize: 16, color: '#9370DB', marginBottom: 16 }}>
@@ -151,22 +168,15 @@ export default function App() {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
         <div>
           <LangButtons langs={leftLangs} current={leftLang} onChange={setLeftLang} />
-          <EditorPanel lang={leftLang} value={leftSamples[leftLang]} />
+          <EditorPanel langs={leftLangs} samples={leftSamples} current={leftLang} />
         </div>
         <div>
           <LangButtons langs={rightLangs} current={rightLang} onChange={setRightLang} />
-          <EditorPanel lang={rightLang} value={rightSamples[rightLang]} />
+          <EditorPanel langs={rightLangs} samples={rightSamples} current={rightLang} />
         </div>
       </div>
 
-      <footer
-        style={{
-          marginTop: 40,
-          textAlign: 'center',
-          color: '#636d83',
-          fontSize: 13,
-        }}
-      >
+      <footer style={{ marginTop: 40, textAlign: 'center', color: '#636d83', fontSize: 13 }}>
         Made with 💜 by{' '}
         <a
           href="https://github.com/funcdfs"
