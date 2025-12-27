@@ -1,20 +1,33 @@
 {
-    "name": "konng",
-    "displayName": "KONNG",
-    "description": "Design By https://github.com/funcdfs",
-    "publisher": "OvO",
-    "version": "5.0.0",
+    "name": "lesser",
+    "displayName": "Lesser",
+    "description": "A minimal dark theme with purple accents for VS Code",
+    "publisher": "funcdfs",
+    "version": "1.0.0",
     "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#211d25",
+        "theme": "dark"
+    },
     "engines": {
         "vscode": "^1.107.0"
     },
     "categories": [
         "Themes"
     ],
+    "keywords": [
+        "theme",
+        "dark",
+        "purple",
+        "minimal",
+        "color theme",
+        "dark theme",
+        "syntax highlighting"
+    ],
     "contributes": {
         "themes": [
             {
-                "label": "KONNG",
+                "label": "Lesser",
                 "uiTheme": "vs-dark",
                 "path": "./themes/lesser.json"
             }
@@ -23,5 +36,14 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/funcdfs/vscode-theme-lesser"
+    },
+    "homepage": "https://funcdfs.github.io/vscode-theme-lesser",
+    "bugs": {
+        "url": "https://github.com/funcdfs/vscode-theme-lesser/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "funcdfs",
+        "url": "https://github.com/funcdfs"
     }
 }

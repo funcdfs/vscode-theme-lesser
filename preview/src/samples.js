@@ -1,5 +1,5 @@
 export const leftSamples = {
-  dart: `// KONNG Theme - Flutter/Dart Preview
+  dart: `// lesser Theme - Flutter/Dart Preview
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'KONNG Theme',
+      title: 'lesser Theme',
       theme: ThemeData(
         colorScheme: ColorScheme.dark(
           primary: const Color(0xFF9370DB),
@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('KONNG')),
+      appBar: AppBar(title: const Text('lesser')),
       body: Center(
         child: Text(
           'Count: \$_counter',
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
   }
 }`,
 
-  rust: `// KONNG Theme - Rust Preview
+  rust: `// lesser Theme - Rust Preview
 use std::collections::HashMap;
 use std::sync::Arc;
 
@@ -105,7 +105,7 @@ async fn fetch_user(id: u64) -> Result<User, Box<dyn std::error::Error>> {
     Ok(user)
 }`,
 
-  go: `// KONNG Theme - Go Preview
+  go: `// lesser Theme - Go Preview
 package main
 
 import (
@@ -163,7 +163,7 @@ func main() {
 	server.ListenAndServe()
 }`,
 
-  cpp: `// KONNG Theme - C++ Preview
+  cpp: `// lesser Theme - C++ Preview
 #include <iostream>
 #include <vector>
 #include <memory>
@@ -222,7 +222,7 @@ int main() {
     return 0;
 }`,
 
-  python: `# KONNG Theme - Python Preview
+  python: `# lesser Theme - Python Preview
 from dataclasses import dataclass
 from typing import Optional, List, Generic, TypeVar
 from abc import ABC, abstractmethod
@@ -279,7 +279,7 @@ if __name__ == "__main__":
 }
 
 export const rightSamples = {
-  typescript: `// KONNG Theme - TypeScript Preview
+  typescript: `// lesser Theme - TypeScript Preview
 interface User {
   id: number
   name: string
@@ -328,7 +328,7 @@ class UserService extends Repository<User> {
 
 const service = new UserService('https://api.example.com')`,
 
-  javascript: `// KONNG Theme - JavaScript Preview
+  javascript: `// lesser Theme - JavaScript Preview
 import { useState, useEffect, useCallback } from 'react'
 
 const API_URL = 'https://api.example.com'
@@ -379,19 +379,19 @@ export default function UserProfile({ userId }) {
   )
 }`,
 
-  html: `<!-- KONNG Theme - HTML Preview -->
+  html: `<!-- lesser Theme - HTML Preview -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KONNG Theme</title>
+  <title>lesser Theme</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
     <nav id="main-nav" aria-label="Main navigation">
-      <a href="/" class="logo">KONNG</a>
+      <a href="/" class="logo">lesser</a>
       <ul class="nav-links">
         <li><a href="/features">Features</a></li>
         <li><a href="/docs">Documentation</a></li>
@@ -423,12 +423,12 @@ export default function UserProfile({ userId }) {
   </main>
 
   <footer>
-    <p>&copy; 2024 KONNG Theme</p>
+    <p>&copy; 2024 lesser Theme</p>
   </footer>
 </body>
 </html>`,
 
-  css: `/* KONNG Theme - CSS Preview */
+  css: `/* lesser Theme - CSS Preview */
 :root {
   --bg-primary: #211d25;
   --bg-secondary: #2a2530;
@@ -490,8 +490,8 @@ body {
 }`,
 
   json: `{
-  "name": "konng-theme",
-  "displayName": "KONNG",
+  "name": "lesser-theme",
+  "displayName": "lesser",
   "description": "🌈 A Pure Colorful Dark Theme",
   "version": "1.0.0",
   "publisher": "OvO",
@@ -504,7 +504,7 @@ body {
   "contributes": {
     "themes": [
       {
-        "label": "KONNG",
+        "label": "lesser",
         "uiTheme": "vs-dark",
         "path": "./themes/lesser.json"
       }

@@ -98,7 +98,7 @@ export default function App() {
             fontWeight: 600,
           }}
         >
-          🌈 KONNG
+          🌈 lesser
         </h1>
         <p style={{ fontSize: 16, color: '#9370DB', marginBottom: 16 }}>
           A Pure Colorful Dark Theme
@@ -125,7 +125,7 @@ export default function App() {
             ⭐ GitHub
           </a>
           <a
-            href="https://marketplace.visualstudio.com/items?itemName=OvO.konng"
+            href="https://marketplace.visualstudio.com/items?itemName=funcdfs.lesser"
             target="_blank"
             rel="noopener noreferrer"
             style={{

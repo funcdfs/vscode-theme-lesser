@@ -1,16 +1,61 @@
+<div align="center">
+
 # Lesser
 
-A dark theme for VS Code, designed for **JavaScript**, **Go**, **C++**, **Python**, and **Markdown**.
+**A minimal dark theme for VS Code with purple accents**
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/YOUR_PUBLISHER_NAME.lesser)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/YOUR_PUBLISHER_NAME.lesser)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/funcdfs.lesser?style=flat-square&color=b2aaca)](https://marketplace.visualstudio.com/items?itemName=funcdfs.lesser)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/funcdfs.lesser?style=flat-square&color=c789d6)](https://marketplace.visualstudio.com/items?itemName=funcdfs.lesser)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/funcdfs.lesser?style=flat-square&color=ce9887)](https://marketplace.visualstudio.com/items?itemName=funcdfs.lesser)
+[![GitHub](https://img.shields.io/github/license/funcdfs/vscode-theme-lesser?style=flat-square&color=80FFB5)](https://github.com/funcdfs/vscode-theme-lesser)
+
+[Install](https://marketplace.visualstudio.com/items?itemName=funcdfs.lesser) · [Preview](https://funcdfs.github.io/vscode-theme-lesser) · [GitHub](https://github.com/funcdfs/vscode-theme-lesser)
+
+</div>
+
+---
 
 ## Preview
 
-![Preview](images/preview.png)
+![Lesser Theme Preview](https://raw.githubusercontent.com/funcdfs/vscode-theme-lesser/main/images/preview.png)
+
+> 🎨 **[Live Preview](https://funcdfs.github.io/vscode-theme-lesser)** — Try the theme in your browser
+
+## Install
+
+```
+ext install funcdfs.lesser
+```
+
+Or search **"lesser"** in VS Code Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+
+## Features
+
+| | |
+|---|---|
+| 🌙 **Dark Background** | True dark `#211d25` for comfortable coding |
+| 💜 **Purple Accents** | Elegant purple tones throughout |
+| 📖 **Readable** | Optimized contrast for long sessions |
+| 🔤 **Multi-language** | JavaScript, Go, C++, Python, Markdown |
+
+## Palette
+
+```
+Background   #211d25  ████████
+Foreground   #abb2bf  ████████
+Accent       #b2aaca  ████████
+Cursor       #80FFB5  ████████
+Selection    #be84bf  ████████
+String       #ce9887  ████████
+Keyword      #c789d6  ████████
+```
+
+## Code Samples
+
+<details>
+<summary>JavaScript</summary>
 
 ```javascript
-// JavaScript
 const greeting = async (name) => {
   const message = `Hello, ${name}!`;
   console.log(message);
@@ -18,8 +63,12 @@ const greeting = async (name) => {
 };
 ```
 
+</details>
+
+<details>
+<summary>Python</summary>
+
 ```python
-# Python
 def fibonacci(n: int) -> list[int]:
     """Generate fibonacci sequence."""
     seq = [0, 1]
@@ -28,8 +77,12 @@ def fibonacci(n: int) -> list[int]:
     return seq
 ```
 
+</details>
+
+<details>
+<summary>Go</summary>
+
 ```go
-// Go
 func main() {
     messages := make(chan string)
     go func() { messages <- "ping" }()
@@ -38,40 +91,12 @@ func main() {
 }
 ```
 
-## Installation
+</details>
 
-1. Open **Extensions** in VS Code (`Cmd+Shift+X` / `Ctrl+Shift+X`)
-2. Search for `lesser`
-3. Click **Install**
-4. Select **Lesser** from `Preferences > Color Theme`
+---
 
-## Features
+<div align="center">
 
-- 🎨 Carefully crafted color palette with purple accents
-- 📝 Optimized for readability in long coding sessions
-- 🔤 Enhanced Markdown syntax highlighting
-- 🌙 True dark background (`#211d25`)
+Made with 💜 by [@funcdfs](https://github.com/funcdfs)
 
-## Color Palette
-
-| Element | Color |
-|---------|-------|
-| Background | `#211d25` |
-| Foreground | `#abb2bf` |
-| Accent | `#b2aaca` |
-| Cursor | `#80FFB5` |
-| Selection | `#be84bf` |
-| String | `#ce9887` |
-| Keyword | `#c789d6` |
-
-## History
-
-Originally published as **KONNG**. Renamed to **Lesser** after losing the original publisher key.
-
-## Author
-
-Designed by [@funcdfs](https://github.com/funcdfs)
-
-## License
-
-MIT
+</div>
