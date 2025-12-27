@@ -1,12 +1,12 @@
 {
     "name": "konng",
     "displayName": "KONNG",
-    "description": "Design By https://github.com/fengwei2002",
+    "description": "Design By https://github.com/funcdfs",
     "publisher": "OvO",
-    "version": "4.5.0",
+    "version": "5.0.0",
     "icon": "icon.png",
     "engines": {
-        "vscode": "^1.46.0"
+        "vscode": "^1.107.0"
     },
     "categories": [
         "Themes"
@@ -16,12 +16,12 @@
             {
                 "label": "KONNG",
                 "uiTheme": "vs-dark",
-                "path": "./themes/konng.json"
+                "path": "./themes/lesser.json"
             }
         ]
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/fengwei2002/vscode-theme-KONNG"
+        "url": "https://github.com/funcdfs/vscode-theme-lesser"
     }
 }
