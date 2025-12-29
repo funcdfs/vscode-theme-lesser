@@ -3,14 +3,14 @@
     "displayName": "Lesser",
     "description": "A minimal dark theme with purple accents for VS Code",
     "publisher": "funcdfs",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "icon": "icon.png",
     "galleryBanner": {
         "color": "#211d25",
         "theme": "dark"
     },
     "engines": {
-        "vscode": "^1.107.0"
+        "vscode": "^1.104.0"
     },
     "categories": [
         "Themes"
