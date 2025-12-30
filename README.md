@@ -9,7 +9,7 @@
 [![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/funcdfs.lesser?style=flat-square&color=ce9887)](https://marketplace.visualstudio.com/items?itemName=funcdfs.lesser)
 [![GitHub](https://img.shields.io/github/license/funcdfs/vscode-theme-lesser?style=flat-square&color=80FFB5)](https://github.com/funcdfs/vscode-theme-lesser)
 
-[Install](https://marketplace.visualstudio.com/items?itemName=funcdfs.lesser) · [Preview](https://funcdfs.github.io/vscode-theme-lesser) · [GitHub](https://github.com/funcdfs/vscode-theme-lesser)
+[Install](https://marketplace.visualstudio.com/items?itemName=funcdfs.lesser) · [Preview](https://vscode-theme-lesser.vercel.app/) · [GitHub](https://github.com/funcdfs/vscode-theme-lesser)
 
 </div>
 
