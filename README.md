@@ -17,9 +17,8 @@
 
 ## Preview
 
-![Lesser Theme Preview](https://raw.githubusercontent.com/funcdfs/vscode-theme-lesser/refs/heads/master/image.png)
 
-> 🎨 **[Live Preview](https://vscode-theme-lesser.vercel.app/)** — Try the theme in your browser
+> ✨ **[Live Preview](https://vscode-theme-lesser.vercel.app/)** — Experience the theme instantly in your browser, no installation needed!
 
 ## Install
 

@@ -14,20 +14,20 @@ export const lesserTheme = {
     { token: 'comment.block.documentation', foreground: '8A85A5', fontStyle: 'italic' },
     
     // Keywords
-    { token: 'keyword', foreground: '5A9BE6' },
-    { token: 'keyword.control', foreground: '5A9BE6' },
-    { token: 'keyword.control.flow', foreground: '5A9BE6' },
-    { token: 'keyword.control.import', foreground: '5A9BE6' },
-    { token: 'keyword.control.export', foreground: '5A9BE6' },
-    { token: 'keyword.operator.new', foreground: '5A9BE6' },
-    { token: 'keyword.operator.expression', foreground: '5A9BE6' },
+    { token: 'keyword', foreground: '8A9DC0' },
+    { token: 'keyword.control', foreground: '8A9DC0' },
+    { token: 'keyword.control.flow', foreground: '8A9DC0' },
+    { token: 'keyword.control.import', foreground: '8A9DC0' },
+    { token: 'keyword.control.export', foreground: '8A9DC0' },
+    { token: 'keyword.operator.new', foreground: '8A9DC0' },
+    { token: 'keyword.operator.expression', foreground: '8A9DC0' },
     
     // Storage
-    { token: 'storage', foreground: '5A9BE6' },
-    { token: 'storage.type', foreground: '5A9BE6' },
-    { token: 'storage.modifier', foreground: '5A9BE6' },
-    { token: 'storage.type.function', foreground: '5A9BE6' },
-    { token: 'storage.type.class', foreground: '5A9BE6' },
+    { token: 'storage', foreground: '8A9DC0' },
+    { token: 'storage.type', foreground: '8A9DC0' },
+    { token: 'storage.modifier', foreground: '8A9DC0' },
+    { token: 'storage.type.function', foreground: '8A9DC0' },
+    { token: 'storage.type.class', foreground: '8A9DC0' },
     
     // Operators
     { token: 'operator', foreground: 'B8C0D0' },
@@ -50,18 +50,18 @@ export const lesserTheme = {
     { token: 'string.quoted', foreground: 'E8B89C' },
     { token: 'string.template', foreground: 'E8B89C' },
     { token: 'string.interpolated', foreground: 'E8B89C' },
-    { token: 'string.regexp', foreground: '80D8C8' },
+    { token: 'string.regexp', foreground: '80FFB5' },
     
     // Numbers and constants
     { token: 'number', foreground: 'FFE5A0' },
     { token: 'number.float', foreground: 'FFE5A0' },
     { token: 'number.hex', foreground: 'FFE5A0' },
-    { token: 'constant', foreground: 'FFE5A0' },
+    { token: 'constant', foreground: '5A9BE6' },
     { token: 'constant.numeric', foreground: 'FFE5A0' },
-    { token: 'constant.language', foreground: 'FFE5A0' },
-    { token: 'constant.language.boolean', foreground: 'FFE5A0' },
-    { token: 'constant.language.null', foreground: 'FFE5A0' },
-    { token: 'constant.character.escape', foreground: '80D8C8' },
+    { token: 'constant.language', foreground: '5A9BE6' },
+    { token: 'constant.language.boolean', foreground: '5A9BE6' },
+    { token: 'constant.language.null', foreground: '5A9BE6' },
+    { token: 'constant.character.escape', foreground: '80FFB5' },
     
     // Types and classes
     { token: 'type', foreground: 'F0C090' },
@@ -74,91 +74,108 @@ export const lesserTheme = {
     { token: 'support.class', foreground: 'F0C090' },
     
     // Interfaces
-    { token: 'interface', foreground: '80D8C8' },
-    { token: 'entity.name.type.interface', foreground: '80D8C8' },
+    { token: 'interface', foreground: '80FFB5' },
+    { token: 'entity.name.type.interface', foreground: '80FFB5' },
     
     // Enums
     { token: 'enum', foreground: 'FFE5A0' },
     { token: 'enumMember', foreground: 'FFE5A0' },
     
     // Type parameters
-    { token: 'typeParameter', foreground: '80D8C8' },
+    { token: 'typeParameter', foreground: '80FFB5' },
     
     // Functions
-    { token: 'function', foreground: 'C9A0FF' },
-    { token: 'function.declaration', foreground: 'C9A0FF' },
-    { token: 'entity.name.function', foreground: 'C9A0FF' },
-    { token: 'support.function', foreground: 'C9A0FF' },
-    { token: 'method', foreground: 'C9A0FF' },
+    { token: 'function', foreground: 'C2A0FD' },
+    { token: 'function.declaration', foreground: 'C2A0FD' },
+    { token: 'entity.name.function', foreground: 'C2A0FD' },
+    { token: 'support.function', foreground: 'C2A0FD' },
+    { token: 'method', foreground: 'C2A0FD' },
     
     // Variables
-    { token: 'variable', foreground: 'C8D0E0' },
-    { token: 'variable.other', foreground: 'C0C8D8' },
-    { token: 'variable.parameter', foreground: 'C0C8D8' },
-    { token: 'parameter', foreground: 'C0C8D8' },
+    { token: 'variable', foreground: 'FFE5A0' },
+    { token: 'variable.other', foreground: 'FFE5A0' },
+    { token: 'variable.parameter', foreground: 'FFE5A0' },
+    { token: 'parameter', foreground: 'FFE5A0' },
     { token: 'variable.other.constant', foreground: 'FFE5A0' },
-    { token: 'variable.language', foreground: '6BC98A' },
-    { token: 'variable.language.this', foreground: '6BC98A' },
-    { token: 'variable.language.self', foreground: '6BC98A' },
+    { token: 'variable.language', foreground: '80FFB5' },
+    { token: 'variable.language.this', foreground: '80FFB5' },
+    { token: 'variable.language.self', foreground: '80FFB5' },
     
     // Properties
-    { token: 'property', foreground: '80D8C8' },
-    { token: 'variable.other.property', foreground: '80D8C8' },
-    { token: 'meta.property', foreground: '80D8C8' },
+    { token: 'property', foreground: '80FFB5' },
+    { token: 'variable.other.property', foreground: '80FFB5' },
+    { token: 'meta.property', foreground: '80FFB5' },
     
     // Namespace
-    { token: 'namespace', foreground: 'A090D0' },
+    { token: 'namespace', foreground: 'C2A0FD' },
     
     // Decorators/Annotations
-    { token: 'annotation', foreground: 'C9A0FF' },
-    { token: 'decorator', foreground: 'C9A0FF' },
-    { token: 'meta.decorator', foreground: 'C9A0FF' },
+    { token: 'annotation', foreground: 'C2A0FD' },
+    { token: 'decorator', foreground: 'C2A0FD' },
+    { token: 'meta.decorator', foreground: 'C2A0FD' },
     
     // Tags (HTML/JSX)
-    { token: 'tag', foreground: '6BC98A' },
-    { token: 'tag.id', foreground: '6BC98A' },
-    { token: 'metatag', foreground: '6BC98A' },
-    { token: 'metatag.html', foreground: '6BC98A' },
-    { token: 'metatag.xml', foreground: '6BC98A' },
+    { token: 'tag', foreground: '80FFB5' },
+    { token: 'tag.id', foreground: '80FFB5' },
+    { token: 'metatag', foreground: '80FFB5' },
+    { token: 'metatag.html', foreground: '80FFB5' },
+    { token: 'metatag.xml', foreground: '80FFB5' },
     
     // Attributes
-    { token: 'attribute.name', foreground: '80D8C8' },
+    { token: 'attribute.name', foreground: '80FFB5' },
     { token: 'attribute.value', foreground: 'E8B89C' },
     { token: 'attribute.value.html', foreground: 'E8B89C' },
     
     // JSON
-    { token: 'string.key.json', foreground: '6BC98A' },
+    { token: 'string.key.json', foreground: '80FFB5' },
     { token: 'string.value.json', foreground: 'E8B89C' },
+    { token: 'support.type.property-name.json', foreground: '80FFB5' },
     
     // CSS
-    { token: 'attribute.name.css', foreground: '80D8C8' },
+    { token: 'attribute.name.css', foreground: '80FFB5' },
     { token: 'attribute.value.css', foreground: 'C0C8D8' },
     { token: 'attribute.value.number.css', foreground: 'FFE5A0' },
-    { token: 'attribute.value.unit.css', foreground: '80D8C8' },
+    { token: 'attribute.value.unit.css', foreground: '80FFB5' },
     { token: 'tag.css', foreground: 'F0C090' },
-    { token: 'tag.id.css', foreground: '5A9BE6' },
+    { token: 'tag.id.css', foreground: '8A9DC0' },
     { token: 'tag.class.css', foreground: 'F0C090' },
     
     // Markdown
-    { token: 'markup.heading', foreground: '6BC98A' },
+    { token: 'markup.heading', foreground: '80FFB5' },
     { token: 'markup.bold', foreground: 'D4A5E8', fontStyle: 'bold' },
-    { token: 'markup.italic', foreground: '5A9BE6', fontStyle: 'italic' },
+    { token: 'markup.italic', foreground: '8A9DC0', fontStyle: 'italic' },
     { token: 'markup.underline.link', foreground: '88C8F0' },
-    { token: 'markup.inline.raw', foreground: '80D8C8' },
+    { token: 'markup.inline.raw', foreground: '80FFB5' },
+    { token: 'string.other.link', foreground: 'D4A5E8' },
     
     // Invalid
     { token: 'invalid', foreground: 'FF8090' },
     { token: 'invalid.illegal', foreground: 'FF8090' },
 
     // Language specific - Rust
-    { token: 'lifetime.rust', foreground: '80D8C8' },
-    { token: 'macro.rust', foreground: 'C9A0FF' },
+    { token: 'lifetime.rust', foreground: '80FFB5' },
+    { token: 'macro.rust', foreground: 'C2A0FD' },
     
     // Language specific - Python
-    { token: 'decorator.python', foreground: 'C9A0FF' },
+    { token: 'decorator.python', foreground: 'C2A0FD' },
     
     // Language specific - Go
-    { token: 'package.go', foreground: 'A090D0' },
+    { token: 'package.go', foreground: 'C2A0FD' },
+    { token: 'type.go', foreground: 'F0C090' },
+    { token: 'struct.go', foreground: 'F0C090' },
+    { token: 'interface.go', foreground: '80FFB5' },
+    { token: 'function.go', foreground: 'C2A0FD' },
+    { token: 'method.go', foreground: 'C2A0FD' },
+    { token: 'variable.go', foreground: 'FFE5A0' },
+    { token: 'constant.go', foreground: '5A9BE6' },
+    { token: 'property.go', foreground: '80FFB5' },
+    { token: 'type.go', foreground: 'F0C090' },
+    { token: 'interface.go', foreground: '80FFB5' },
+    { token: 'struct.go', foreground: 'F0C090' },
+    { token: 'function.go', foreground: 'C2A0FD' },
+    { token: 'variable.go', foreground: 'FFE5A0' },
+    { token: 'constant.go', foreground: '5A9BE6' },
+    { token: 'property.go', foreground: '80FFB5' },
   ],
   colors: {
     'editor.background': '#14101A',

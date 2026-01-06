@@ -522,4 +522,55 @@ body {
     "publish": "vsce publish"
   }
 }`,
+
+  markdown: `# lesser Theme - Markdown Preview
+
+A **pure colorful** dark theme for *Visual Studio Code*.
+
+## Features
+
+- Beautiful syntax highlighting
+- Easy on the eyes
+- Supports many languages
+
+### Code Examples
+
+Inline code: \`const theme = "lesser"\`
+
+\`\`\`javascript
+function hello() {
+  console.log("Hello, lesser!");
+}
+\`\`\`
+
+## Links and References
+
+Check out the [GitHub Repository](https://github.com/funcdfs/vscode-theme-lesser) for more info.
+
+Visit the [VS Code Marketplace](https://marketplace.visualstudio.com) to install.
+
+### Lists
+
+- Item one
+- Item two
+  - Nested item
+- Item three
+
+1. First step
+2. Second step
+3. Third step
+
+> This is a blockquote.
+> It can span multiple lines.
+
+---
+
+| Feature | Status |
+|---------|--------|
+| Dark mode | ✅ |
+| Colorful | ✅ |
+| Easy to read | ✅ |
+
+**Bold text** and *italic text* and ~~strikethrough~~.
+`,
 }
