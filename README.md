@@ -24,6 +24,21 @@
 
 search **"lesser"** in VS Code Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
 
+## Semantic Highlighting
+
+Lesser 提供完整的语义化高亮支持，确保所有语言的颜色风格一致：
+
+**支持的语言**: JavaScript, TypeScript, React (JSX/TSX), Python, Rust, Go, C++, Dart, Vue
+
+| 语义 | 颜色 | 示例 |
+|------|------|------|
+| 命名空间/模块 | `#C2A0FD` | ![](https://img.shields.io/badge/-C2A0FD-C2A0FD?style=flat-square) |
+| 类型/类/接口 | `#7AC0A0` | ![](https://img.shields.io/badge/-7AC0A0-7AC0A0?style=flat-square) |
+| 函数/方法 | `#C2A0FD` | ![](https://img.shields.io/badge/-C2A0FD-C2A0FD?style=flat-square) |
+| 变量/参数/属性 | `#FFE5A0` | ![](https://img.shields.io/badge/-FFE5A0-FFE5A0?style=flat-square) |
+| 关键字 | `#89DDFF` | ![](https://img.shields.io/badge/-89DDFF-89DDFF?style=flat-square) |
+| this/self | `#80FFB5` | ![](https://img.shields.io/badge/-80FFB5-80FFB5?style=flat-square) |
+| 装饰器/宏 | `#C2A0FD` | ![](https://img.shields.io/badge/-C2A0FD-C2A0FD?style=flat-square) |
 
 ## Palette
 
