@@ -24,6 +24,18 @@
         "dark theme",
         "syntax highlighting"
     ],
+    "scripts": {
+        "build": "tsc && node dist/build.js",
+        "build:theme": "npx ts-node src/build.ts",
+        "watch": "tsc -w",
+        "clean": "rm -rf dist",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0",
+        "ts-node": "^10.9.0"
+    },
     "contributes": {
         "themes": [
             {
