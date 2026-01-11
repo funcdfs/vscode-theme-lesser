@@ -16,8 +16,8 @@ export const extensions = {
   "extensionButton.separator": "#FFFFFF20",
   "extensionBadge.remoteBackground": withOpacity(palette.green, "muted"),
   "extensionBadge.remoteForeground": "#FFFFFF",
-  "extensionIcon.starForeground": withOpacity(palette.yellow, "low"),
-  "extensionIcon.verifiedForeground": withOpacity(palette.sapphire, "medium"),
+  "extensionIcon.starForeground": "#E0C080",
+  "extensionIcon.verifiedForeground": withOpacity(palette.green, "medium"),
   "extensionIcon.preReleaseForeground": "#E8A855",
   "extensionIcon.sponsorForeground": withOpacity(palette.green, "medium"),
 };

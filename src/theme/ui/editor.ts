@@ -41,11 +41,11 @@ export const editorFind = {
   "editor.findMatchBackground": "#3D7A5090",
   "editor.findMatchHighlightBackground": "#3D7A5060",
   "editor.findRangeHighlightBackground": "#9D6AAF25",
-  "editor.findMatchBorder": withOpacity(palette.sapphire, "medium"),
-  "editor.findMatchHighlightBorder": withOpacity(palette.sapphire, "ghost"),
+  "editor.findMatchBorder": withOpacity(palette.green, "medium"),
+  "editor.findMatchHighlightBorder": withOpacity(palette.green, "ghost"),
   "editor.findRangeHighlightBorder": "#9D6AAF00",
   "searchEditor.findMatchBackground": "#3D7A5090",
-  "searchEditor.findMatchBorder": withOpacity(palette.sapphire, "ghost"),
+  "searchEditor.findMatchBorder": withOpacity(palette.green, "ghost"),
   "searchEditor.textInputBorder": palette.overlay0,
 };
 
@@ -53,11 +53,11 @@ export const editorHighlight = {
   "editor.hoverHighlightBackground": withOpacity(palette.lavender, "trace"),
   "editor.lineHighlightBackground": palette.surface0,
   "editor.lineHighlightBorder": "#2E284000",
-  "editorLink.activeForeground": palette.mauve,
+  "editorLink.activeForeground": palette.dusk,
   "editor.rangeHighlightBackground": withOpacity(palette.mantle, "dim"),
   "editor.rangeHighlightBorder": "#2E284000",
   "editor.symbolHighlightBackground": "#3D7A5090",
-  "editor.symbolHighlightBorder": withOpacity(palette.sapphire, "ghost"),
+  "editor.symbolHighlightBorder": withOpacity(palette.green, "ghost"),
 };
 
 export const editorWhitespace = {
@@ -81,6 +81,6 @@ export const editorRuler = {
   "editorRuler.foreground": withOpacity(palette.overlay0, "whisper"),
   "editor.linkedEditingBackground": "#9D6AAF35",
   "editorCodeLens.foreground": "#7A7590",
-  "editorLightBulb.foreground": withOpacity(palette.yellow, "low"),
-  "editorLightBulbAutoFix.foreground": withOpacity(palette.sapphire, "medium"),
+  "editorLightBulb.foreground": "#E0C080",
+  "editorLightBulbAutoFix.foreground": withOpacity(palette.green, "medium"),
 };

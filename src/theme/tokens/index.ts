@@ -15,4 +15,3 @@ export * from "./storage";
 export * from "./strings";
 export * from "./support";
 export * from "./variables";
-export * from "./languages";

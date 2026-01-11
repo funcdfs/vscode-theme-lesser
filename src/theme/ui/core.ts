@@ -28,7 +28,7 @@ export const text = {
   "textBlockQuote.background": palette.mantle,
   "textBlockQuote.border": withOpacity(palette.lavender, "faint"),
   "textCodeBlock.background": palette.mantle,
-  "textLink.activeForeground": palette.mauve,
+  "textLink.activeForeground": palette.dusk,
   "textLink.foreground": withOpacity(palette.lavender, "faint"),
   "textPreformat.foreground": palette.peach,
   "textPreformat.background": palette.mantle,

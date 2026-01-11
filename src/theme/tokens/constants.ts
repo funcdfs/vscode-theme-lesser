@@ -9,7 +9,7 @@ export const constants: TokenColor[] = [
   {
     name: "Constants",
     scope: "constant",
-    settings: { foreground: withOpacity(palette.yellow, "low") },
+    settings: { foreground: withOpacity(palette.clay, "medium") },
   },
   {
     name: "Numeric constants",
@@ -19,7 +19,7 @@ export const constants: TokenColor[] = [
       "constant.numeric.float",
       "constant.numeric.hex",
     ],
-    settings: { foreground: "#E8B89CAA" },
+    settings: { foreground: withOpacity(palette.pink, "medium") },
   },
   {
     name: "Language constants",
@@ -29,21 +29,21 @@ export const constants: TokenColor[] = [
       "constant.language.null",
       "constant.language.undefined",
     ],
-    settings: { foreground: "#E8B89CAA" },
+    settings: { foreground: withOpacity(palette.pink, "medium") },
   },
   {
     name: "Character constants",
     scope: ["constant.character", "constant.other"],
-    settings: { foreground: withOpacity(palette.yellow, "subtle") },
+    settings: { foreground: withOpacity(palette.clay, "medium") },
   },
   {
     name: "Escape characters",
     scope: ["constant.character.escape", "constant.character.entity"],
-    settings: { foreground: withOpacity(palette.green, "medium") },
+    settings: { foreground: withOpacity(palette.dusk, "medium") },
   },
   {
     name: "Constant placeholder",
     scope: ["constant.other.placeholder", "constant.other.format.placeholder"],
-    settings: { foreground: withOpacity(palette.green, "medium") },
+    settings: { foreground: withOpacity(palette.dusk, "medium") },
   },
 ];

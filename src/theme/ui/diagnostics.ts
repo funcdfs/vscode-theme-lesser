@@ -13,14 +13,14 @@ export const editorError = {
   "editorWarning.foreground": withOpacity("#E8A855", "medium"),
   "editorWarning.border": withOpacity("#E8A855", "none"),
   "editorWarning.background": withOpacity("#E8A855", "invisible"),
-  "editorInfo.foreground": withOpacity(palette.blue, "medium"),
-  "editorInfo.border": withOpacity(palette.blue, "none"),
-  "editorInfo.background": withOpacity(palette.blue, "invisible"),
+  "editorInfo.foreground": withOpacity(palette.ocean, "medium"),
+  "editorInfo.border": withOpacity(palette.ocean, "none"),
+  "editorInfo.background": withOpacity(palette.ocean, "invisible"),
   "editorHint.foreground": withOpacity(palette.green, "medium"),
   "editorHint.border": withOpacity(palette.green, "none"),
   "problemsErrorIcon.foreground": palette.red,
   "problemsWarningIcon.foreground": withOpacity("#E8A855", "medium"),
-  "problemsInfoIcon.foreground": withOpacity(palette.blue, "medium"),
+  "problemsInfoIcon.foreground": withOpacity(palette.ocean, "medium"),
 };
 
 export const editorUnnecessary = {

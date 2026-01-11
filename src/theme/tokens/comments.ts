@@ -2,6 +2,7 @@
  * Comment Token Colors
  */
 
+import { palette, withOpacity } from "../../palette";
 import type { TokenColor } from "../types";
 
 export const comments: TokenColor[] = [
@@ -14,11 +15,11 @@ export const comments: TokenColor[] = [
       "comment.block",
       "comment.line",
     ],
-    settings: { foreground: "#7A7595" },
+    settings: { foreground: withOpacity(palette.dusk, "muted") },
   },
   {
     name: "Documentation comments",
     scope: ["comment.block.documentation", "comment.block.javadoc"],
-    settings: { foreground: "#8A85A5", fontStyle: "italic" },
+    settings: { foreground: withOpacity(palette.dusk, "dim") },
   },
 ];

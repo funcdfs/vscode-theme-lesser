@@ -9,7 +9,7 @@ export const markup: TokenColor[] = [
   {
     name: "Markup quotes",
     scope: "markup.quote",
-    settings: { foreground: withOpacity(palette.peach, "subtle") },
+    settings: { foreground: withOpacity(palette.peach, "medium") },
   },
   {
     name: "Markup headings",
@@ -19,22 +19,22 @@ export const markup: TokenColor[] = [
   {
     name: "Markup bold",
     scope: "markup.bold",
-    settings: { foreground: palette.mauve, fontStyle: "bold" },
+    settings: { foreground: withOpacity(palette.sand, "medium"), fontStyle: "bold" },
   },
   {
     name: "Markup italics",
     scope: "markup.italic",
-    settings: { foreground: withOpacity(palette.blue, "medium"), fontStyle: "italic" },
+    settings: { foreground: withOpacity(palette.frost, "medium"), fontStyle: "italic" },
   },
   {
     name: "Markup strikethrough",
     scope: "markup.strikethrough",
-    settings: { foreground: palette.overlay1, fontStyle: "strikethrough" },
+    settings: { foreground: withOpacity(palette.overlay1, "medium"), fontStyle: "strikethrough" },
   },
   {
     name: "Markup links",
     scope: "markup.underline.link",
-    settings: { foreground: "#88C8F0B3" },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "Markup code",
@@ -44,12 +44,12 @@ export const markup: TokenColor[] = [
   {
     name: "Markup inserted",
     scope: "markup.inserted",
-    settings: { foreground: withOpacity(palette.blue, "medium") },
+    settings: { foreground: withOpacity(palette.green, "medium") },
   },
   {
     name: "Markup deleted",
     scope: "markup.deleted",
-    settings: { foreground: withOpacity(palette.maroon, "medium") },
+    settings: { foreground: withOpacity(palette.red, "medium") },
   },
   {
     name: "Markup changed",

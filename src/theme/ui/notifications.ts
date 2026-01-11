@@ -16,6 +16,6 @@ export const notifications = {
   "notificationToast.border": palette.overlay0,
   "notificationsErrorIcon.foreground": palette.red,
   "notificationsWarningIcon.foreground": withOpacity("#E8A855", "medium"),
-  "notificationsInfoIcon.foreground": withOpacity(palette.blue, "medium"),
+  "notificationsInfoIcon.foreground": withOpacity(palette.ocean, "medium"),
   "notificationLink.foreground": withOpacity(palette.lavender, "faint"),
 };

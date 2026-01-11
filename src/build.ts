@@ -15,7 +15,7 @@ import * as ui from "./theme/ui";
 import * as tokens from "./theme/tokens";
 
 // Import semantic tokens
-import { semanticTokenColors, languageSemanticTokens } from "./theme/semantic";
+import { semanticTokenColors } from "./theme/semantic";
 
 /**
  * Collect all UI colors from the UI modules
@@ -52,17 +52,6 @@ function collectTokenColors(): TokenColor[] {
   if (Array.isArray(tokens.support)) tokenColors.push(...tokens.support);
   if (Array.isArray(tokens.variables)) tokenColors.push(...tokens.variables);
 
-  // Language-specific tokens
-  if (Array.isArray(tokens.javascript)) tokenColors.push(...tokens.javascript);
-  if (Array.isArray(tokens.typescript)) tokenColors.push(...tokens.typescript);
-  if (Array.isArray(tokens.python)) tokenColors.push(...tokens.python);
-  if (Array.isArray(tokens.rust)) tokenColors.push(...tokens.rust);
-  if (Array.isArray(tokens.go)) tokenColors.push(...tokens.go);
-  if (Array.isArray(tokens.cpp)) tokenColors.push(...tokens.cpp);
-  if (Array.isArray(tokens.dart)) tokenColors.push(...tokens.dart);
-  if (Array.isArray(tokens.vue)) tokenColors.push(...tokens.vue);
-  if (Array.isArray(tokens.misc)) tokenColors.push(...tokens.misc);
-
   return tokenColors;
 }
 
@@ -77,7 +66,6 @@ function buildTheme(): Theme {
     semanticHighlighting: true,
     semanticTokenColors: {
       ...semanticTokenColors,
-      ...languageSemanticTokens,
     },
     tokenColors: collectTokenColors(),
   };

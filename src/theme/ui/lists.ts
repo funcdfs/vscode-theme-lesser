@@ -7,7 +7,7 @@
 import { palette, withOpacity } from "../../palette";
 
 export const badge = {
-  "activityBarBadge.background": withOpacity(palette.lavender, "low"),
+  "activityBarBadge.background": withOpacity(palette.lavender, "ghost"),
   "activityBarBadge.foreground": "#FFFFFF",
   "badge.background": "#4A3D6039",
   "badge.foreground": "#FFFFFF7F",
@@ -19,20 +19,20 @@ export const progressBar = {
 
 export const list = {
   "list.activeSelectionBackground": palette.surface2,
-  "list.activeSelectionForeground": palette.yellow,
-  "list.activeSelectionIconForeground": palette.yellow,
+  "list.activeSelectionForeground": palette.frost,
+  "list.activeSelectionIconForeground": palette.frost,
   "list.dropBackground": "#3A3050",
   "list.focusBackground": palette.surface2,
   "list.focusForeground": palette.subtext1,
-  "list.focusHighlightForeground": palette.yellow,
+  "list.focusHighlightForeground": palette.frost,
   "list.focusOutline": withOpacity(palette.lavender, "muted"),
   "list.focusAndSelectionOutline": withOpacity(palette.lavender, "dim"),
   "list.highlightForeground": palette.lavender,
   "list.hoverBackground": palette.surface1,
   "list.hoverForeground": palette.subtext1,
   "list.inactiveSelectionBackground": palette.surface1,
-  "list.inactiveSelectionForeground": palette.yellow,
-  "list.inactiveSelectionIconForeground": palette.yellow,
+  "list.inactiveSelectionForeground": palette.frost,
+  "list.inactiveSelectionIconForeground": palette.frost,
   "list.inactiveFocusBackground": palette.mantle,
   "list.inactiveFocusOutline": withOpacity(palette.lavender, "whisper"),
   "list.invalidItemForeground": palette.red,
@@ -43,7 +43,7 @@ export const list = {
   "listFilterWidget.noMatchesOutline": palette.red,
   "listFilterWidget.shadow": "#00000030",
   "list.filterMatchBackground": "#3D7A5080",
-  "list.filterMatchBorder": withOpacity(palette.sapphire, "medium"),
+  "list.filterMatchBorder": withOpacity(palette.green, "medium"),
 };
 
 export const tree = {

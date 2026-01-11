@@ -23,12 +23,12 @@ export const base: TokenColor[] = [
       "string",
       "comment",
     ],
-    settings: { foreground: "#C0C8D8" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Default text",
     scope: ["source", "text"],
-    settings: { foreground: "#C0C8D8" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Meta and punctuation fallback",
@@ -43,7 +43,7 @@ export const base: TokenColor[] = [
       "punctuation.terminator",
       "punctuation.accessor",
     ],
-    settings: { foreground: "#B8C0D0" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Support fallback",
@@ -54,6 +54,6 @@ export const base: TokenColor[] = [
       "support.constant",
       "support.other",
     ],
-    settings: { foreground: "#C0C8D8" },
+    settings: { foreground: "#D3C6AADD" },
   },
 ];

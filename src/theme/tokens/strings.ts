@@ -15,12 +15,12 @@ export const strings: TokenColor[] = [
       "string.quoted.double",
       "string.template",
     ],
-    settings: { foreground: "#E8B89CBB" },
+    settings: { foreground: withOpacity(palette.peach, "soft") },
   },
   {
     name: "String interpolation",
     scope: ["string.interpolated", "meta.string-contents.quoted"],
-    settings: { foreground: "#E8B89CBB" },
+    settings: { foreground: withOpacity(palette.peach, "soft") },
   },
   {
     name: "Regex",
@@ -30,16 +30,16 @@ export const strings: TokenColor[] = [
   {
     name: "Markup link descriptions",
     scope: "string.other.link",
-    settings: { foreground: palette.mauve },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "String unquoted",
     scope: ["string.unquoted", "string.unquoted.heredoc"],
-    settings: { foreground: "#90A8E8" },
+    settings: { foreground: withOpacity(palette.peach, "soft") },
   },
   {
     name: "String quoted other",
     scope: ["string.quoted.other", "string.quoted.angle"],
-    settings: { foreground: "#90A8E8" },
+    settings: { foreground: withOpacity(palette.peach, "soft") },
   },
 ];

@@ -53,7 +53,7 @@ export const merge = {
   "mergeEditor.conflict.handledUnfocusedBackground": withOpacity(palette.green, "trace"),
   "mergeEditor.conflict.unhandledFocusedBackground": withOpacity(palette.red, "whisper"),
   "mergeEditor.conflict.unhandledUnfocusedBackground": withOpacity(palette.red, "trace"),
-  "mergeEditor.conflictingLines.background": withOpacity(palette.yellow, "trace"),
-  "mergeEditor.changeBase.background": withOpacity(palette.yellow, "trace"),
-  "mergeEditor.changeBase.word.background": withOpacity(palette.yellow, "whisper"),
+  "mergeEditor.conflictingLines.background": "#E0C08025",
+  "mergeEditor.changeBase.background": "#E0C08025",
+  "mergeEditor.changeBase.word.background": "#E0C08040",
 };

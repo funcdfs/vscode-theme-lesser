@@ -29,7 +29,7 @@ export const statusBar = {
   "statusBarItem.remoteHoverForeground": "#FFFFFF",
   "statusBarItem.errorBackground": palette.red,
   "statusBarItem.errorForeground": "#FFFFFF",
-  "statusBarItem.errorHoverBackground": withOpacity(palette.maroon, "medium"),
+  "statusBarItem.errorHoverBackground": withOpacity(palette.red, "medium"),
   "statusBarItem.errorHoverForeground": "#FFFFFF",
   "statusBarItem.warningBackground": "#E8A855",
   "statusBarItem.warningForeground": "#FFFFFF",

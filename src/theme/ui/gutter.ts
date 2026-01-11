@@ -13,13 +13,13 @@ export const editorGutter = {
   "editorGutter.deletedBackground": withOpacity(palette.red, "low"),
   "editorGutter.commentRangeForeground": palette.overlay1,
   "editorGutter.commentGlyphForeground": palette.text,
-  "editorGutter.commentUnresolvedGlyphForeground": withOpacity(palette.yellow, "low"),
+  "editorGutter.commentUnresolvedGlyphForeground": "#E0C080",
   "editorGutter.foldingControlForeground": palette.overlay1,
 };
 
 export const editorComments = {
-  "editorCommentsWidget.resolvedBorder": withOpacity(palette.sapphire, "medium"),
-  "editorCommentsWidget.unresolvedBorder": withOpacity(palette.yellow, "low"),
+  "editorCommentsWidget.resolvedBorder": withOpacity(palette.green, "medium"),
+  "editorCommentsWidget.unresolvedBorder": "#E0C080",
   "editorCommentsWidget.rangeBackground": withOpacity(palette.lavender, "invisible"),
   "editorCommentsWidget.rangeBorder": "#9D8CCC35",
   "editorCommentsWidget.rangeActiveBackground": withOpacity(palette.lavender, "trace"),

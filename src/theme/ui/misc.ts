@@ -35,7 +35,7 @@ export const chat = {
   "chat.requestBackground": "#2E284045",
   "chat.requestBorder": "#3D365045",
   "chat.slashCommandBackground": "#9D8CCC35",
-  "chat.slashCommandForeground": palette.mauve,
+  "chat.slashCommandForeground": palette.dusk,
   "chat.avatarBackground": palette.mantle,
   "chat.avatarForeground": palette.text,
 };
@@ -48,17 +48,17 @@ export const keybindingTable = {
 export const testing = {
   "testing.iconFailed": palette.red,
   "testing.iconErrored": palette.red,
-  "testing.iconPassed": withOpacity(palette.sapphire, "medium"),
+  "testing.iconPassed": withOpacity(palette.green, "medium"),
   "testing.iconQueued": palette.overlay1,
   "testing.iconUnset": palette.overlay1,
-  "testing.iconSkipped": withOpacity(palette.yellow, "low"),
-  "testing.runAction": withOpacity(palette.sapphire, "medium"),
+  "testing.iconSkipped": withOpacity(palette.sand, "medium"),
+  "testing.runAction": withOpacity(palette.green, "medium"),
   "testing.peekBorder": palette.red,
   "testing.peekHeaderBackground": withOpacity(palette.red, "trace"),
   "testing.message.error.decorationForeground": palette.red,
   "testing.message.error.lineBackground": withOpacity(palette.red, "invisible"),
-  "testing.message.info.decorationForeground": withOpacity(palette.blue, "medium"),
-  "testing.message.info.lineBackground": withOpacity(palette.blue, "invisible"),
+  "testing.message.info.decorationForeground": withOpacity(palette.ocean, "medium"),
+  "testing.message.info.lineBackground": withOpacity(palette.ocean, "invisible"),
 };
 
 export const notebook = {
@@ -81,13 +81,13 @@ export const notebook = {
   "notebookScrollbarSlider.background": withOpacity(palette.lavender, "trace"),
   "notebookScrollbarSlider.hoverBackground": withOpacity(palette.lavender, "whisper"),
   "notebookStatusErrorIcon.foreground": palette.red,
-  "notebookStatusRunningIcon.foreground": withOpacity(palette.blue, "medium"),
-  "notebookStatusSuccessIcon.foreground": withOpacity(palette.sapphire, "medium"),
+  "notebookStatusRunningIcon.foreground": withOpacity(palette.ocean, "medium"),
+  "notebookStatusSuccessIcon.foreground": withOpacity(palette.green, "medium"),
 };
 
 export const settings = {
   "settings.headerForeground": palette.text,
-  "settings.modifiedItemIndicator": withOpacity(palette.blue, "medium"),
+  "settings.modifiedItemIndicator": withOpacity(palette.ocean, "medium"),
   "settings.dropdownBackground": palette.mantle,
   "settings.dropdownForeground": palette.text,
   "settings.dropdownBorder": palette.overlay0,
@@ -126,7 +126,7 @@ export const banner = {
 };
 
 export const breadcrumb = {
-  "breadcrumb.activeSelectionForeground": withOpacity(palette.blue, "medium"),
+  "breadcrumb.activeSelectionForeground": withOpacity(palette.ocean, "medium"),
   "breadcrumb.focusForeground": palette.text,
   "breadcrumb.foreground": palette.overlay1,
   "breadcrumbPicker.background": palette.surface0,
@@ -143,26 +143,26 @@ export const charts = {
   "charts.foreground": palette.text,
   "charts.lines": palette.overlay0,
   "charts.red": palette.red,
-  "charts.blue": withOpacity(palette.blue, "medium"),
-  "charts.yellow": withOpacity(palette.yellow, "low"),
+  "charts.blue": withOpacity(palette.ocean, "medium"),
+  "charts.yellow": "#E0C080",
   "charts.orange": "#E8A855",
-  "charts.green": withOpacity(palette.sapphire, "medium"),
-  "charts.purple": palette.mauve,
+  "charts.green": withOpacity(palette.green, "medium"),
+  "charts.purple": palette.dusk,
 };
 
 export const markdownAlert = {
-  "markdownAlert.note.border": withOpacity(palette.blue, "medium"),
-  "markdownAlert.note.background": withOpacity(palette.blue, "invisible"),
-  "markdownAlert.note.foreground": withOpacity(palette.blue, "medium"),
-  "markdownAlert.tip.border": withOpacity(palette.sapphire, "medium"),
-  "markdownAlert.tip.background": withOpacity(palette.sapphire, "invisible"),
-  "markdownAlert.tip.foreground": withOpacity(palette.sapphire, "medium"),
-  "markdownAlert.important.border": palette.mauve,
-  "markdownAlert.important.background": withOpacity(palette.mauve, "invisible"),
-  "markdownAlert.important.foreground": palette.mauve,
-  "markdownAlert.warning.border": withOpacity(palette.yellow, "low"),
-  "markdownAlert.warning.background": withOpacity(palette.yellow, "invisible"),
-  "markdownAlert.warning.foreground": withOpacity(palette.yellow, "low"),
+  "markdownAlert.note.border": withOpacity(palette.ocean, "medium"),
+  "markdownAlert.note.background": withOpacity(palette.ocean, "invisible"),
+  "markdownAlert.note.foreground": withOpacity(palette.ocean, "medium"),
+  "markdownAlert.tip.border": withOpacity(palette.green, "medium"),
+  "markdownAlert.tip.background": withOpacity(palette.green, "invisible"),
+  "markdownAlert.tip.foreground": withOpacity(palette.green, "medium"),
+  "markdownAlert.important.border": palette.dusk,
+  "markdownAlert.important.background": withOpacity(palette.dusk, "invisible"),
+  "markdownAlert.important.foreground": palette.dusk,
+  "markdownAlert.warning.border": "#E0C080",
+  "markdownAlert.warning.background": "#E0C08018",
+  "markdownAlert.warning.foreground": "#E0C080",
   "markdownAlert.caution.border": palette.red,
   "markdownAlert.caution.background": withOpacity(palette.red, "invisible"),
   "markdownAlert.caution.foreground": palette.red,
@@ -180,7 +180,7 @@ export const outputView = {
 };
 
 export const ports = {
-  "ports.iconRunningProcessForeground": withOpacity(palette.sapphire, "medium"),
+  "ports.iconRunningProcessForeground": withOpacity(palette.green, "medium"),
 };
 
 export const profileBadge = {
@@ -189,20 +189,20 @@ export const profileBadge = {
 };
 
 export const gauge = {
-  "gauge.default.foreground": withOpacity(palette.blue, "medium"),
+  "gauge.default.foreground": withOpacity(palette.ocean, "medium"),
   "gauge.default.background": palette.mantle,
   "gauge.warning.foreground": withOpacity("#E8A855", "dim"),
   "gauge.critical.foreground": palette.red,
-  "gauge.success.foreground": withOpacity(palette.sapphire, "medium"),
+  "gauge.success.foreground": withOpacity(palette.green, "medium"),
   "gauge.neutral.foreground": palette.overlay1,
 };
 
 export const inlineEdit = {
   "editorInlineEdit.onLineBackground": withOpacity(palette.lavender, "invisible"),
-  "editorInlineEdit.modifiedBackground": withOpacity(palette.blue, "invisible"),
+  "editorInlineEdit.modifiedBackground": withOpacity(palette.ocean, "invisible"),
   "editorInlineEdit.modifiedBorder": "#5A9BE638",
-  "editorInlineEdit.modifiedChangedLineBackground": withOpacity(palette.blue, "invisible"),
-  "editorInlineEdit.modifiedChangedText": withOpacity(palette.blue, "medium"),
+  "editorInlineEdit.modifiedChangedLineBackground": withOpacity(palette.ocean, "invisible"),
+  "editorInlineEdit.modifiedChangedText": withOpacity(palette.ocean, "medium"),
   "editorInlineEdit.originalBackground": withOpacity(palette.red, "invisible"),
   "editorInlineEdit.originalBorder": "#FF6B8A38",
   "editorInlineEdit.originalChangedLineBackground": withOpacity(palette.red, "invisible"),
@@ -210,21 +210,21 @@ export const inlineEdit = {
   "inlineEdit.gutterIndicator.primaryBorder": withOpacity(palette.green, "subtle"),
   "inlineEdit.gutterIndicator.primaryForeground": withOpacity(palette.green, "subtle"),
   "inlineEdit.gutterIndicator.primaryBackground": palette.mantle,
-  "inlineEdit.gutterIndicator.secondaryBorder": withOpacity(palette.blue, "muted"),
-  "inlineEdit.gutterIndicator.secondaryForeground": withOpacity(palette.blue, "muted"),
+  "inlineEdit.gutterIndicator.secondaryBorder": withOpacity(palette.ocean, "muted"),
+  "inlineEdit.gutterIndicator.secondaryForeground": withOpacity(palette.ocean, "muted"),
   "inlineEdit.gutterIndicator.secondaryBackground": palette.mantle,
-  "inlineEdit.gutterIndicator.successfulBorder": withOpacity(palette.sapphire, "muted"),
-  "inlineEdit.gutterIndicator.successfulForeground": withOpacity(palette.sapphire, "muted"),
+  "inlineEdit.gutterIndicator.successfulBorder": withOpacity(palette.green, "muted"),
+  "inlineEdit.gutterIndicator.successfulForeground": withOpacity(palette.green, "muted"),
   "inlineEdit.gutterIndicator.successfulBackground": palette.mantle,
   "inlineEdit.gutterIndicator.background": "#2E2840",
   "inlineEdit.originalBackground": withOpacity(palette.red, "invisible"),
-  "inlineEdit.modifiedBackground": withOpacity(palette.blue, "invisible"),
+  "inlineEdit.modifiedBackground": withOpacity(palette.ocean, "invisible"),
   "inlineEdit.originalChangedLineBackground": withOpacity(palette.red, "invisible"),
   "inlineEdit.originalChangedTextBackground": palette.red,
-  "inlineEdit.modifiedChangedLineBackground": withOpacity(palette.blue, "invisible"),
-  "inlineEdit.modifiedChangedTextBackground": withOpacity(palette.blue, "medium"),
+  "inlineEdit.modifiedChangedLineBackground": withOpacity(palette.ocean, "invisible"),
+  "inlineEdit.modifiedChangedTextBackground": withOpacity(palette.ocean, "medium"),
   "inlineEdit.originalBorder": "#FF6B8A38",
   "inlineEdit.modifiedBorder": "#5A9BE638",
-  "inlineEdit.tabWillAcceptModifiedBorder": withOpacity(palette.blue, "medium"),
+  "inlineEdit.tabWillAcceptModifiedBorder": withOpacity(palette.ocean, "medium"),
   "inlineEdit.tabWillAcceptOriginalBorder": palette.red,
 };

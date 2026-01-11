@@ -9,17 +9,17 @@ export const support: TokenColor[] = [
   {
     name: "Provided values",
     scope: "support",
-    settings: { foreground: withOpacity(palette.teal, "medium") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
   {
     name: "Provided functions",
     scope: ["support.function", "support.function.builtin"],
-    settings: { foreground: withOpacity(palette.lavender, "high") },
+    settings: { foreground: withOpacity(palette.lavender, "medium") },
   },
   {
     name: "Provided variables",
     scope: ["support.variable", "support.constant"],
-    settings: { foreground: withOpacity(palette.yellow, "low") },
+    settings: { foreground: withOpacity(palette.clay, "medium") },
   },
   {
     name: "Property names",
@@ -29,7 +29,7 @@ export const support: TokenColor[] = [
       "string.json support.type.property-name",
       "meta.structure.dictionary.key",
     ],
-    settings: { foreground: withOpacity(palette.yellow, "low") },
+    settings: { foreground: withOpacity(palette.sand, "medium") },
   },
   {
     name: "JSON string values",
@@ -37,7 +37,7 @@ export const support: TokenColor[] = [
       "meta.structure.dictionary.value string",
       "meta.object-literal.value string",
     ],
-    settings: { foreground: "#E8B89CBB" },
+    settings: { foreground: withOpacity(palette.peach, "medium") },
   },
   {
     name: "JSON property names",
@@ -47,22 +47,22 @@ export const support: TokenColor[] = [
       "punctuation.support.type.property-name.begin.json",
       "punctuation.support.type.property-name.end.json",
     ],
-    settings: { foreground: withOpacity(palette.yellow, "low") },
+    settings: { foreground: withOpacity(palette.sand, "medium") },
   },
   {
     name: "CSS property names",
     scope: "support.type.property-name.css",
-    settings: { foreground: withOpacity(palette.yellow, "low") },
+    settings: { foreground: withOpacity(palette.sand, "medium") },
   },
   {
     name: "CSS property values",
     scope: ["support.constant.property-value.css", "meta.property-value.css"],
-    settings: { foreground: "#C0C8D8" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "CSS vendor prefixes",
     scope: "support.type.vendored.property-name.css",
-    settings: { foreground: withOpacity(palette.yellow, "subtle") },
+    settings: { foreground: withOpacity(palette.sand, "medium") },
   },
   {
     name: "Support module",
@@ -72,6 +72,6 @@ export const support: TokenColor[] = [
   {
     name: "Support type builtin",
     scope: ["support.type.builtin", "support.type.built-in"],
-    settings: { foreground: withOpacity(palette.teal, "subtle") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
 ];

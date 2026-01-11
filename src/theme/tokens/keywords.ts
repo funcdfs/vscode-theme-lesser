@@ -9,7 +9,7 @@ export const keywords: TokenColor[] = [
   {
     name: "Keywords",
     scope: "keyword",
-    settings: { foreground: withOpacity(palette.sky, "medium") },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "Control keywords",
@@ -22,12 +22,12 @@ export const keywords: TokenColor[] = [
       "keyword.control.export",
       "keyword.control.return",
     ],
-    settings: { foreground: withOpacity(palette.sky, "medium") },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "Operators",
     scope: "keyword.operator",
-    settings: { foreground: "#B8C0D0" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Arithmetic operators",
@@ -37,7 +37,7 @@ export const keywords: TokenColor[] = [
       "keyword.operator.comparison",
       "keyword.operator.relational",
     ],
-    settings: { foreground: "#B8C0D0" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Special operators",
@@ -49,17 +49,17 @@ export const keywords: TokenColor[] = [
       "keyword.operator.typeof",
       "keyword.operator.instanceof",
     ],
-    settings: { foreground: withOpacity(palette.sky, "medium") },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "Spread operator",
     scope: "keyword.operator.spread",
-    settings: { foreground: withOpacity(palette.sky, "medium") },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "Units",
     scope: "keyword.other.unit",
-    settings: { foreground: "#E8B89CAA" },
+    settings: { foreground: withOpacity(palette.clay, "medium") },
   },
   {
     name: "Conditional keywords",
@@ -70,7 +70,7 @@ export const keywords: TokenColor[] = [
       "keyword.control.conditional.switch",
       "keyword.control.conditional.case",
     ],
-    settings: { foreground: palette.blue },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "Exception keywords",
@@ -81,11 +81,11 @@ export const keywords: TokenColor[] = [
       "keyword.control.exception.finally",
       "keyword.control.exception.throw",
     ],
-    settings: { foreground: palette.blue },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "Keyword other",
     scope: ["keyword.other", "keyword.other.unit.suffix"],
-    settings: { foreground: palette.blue },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
 ];

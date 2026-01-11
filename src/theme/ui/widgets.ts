@@ -33,7 +33,7 @@ export const peekView = {
   "peekViewEditor.background": palette.mantle,
   "peekViewEditorGutter.background": palette.mantle,
   "peekViewEditor.matchHighlightBackground": "#3D7A5090",
-  "peekViewEditor.matchHighlightBorder": withOpacity(palette.sapphire, "ghost"),
+  "peekViewEditor.matchHighlightBorder": withOpacity(palette.green, "ghost"),
   "peekViewResult.background": palette.mantle,
   "peekViewResult.fileForeground": palette.text,
   "peekViewResult.lineForeground": palette.overlay1,

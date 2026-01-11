@@ -24,22 +24,22 @@ export const entities: TokenColor[] = [
       "support.class",
       "meta.class entity.name.type",
     ],
-    settings: { foreground: withOpacity(palette.teal, "medium") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
   {
     name: "Interface names",
     scope: ["entity.name.type.interface", "support.type.interface"],
-    settings: { foreground: withOpacity(palette.teal, "medium") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
   {
     name: "Struct names",
     scope: ["entity.name.type.struct", "storage.type.struct"],
-    settings: { foreground: withOpacity(palette.teal, "medium") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
   {
     name: "Enum names",
     scope: ["entity.name.type.enum", "support.type.enum"],
-    settings: { foreground: withOpacity(palette.teal, "medium") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
   {
     name: "Enum members",
@@ -50,7 +50,7 @@ export const entities: TokenColor[] = [
       "variable.other.constant.object",
       "support.type.object.module",
     ],
-    settings: { foreground: withOpacity(palette.yellow, "low") },
+    settings: { foreground: withOpacity(palette.clay, "medium") },
   },
   {
     name: "Type parameters",
@@ -58,22 +58,22 @@ export const entities: TokenColor[] = [
       "entity.name.type.parameter",
       "meta.type.parameters entity.name.type",
     ],
-    settings: { foreground: withOpacity(palette.teal, "subtle") },
+    settings: { foreground: withOpacity(palette.dusk, "medium") },
   },
   {
     name: "Named entities",
     scope: "entity.name",
-    settings: { foreground: withOpacity(palette.teal, "medium") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
   {
     name: "Function names",
     scope: ["entity.name.function", "meta.function-call entity.name.function"],
-    settings: { foreground: withOpacity(palette.lavender, "high") },
+    settings: { foreground: withOpacity(palette.lavender, "medium") },
   },
   {
     name: "Method names",
     scope: ["entity.name.function.member", "meta.function.method"],
-    settings: { foreground: withOpacity(palette.lavender, "high") },
+    settings: { foreground: withOpacity(palette.lavender, "medium") },
   },
   {
     name: "Tags",
@@ -88,7 +88,7 @@ export const entities: TokenColor[] = [
       "support.type",
       "support.type.primitive",
     ],
-    settings: { foreground: withOpacity(palette.teal, "medium") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
   {
     name: "Tag attributes",
@@ -96,7 +96,7 @@ export const entities: TokenColor[] = [
       "entity.other.attribute-name",
       "meta.tag.attributes entity.other.attribute-name",
     ],
-    settings: { foreground: withOpacity(palette.yellow, "low"), fontStyle: "normal" },
+    settings: { foreground: withOpacity(palette.sand, "medium"), fontStyle: "normal" },
   },
   {
     name: "Inherited classes",
@@ -106,12 +106,12 @@ export const entities: TokenColor[] = [
   {
     name: "CSS ID selectors",
     scope: "entity.other.attribute-name.id",
-    settings: { foreground: withOpacity(palette.blue, "medium") },
+    settings: { foreground: withOpacity(palette.ocean, "medium") },
   },
   {
     name: "CSS class selectors",
     scope: "entity.other.attribute-name.class",
-    settings: { foreground: withOpacity(palette.teal, "medium") },
+    settings: { foreground: withOpacity(palette.moss, "medium") },
   },
   {
     name: "Pseudo CSS",
@@ -134,12 +134,12 @@ export const entities: TokenColor[] = [
   {
     name: "Entity name constant",
     scope: ["entity.name.constant", "meta.constant entity.name"],
-    settings: { foreground: withOpacity(palette.yellow, "low") },
+    settings: { foreground: withOpacity(palette.clay, "medium") },
   },
   {
     name: "Entity name label",
     scope: ["entity.name.label", "entity.name.goto-label"],
-    settings: { foreground: "#C0C8D8DD" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Entity name section",

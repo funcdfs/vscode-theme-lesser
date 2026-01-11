@@ -9,7 +9,7 @@ export const punctuation: TokenColor[] = [
   {
     name: "Embedded template punctuation",
     scope: "string.template meta.embedded",
-    settings: { foreground: "#B8C0D0" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Tag brackets",
@@ -23,7 +23,7 @@ export const punctuation: TokenColor[] = [
       "punctuation.separator.key-value",
       "punctuation.separator.dictionary",
     ],
-    settings: { foreground: "#B8C0D0" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Template expressions",
@@ -31,12 +31,12 @@ export const punctuation: TokenColor[] = [
       "punctuation.definition.template-expression",
       "punctuation.definition.interpolation",
     ],
-    settings: { foreground: palette.mauve },
+    settings: { foreground: withOpacity(palette.dusk, "medium") },
   },
   {
     name: "Embedded section punctuation",
     scope: "punctuation.section.embedded",
-    settings: { foreground: palette.mauve },
+    settings: { foreground: withOpacity(palette.dusk, "medium") },
   },
   {
     name: "Markup list punctuation",
@@ -46,7 +46,7 @@ export const punctuation: TokenColor[] = [
   {
     name: "Brackets",
     scope: ["punctuation.brackets", "punctuation.section.brackets", "meta.brace"],
-    settings: { foreground: "#B0B8C8" },
+    settings: { foreground: "#9DA9A0DD" },
   },
   {
     name: "Punctuation accessor",
@@ -56,7 +56,7 @@ export const punctuation: TokenColor[] = [
       "punctuation.accessor.arrow",
       "punctuation.accessor.double-colon",
     ],
-    settings: { foreground: "#B8C0D0" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Punctuation section block",
@@ -66,7 +66,7 @@ export const punctuation: TokenColor[] = [
       "punctuation.section.braces.begin",
       "punctuation.section.braces.end",
     ],
-    settings: { foreground: "#B0B8C8" },
+    settings: { foreground: "#9DA9A0DD" },
   },
   {
     name: "Punctuation section parens",
@@ -76,7 +76,7 @@ export const punctuation: TokenColor[] = [
       "punctuation.section.group.begin",
       "punctuation.section.group.end",
     ],
-    settings: { foreground: "#B0B8C8" },
+    settings: { foreground: "#9DA9A0DD" },
   },
   {
     name: "Punctuation section brackets",
@@ -86,7 +86,7 @@ export const punctuation: TokenColor[] = [
       "punctuation.section.array.begin",
       "punctuation.section.array.end",
     ],
-    settings: { foreground: "#B0B8C8" },
+    settings: { foreground: "#9DA9A0DD" },
   },
   {
     name: "Punctuation section generic",
@@ -96,12 +96,12 @@ export const punctuation: TokenColor[] = [
       "punctuation.section.generic.begin",
       "punctuation.section.generic.end",
     ],
-    settings: { foreground: "#B0B8C8" },
+    settings: { foreground: "#9DA9A0DD" },
   },
   {
     name: "Punctuation terminator",
     scope: ["punctuation.terminator", "punctuation.terminator.statement"],
-    settings: { foreground: "#B8C0D0" },
+    settings: { foreground: "#D3C6AADD" },
   },
   {
     name: "Punctuation continuation",
