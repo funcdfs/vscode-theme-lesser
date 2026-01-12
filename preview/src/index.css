@@ -5,8 +5,8 @@
 }
 
 body {
-  background: linear-gradient(180deg, #1a171d 0%, #211d25 100%);
-  color: #abb2bf;
+  background: #211D25;
+  color: #E4E4E4EB;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   min-height: 100vh;
 }
@@ -17,23 +17,23 @@ body {
   flex-direction: column;
 }
 
-/* 滚动条样式 */
+/* 滚动条样式 - 紫色调 */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a171d;
+  background: #211D25;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3d434f;
+  background: #A995F126;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4d535f;
+  background: #A995F140;
 }
 
 /* 链接悬停效果 */

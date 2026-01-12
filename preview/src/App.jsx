@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import Editor, { loader } from '@monaco-editor/react'
 import { lesserTheme } from './theme'
 import { leftSamples, rightSamples } from './samples'
@@ -11,6 +11,19 @@ loader.init().then((monaco) => {
   monaco.editor.defineTheme('lesser', lesserTheme)
 })
 
+// 主题色常量
+const colors = {
+  bg: '#211D25',
+  surface: '#251E2E',
+  selection: '#322840',
+  violet: '#A995F1',
+  violetDim: '#7A6BAE',
+  text: '#E4E4E4EB',
+  textMuted: '#E4E4E48D',
+  textDim: '#E4E4E442',
+  border: '#E4E4E413',
+}
+
 const LangButtons = ({ langs, current, onChange }) => (
   <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 12 }}>
     {langs.map((l) => (
@@ -21,13 +34,13 @@ const LangButtons = ({ langs, current, onChange }) => (
           padding: '6px 14px',
           fontSize: 12,
           fontWeight: 500,
-          background: current === l ? 'linear-gradient(135deg, #9370DB, #7B68EE)' : '#1a171d',
-          color: current === l ? '#fff' : '#abb2bf',
-          border: current === l ? 'none' : '1px solid #3d434f',
+          background: current === l ? `linear-gradient(135deg, ${colors.violet}, ${colors.violetDim})` : colors.bg,
+          color: current === l ? '#fff' : colors.textMuted,
+          border: current === l ? 'none' : `1px solid ${colors.border}`,
           borderRadius: 6,
           cursor: 'pointer',
           transition: 'all 0.2s',
-          boxShadow: current === l ? '0 2px 8px rgba(147, 112, 219, 0.3)' : 'none',
+          boxShadow: current === l ? `0 2px 8px ${colors.violet}40` : 'none',
         }}
       >
         {l}
@@ -42,30 +55,30 @@ const EditorPanel = ({ langs, samples, current }) => {
   return (
     <div
       style={{
-        border: '1px solid #3d434f',
+        border: `1px solid ${colors.border}`,
         borderRadius: 8,
         overflow: 'hidden',
-        background: '#1a171d',
+        background: colors.bg,
       }}
     >
       <div
         style={{
           padding: '8px 12px',
-          background: '#211d25',
-          borderBottom: '1px solid #3d434f',
+          background: colors.surface,
+          borderBottom: `1px solid ${colors.border}`,
           fontSize: 12,
-          color: '#636d83',
+          color: colors.textDim,
           display: 'flex',
           alignItems: 'center',
           gap: 8,
         }}
       >
         <span style={{ display: 'flex', gap: 6 }}>
-          <span style={{ width: 12, height: 12, borderRadius: '50%', background: '#FF5F56' }} />
-          <span style={{ width: 12, height: 12, borderRadius: '50%', background: '#FFBD2E' }} />
-          <span style={{ width: 12, height: 12, borderRadius: '50%', background: '#27CA40' }} />
+          <span style={{ width: 12, height: 12, borderRadius: '50%', background: '#E34671' }} />
+          <span style={{ width: 12, height: 12, borderRadius: '50%', background: '#F1B467' }} />
+          <span style={{ width: 12, height: 12, borderRadius: '50%', background: '#3FA266' }} />
         </span>
-        <span style={{ marginLeft: 8 }}>{current}</span>
+        <span style={{ marginLeft: 8, color: colors.textMuted }}>{current}</span>
       </div>
       <div style={{ position: 'relative', height: 460 }}>
         {langs.map((lang) => (
@@ -114,10 +127,10 @@ export default function App() {
   return (
     <div style={{ padding: '32px 0', width: '80%', margin: '0 auto' }}>
       <header style={{ textAlign: 'center', marginBottom: 40 }}>
-        <h1 style={{ fontSize: 32, marginBottom: 8, color: '#eeeeee', fontWeight: 600 }}>
+        <h1 style={{ fontSize: 32, marginBottom: 8, color: colors.text, fontWeight: 600 }}>
           🌈 lesser
         </h1>
-        <p style={{ fontSize: 16, color: '#9370DB', marginBottom: 16 }}>
+        <p style={{ fontSize: 16, color: colors.violet, marginBottom: 16 }}>
           A Pure Colorful Dark Theme
         </p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: 12 }}>
@@ -130,9 +143,9 @@ export default function App() {
               alignItems: 'center',
               gap: 6,
               padding: '8px 16px',
-              background: '#1a171d',
-              color: '#abb2bf',
-              border: '1px solid #3d434f',
+              background: colors.bg,
+              color: colors.textMuted,
+              border: `1px solid ${colors.border}`,
               borderRadius: 6,
               textDecoration: 'none',
               fontSize: 13,
@@ -150,14 +163,14 @@ export default function App() {
               alignItems: 'center',
               gap: 6,
               padding: '8px 16px',
-              background: 'linear-gradient(135deg, #9370DB, #7B68EE)',
+              background: `linear-gradient(135deg, ${colors.violet}, ${colors.violetDim})`,
               color: '#fff',
               border: 'none',
               borderRadius: 6,
               textDecoration: 'none',
               fontSize: 13,
               fontWeight: 500,
-              boxShadow: '0 2px 8px rgba(147, 112, 219, 0.3)',
+              boxShadow: `0 2px 8px ${colors.violet}40`,
             }}
           >
             📦 VS Code Marketplace
@@ -176,13 +189,13 @@ export default function App() {
         </div>
       </div>
 
-      <footer style={{ marginTop: 40, textAlign: 'center', color: '#636d83', fontSize: 13 }}>
+      <footer style={{ marginTop: 40, textAlign: 'center', color: colors.textDim, fontSize: 13 }}>
         Made with 💜 by{' '}
         <a
           href="https://github.com/funcdfs"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: '#9370DB', textDecoration: 'none' }}
+          style={{ color: colors.violet, textDecoration: 'none' }}
         >
           funcdfs
         </a>
