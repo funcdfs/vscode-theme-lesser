@@ -26,7 +26,6 @@ export const core: TokenColor[] = [
     scope:
       "comment, punctuation.definition.comment, comment.line.double-slash, comment.block.documentation",
     settings: {
-      fontStyle: "italic",
       foreground: fg.disabled,
     },
   },

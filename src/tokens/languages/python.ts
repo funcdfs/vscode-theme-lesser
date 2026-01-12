@@ -109,6 +109,6 @@ export const python: TokenColor[] = [
   {
     name: "Python: 关键字控制",
     scope: "keyword.control.import.python,keyword.control.flow.python",
-    settings: { fontStyle: "italic" },
+    settings: { foreground: syntax.keyword },
   },
 ];

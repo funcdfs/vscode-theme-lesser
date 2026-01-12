@@ -115,11 +115,11 @@ export const javascript: TokenColor[] = [
     settings: { foreground: syntax.string },
   },
 
-  // === 斜体属性 ===
+  // === 属性名 ===
   {
-    name: "JavaScript/TypeScript: 斜体",
+    name: "JavaScript/TypeScript: 属性名",
     scope:
       "entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.parameter,variable.language.super",
-    settings: { fontStyle: "italic" },
+    settings: { foreground: syntax.text },
   },
 ];

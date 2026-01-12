@@ -156,7 +156,7 @@
         "activityBarBadge.background": "#C2A0FD55",
         "activityBarBadge.foreground": "#FFFFFF",
         "sideBar.background": "#141414",
-        "sideBar.foreground": "#E4E4E48D",
+        "sideBar.foreground": "#C0B8A8",
         "sideBar.border": "#E4E4E413",
         "sideBarTitle.foreground": "#E4E4E48D",
         "sideBarSectionHeader.background": "#141414",
@@ -222,17 +222,17 @@
         "terminal.ansiBrightMagenta": "#B48EAD",
         "terminal.ansiBrightCyan": "#88C0D0",
         "terminal.ansiBrightWhite": "#E4E4E4",
-        "gitDecoration.addedResourceForeground": "#70B489",
-        "gitDecoration.deletedResourceForeground": "#FC6B83",
-        "gitDecoration.ignoredResourceForeground": "#E4E4E45E",
-        "gitDecoration.modifiedResourceForeground": "#A995F1",
-        "gitDecoration.untrackedResourceForeground": "#88C0D0",
-        "gitDecoration.conflictingResourceForeground": "#E34671",
-        "gitDecoration.submoduleResourceForeground": "#88C0D0",
-        "gitDecoration.renamedResourceForeground": "#A995F1",
-        "gitDecoration.stageModifiedResourceForeground": "#A995F1",
-        "gitDecoration.stageAddedResourceForeground": "#70B489",
-        "gitDecoration.stageDeletedResourceForeground": "#FC6B83",
+        "gitDecoration.addedResourceForeground": "#65A27C",
+        "gitDecoration.deletedResourceForeground": "#E36076",
+        "gitDecoration.ignoredResourceForeground": "#565656",
+        "gitDecoration.modifiedResourceForeground": "#9886D9",
+        "gitDecoration.untrackedResourceForeground": "#7AADBB",
+        "gitDecoration.conflictingResourceForeground": "#CC3F66",
+        "gitDecoration.submoduleResourceForeground": "#7AADBB",
+        "gitDecoration.renamedResourceForeground": "#9886D9",
+        "gitDecoration.stageModifiedResourceForeground": "#9886D9",
+        "gitDecoration.stageAddedResourceForeground": "#65A27C",
+        "gitDecoration.stageDeletedResourceForeground": "#E36076",
         "gitlens.trailingLineForegroundColor": "#E4E4E48D",
         "notifications.background": "#141414",
         "notifications.foreground": "#E4E4E4EB",
@@ -292,24 +292,20 @@
         "builtinConstant.readonly.builtin:python": "#ff8ba7",
         "function": "#82D2CE",
         "function.declaration": {
-            "foreground": "#efb080",
-            "fontStyle": "bold"
+            "foreground": "#efb080"
         },
         "function.builtin": "#ff8ba7",
         "entity.name.function": {
             "foreground": "#EBC88D"
         },
         "method.declaration": {
-            "foreground": "#efb080",
-            "fontStyle": "bold"
+            "foreground": "#efb080"
         },
         "function:cpp": {
-            "foreground": "#E4E4E4EB",
-            "fontStyle": "bold"
+            "foreground": "#E4E4E4EB"
         },
         "function:c": {
-            "foreground": "#E4E4E4EB",
-            "fontStyle": "bold"
+            "foreground": "#E4E4E4EB"
         },
         "method:cpp": {
             "foreground": "#87c3ff",
@@ -361,7 +357,6 @@
             "name": "注释",
             "scope": "comment, punctuation.definition.comment, comment.line.double-slash, comment.block.documentation",
             "settings": {
-                "fontStyle": "italic",
                 "foreground": "#E4E4E45E"
             }
         },
@@ -1072,7 +1067,7 @@
             "name": "Python: 关键字控制",
             "scope": "keyword.control.import.python,keyword.control.flow.python",
             "settings": {
-                "fontStyle": "italic"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1260,10 +1255,10 @@
             }
         },
         {
-            "name": "JavaScript/TypeScript: 斜体",
+            "name": "JavaScript/TypeScript: 属性名",
             "scope": "entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.parameter,variable.language.super",
             "settings": {
-                "fontStyle": "italic"
+                "foreground": "#d6d6dd"
             }
         },
         {

@@ -16,10 +16,9 @@ export const functions: Record<string, SemanticTokenColor> = {
   /** 普通函数调用 - 使用数字色（函数调用色） */
   "function": syntax.number,
 
-  /** 函数声明 - 使用函数色，加粗 */
+  /** 函数声明 - 使用函数色 */
   "function.declaration": {
     foreground: syntax.function,
-    fontStyle: "bold",
   },
 
   /** 内置函数 - 使用关键字色（小写形式） */
@@ -31,23 +30,20 @@ export const functions: Record<string, SemanticTokenColor> = {
   },
 
   // === 方法 ===
-  /** 方法声明 - 使用函数色，加粗 */
+  /** 方法声明 - 使用函数色 */
   "method.declaration": {
     foreground: syntax.function,
-    fontStyle: "bold",
   },
 
   // === C/C++ 特定 ===
-  /** C++ 函数 - 使用主要前景色，加粗 */
+  /** C++ 函数 - 使用主要前景色 */
   "function:cpp": {
     foreground: fg.primary,
-    fontStyle: "bold",
   },
 
-  /** C 函数 - 使用主要前景色，加粗 */
+  /** C 函数 - 使用主要前景色 */
   "function:c": {
     foreground: fg.primary,
-    fontStyle: "bold",
   },
 
   /** C++ 方法 - 使用类色 */
