@@ -4,7 +4,7 @@
  * 包含进度条、滚动条、树形视图、面包屑等杂项 UI 元素的颜色配置
  */
 
-import { fg, bg, border, accent, shadow, withAlpha } from "../palette";
+import { fg, bg, border, accent, shadow, withAlpha, fileTree } from "../palette";
 
 export const misc = {
   // === 进度条 ===
@@ -20,6 +20,10 @@ export const misc = {
   "scrollbarSlider.hoverBackground": withAlpha(fg.bright, "12"),
   /** 滚动条滑块活动背景 */
   "scrollbarSlider.activeBackground": withAlpha(fg.bright, "12"),
+
+  // === 拖动条（Sash）===
+  /** 拖动条悬浮边框 - 文件树紫色 */
+  "sash.hoverBorder": fileTree.modified,
 
   // === 树形视图 ===
   /** 树形视图缩进指南描边 */

@@ -9,15 +9,15 @@
 // 用于各种 UI 元素的背景
 export const bg = {
   /** 编辑器主背景 - editor.background */
-  base: "#181818",
+  base: "#211D25",
   /** 侧边栏/面板背景 - sideBar.background */
-  elevated: "#141414",
+  elevated: "#211D25",
   /** 行高亮背景 - editor.lineHighlightBackground */
-  surface: "#262626",
+  surface: "#251E2E",
   /** 选中项背景 - editorSuggestWidget.selectedBackground */
-  selection: "#343434",
+  selection: "#322840",
   /** 深色背景 - peekViewTitle.background */
-  deep: "#242424",
+  deep: "#211A28",
   /** 输入框背景 - input.background */
   input: "#E4E4E40A",
 } as const;
@@ -33,6 +33,8 @@ export const fg = {
   muted: "#E4E4E442",
   /** 禁用文本 - input.placeholderForeground */
   disabled: "#E4E4E45E",
+  /** 注释文本 - 淡紫色调，更柔和内敛 */
+  comment: "#8B839970",
   /** 高亮文本 - terminal.ansiWhite */
   bright: "#E4E4E4",
   /** 标题栏活动前景 - titleBar.activeForeground */
@@ -111,22 +113,22 @@ export const accent = {
 
 // === 文件树颜色 ===
 // 用于文件资源管理器中的 Git 状态显示
-// 颜色为原始强调色的 90% 浓度，视觉更柔和
+// 专属文件树色系：整体为原色的 80% 亮度，更沉稳内敛
 export const fileTree = {
-  /** 正常文件（无 Git 状态）- 奶白色，与 cream.base 协调 */
-  normal: "#D8D2CA",
-  /** 已添加/新增文件 - 柔和绿色 */
-  added: "#65A27C",
-  /** 已修改文件 - 柔和紫色 */
-  modified: "#9886D9",
-  /** 已删除文件 - 柔和红色 */
-  deleted: "#E36076",
-  /** 未跟踪文件 - 柔和蓝色 */
-  untracked: "#7AADBB",
-  /** 冲突文件 - 柔和红色 */
-  conflict: "#CC3F66",
-  /** 忽略文件 - 暗灰色 */
-  ignored: "#565656",
+  /** 正常文件（无 Git 状态）- 柔和奶白，80% 亮度 */
+  normal: "#ADA8A2",
+  /** 已添加/新增文件 - 柔和绿色，80% 亮度 */
+  added: "#518263",
+  /** 已修改文件 - 柔和紫色，80% 亮度 */
+  modified: "#7A6BAE",
+  /** 已删除文件 - 柔和红色，80% 亮度 */
+  deleted: "#B64D5E",
+  /** 未跟踪文件 - 柔和蓝色，80% 亮度 */
+  untracked: "#628B96",
+  /** 冲突文件 - 柔和红色，80% 亮度 */
+  conflict: "#A33352",
+  /** 忽略文件 - 暗灰色，80% 亮度 */
+  ignored: "#454545",
 } as const;
 
 // === 语法高亮色 ===
@@ -181,13 +183,13 @@ export const syntax = {
 // 用于编辑器选择和高亮
 export const selection = {
   /** 选择背景 - editor.selectionBackground */
-  background: "#40404099",
+  background: "#3D325099",
   /** 选择高亮背景 - editor.selectionHighlightBackground */
-  highlight: "#404040CC",
+  highlight: "#3D3250CC",
   /** 非活动选择背景 - editor.inactiveSelectionBackground */
-  inactive: "#40404077",
+  inactive: "#3D325077",
   /** 范围高亮背景 - editor.rangeHighlightBackground */
-  range: "#40404052",
+  range: "#3D325052",
 } as const;
 
 // === 阴影色 ===

@@ -4,7 +4,7 @@
  * 包含状态栏的背景、前景、调试状态、远程连接等颜色配置
  */
 
-import { fg, bg, border, withAlpha } from "../palette";
+import { fg, bg, border, withAlpha, accent } from "../palette";
 
 export const statusBar = {
   // === 状态栏基础 ===
@@ -16,8 +16,8 @@ export const statusBar = {
   "statusBar.border": border.default,
 
   // === 调试状态 ===
-  /** 调试时状态栏背景 */
-  "statusBar.debuggingBackground": withAlpha(fg.bright, "11"),
+  /** 调试时状态栏背景 - 紫色调 */
+  "statusBar.debuggingBackground": withAlpha(accent.violet, "11"),
   /** 调试时状态栏前景 */
   "statusBar.debuggingForeground": fg.primary,
 
@@ -28,14 +28,14 @@ export const statusBar = {
   "statusBar.noFolderForeground": fg.primary,
 
   // === 状态栏项目 ===
-  /** 状态栏项目激活背景 */
-  "statusBarItem.activeBackground": withAlpha(fg.bright, "12"),
-  /** 状态栏项目悬浮背景 */
-  "statusBarItem.hoverBackground": withAlpha(fg.bright, "7"),
-  /** 状态栏突出项目背景 */
-  "statusBarItem.prominentBackground": withAlpha(fg.bright, "7"),
-  /** 状态栏突出项目悬浮背景 */
-  "statusBarItem.prominentHoverBackground": withAlpha(fg.bright, "12"),
+  /** 状态栏项目激活背景 - 紫色调 */
+  "statusBarItem.activeBackground": withAlpha(accent.violet, "15"),
+  /** 状态栏项目悬浮背景 - 紫色调 */
+  "statusBarItem.hoverBackground": withAlpha(accent.violet, "10"),
+  /** 状态栏突出项目背景 - 紫色调 */
+  "statusBarItem.prominentBackground": withAlpha(accent.violet, "10"),
+  /** 状态栏突出项目悬浮背景 - 紫色调 */
+  "statusBarItem.prominentHoverBackground": withAlpha(accent.violet, "15"),
 
   // === 远程连接 ===
   /** 远程连接状态栏背景 */
