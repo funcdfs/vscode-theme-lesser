@@ -4,7 +4,7 @@
  * 包含前景、背景、边框、阴影、焦点等基础颜色配置
  */
 
-import { fg, bg, border, shadow, accent } from "../palette";
+import { fg, bg, border, shadow, accent, badge } from "../palette";
 
 export const base = {
   // === 前景色 ===
@@ -40,10 +40,10 @@ export const base = {
   "button.secondaryHoverBackground": accent.grayBright,
 
   // === 徽章 ===
-  /** 徽章背景 */
-  "badge.background": accent.blue,
-  /** 徽章前景 */
-  "badge.foreground": bg.elevated,
+  /** 通用徽章背景 - 深紫色低透明度，用于问题数量等次要提示 */
+  "badge.background": badge.defaultBg,
+  /** 通用徽章前景 - 半透明白色，柔和显示 */
+  "badge.foreground": badge.defaultFg,
 
   // === 下拉框 ===
   /** 下拉框背景 */

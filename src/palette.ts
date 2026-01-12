@@ -55,10 +55,23 @@ export const border = {
 } as const;
 
 
+// === 徽章色 ===
+// 用于活动栏徽章、通知徽章等提示性元素
+export const badge = {
+  /** 活动栏徽章背景 - 紫色半透明，用于重要通知 */
+  activeBg: "#C2A0FD55",
+  /** 活动栏徽章前景 - 纯白色，确保可读性 */
+  activeFg: "#FFFFFF",
+  /** 通用徽章背景 - 深紫色低透明度，用于次要提示 */
+  defaultBg: "#4A3D6039",
+  /** 通用徽章前景 - 半透明白色，柔和显示 */
+  defaultFg: "#FFFFFF7F",
+} as const;
+
 // === 强调色 ===
 // 用于高亮、徽章、按钮等强调元素
 export const accent = {
-  /** 主强调色 - activityBarBadge.background */
+  /** 主强调色 */
   blue: "#88C0D0",
   /** 备选蓝色 - button.background */
   blueAlt: "#81A1C1",
