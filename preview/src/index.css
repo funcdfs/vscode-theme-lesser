@@ -19,8 +19,8 @@ body {
 
 /* 滚动条样式 - 紫色调 */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -28,15 +28,61 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #A995F126;
-  border-radius: 4px;
+  background: #E4E4E411;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #A995F140;
+  background: #E4E4E41E;
+}
+
+::-webkit-scrollbar-corner {
+  background: #211D25;
 }
 
 /* 链接悬停效果 */
 a:hover {
   opacity: 0.9;
+}
+
+/* 按钮悬停效果 */
+button:hover {
+  filter: brightness(1.1);
+}
+
+/* 选择文本颜色 */
+::selection {
+  background: #3D325099;
+  color: #FFFFFF;
+}
+
+/* Monaco 编辑器自定义 */
+.monaco-editor {
+  font-feature-settings: "liga" on, "calt" on;
+}
+
+.monaco-editor .minimap {
+  opacity: 0.8;
+}
+
+.monaco-editor .minimap:hover {
+  opacity: 1;
+}
+
+/* 动画 */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 响应式 */
+@media (max-width: 1200px) {
+  .editor-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
