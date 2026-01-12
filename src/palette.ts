@@ -70,8 +70,10 @@ export const accent = {
   greenBright: "#70B489",
   /** 警告 - editorWarning.foreground */
   yellow: "#F1B467",
-  /** 修改 - editorGutter.modifiedBackground */
+  /** 警告 - inputValidation.warningBorder */
   orange: "#D2943E",
+  /** 修改 - editorGutter.modifiedBackground */
+  violet: "#A995F1",
   /** 错误 - errorForeground */
   red: "#E34671",
   /** 亮红色 - terminal.ansiRed */
@@ -88,8 +90,7 @@ export const accent = {
 
 // === 语法高亮色 ===
 // 用于代码语法高亮
-// 注意：cursor.json 中同一颜色有时用大写有时用小写，这里统一使用小写
-// 需要大写的地方在具体文件中直接硬编码
+// 注意：同一颜色统一使用小写
 export const syntax = {
   /** 普通文本/变量 */
   text: "#d6d6dd",

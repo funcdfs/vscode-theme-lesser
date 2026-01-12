@@ -26,7 +26,7 @@ export const minimap = {
   /** 添加标记背景 */
   "minimapGutter.addedBackground": accent.green,
   /** 修改标记背景 */
-  "minimapGutter.modifiedBackground": accent.orange,
+  "minimapGutter.modifiedBackground": accent.violet,
   /** 删除标记背景 */
   "minimapGutter.deletedBackground": accent.red,
 } as const;

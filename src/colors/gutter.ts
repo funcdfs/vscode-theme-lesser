@@ -16,7 +16,13 @@ export const gutter = {
   /** 删除标记背景 */
   "editorGutter.deletedBackground": accent.red,
   /** 修改标记背景 */
-  "editorGutter.modifiedBackground": accent.orange,
+  "editorGutter.modifiedBackground": accent.violet,
+  /** 添加标记次要背景 */
+  "editorGutter.addedSecondaryBackground": accent.green,
+  /** 删除标记次要背景 */
+  "editorGutter.deletedSecondaryBackground": accent.red,
+  /** 修改标记次要背景 */
+  "editorGutter.modifiedSecondaryBackground": accent.violet,
 
   // === 概览标尺（滚动条旁边的标记） ===
   /** 概览标尺边框（透明） */
@@ -25,10 +31,14 @@ export const gutter = {
   "editorOverviewRuler.addedForeground": withAlpha(accent.green, "52"),
   /** 删除标记前景 */
   "editorOverviewRuler.deletedForeground": withAlpha(accent.red, "52"),
-  /** 修改标记前景 - 使用特定的棕色 */
-  "editorOverviewRuler.modifiedForeground": "#B9790084",
+  /** 修改标记前景 */
+  "editorOverviewRuler.modifiedForeground": withAlpha(accent.violet, "52"),
   /** 错误标记前景 */
   "editorOverviewRuler.errorForeground": accent.redDark,
+  /** 警告标记前景 */
+  "editorOverviewRuler.warningForeground": withAlpha(accent.yellow, "52"),
+  /** 信息标记前景 */
+  "editorOverviewRuler.infoForeground": withAlpha(accent.blue, "52"),
   /** 查找匹配前景 */
   "editorOverviewRuler.findMatchForeground": "#E4E4E411",
 } as const;

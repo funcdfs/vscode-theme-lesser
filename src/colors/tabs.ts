@@ -5,7 +5,7 @@
  * 以及标签页头部区域的颜色配置
  */
 
-import { fg, bg, border, withAlpha } from "../palette";
+import { fg, bg, border, accent, withAlpha } from "../palette";
 
 export const tabs = {
   // === 标签页头部 ===
@@ -51,4 +51,14 @@ export const tabs = {
   "tab.unfocusedHoverBorder": "#88C0D000",
   /** 未聚焦时非活动标签页前景 */
   "tab.unfocusedInactiveForeground": fg.secondary,
+
+  // === 修改状态（未保存文件）===
+  /** 活动标签页修改边框 */
+  "tab.activeModifiedBorder": accent.violet,
+  /** 非活动标签页修改边框 */
+  "tab.inactiveModifiedBorder": withAlpha(accent.violet, "52"),
+  /** 未聚焦时活动标签页修改边框 */
+  "tab.unfocusedActiveModifiedBorder": withAlpha(accent.violet, "52"),
+  /** 未聚焦时非活动标签页修改边框 */
+  "tab.unfocusedInactiveModifiedBorder": withAlpha(accent.violet, "40"),
 } as const;

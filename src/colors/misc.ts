@@ -36,4 +36,8 @@ export const misc = {
   "breadcrumb.activeSelectionForeground": fg.primary,
   /** 面包屑选择器背景 */
   "breadcrumbPicker.background": bg.elevated,
+
+  // === 设置编辑器 ===
+  /** 设置修改指示器 */
+  "settings.modifiedItemIndicator": accent.violet,
 } as const;

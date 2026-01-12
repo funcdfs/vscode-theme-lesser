@@ -12,10 +12,8 @@ import { tokenColors } from "./tokens";
 
 /**
  * 主题名称
- *
- * 来自 cursor.json 的原始主题名称
  */
-export const THEME_NAME = "Cursor Dark Anysphere v0.0.3";
+export const THEME_NAME = "Lesser";
 
 /**
  * 主题类型
