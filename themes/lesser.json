@@ -271,7 +271,7 @@
     "semanticHighlighting": true,
     "semanticTokenColors": {
         "variable.constant": {
-            "foreground": "#82D2CE"
+            "foreground": "#FF8BA7"
         },
         "variable.defaultLibrary": {
             "foreground": "#d6d6dd"
@@ -289,13 +289,13 @@
         "enumMember": {
             "foreground": "#d6d6dd"
         },
-        "builtinConstant.readonly.builtin:python": "#82d2ce",
-        "function": "#ebc88d",
+        "builtinConstant.readonly.builtin:python": "#ff8ba7",
+        "function": "#82D2CE",
         "function.declaration": {
             "foreground": "#efb080",
             "fontStyle": "bold"
         },
-        "function.builtin": "#82d2ce",
+        "function.builtin": "#ff8ba7",
         "entity.name.function": {
             "foreground": "#EBC88D"
         },
@@ -316,15 +316,15 @@
             "fontStyle": ""
         },
         "method:python": {
-            "foreground": "#ebc88d",
+            "foreground": "#82D2CE",
             "fontStyle": ""
         },
         "function:cmake": "#87c3ff",
-        "class.builtin": "#82d2ce",
-        "class.typeHint": "#82d2ce",
+        "class.builtin": "#ff8ba7",
+        "class.typeHint": "#ff8ba7",
         "class.declaration:python": "#87c3ff",
         "class:python": {
-            "foreground": "#ebc88d",
+            "foreground": "#82D2CE",
             "fontStyle": ""
         },
         "namespace:cpp": "#87c3ff",
@@ -376,7 +376,7 @@
             "name": "关键字",
             "scope": "keyword",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -390,21 +390,21 @@
             "name": "操作符",
             "scope": "keyword.operator",
             "settings": {
-                "foreground": "#d6d6dd"
+                "foreground": "#82D2CE"
             }
         },
         {
             "name": "逻辑操作符",
             "scope": "keyword.operator.logical",
             "settings": {
-                "foreground": "#d6d6dd"
+                "foreground": "#82D2CE"
             }
         },
         {
             "name": "位操作符",
             "scope": "keyword.operator.bitwise",
             "settings": {
-                "foreground": "#d6d6dd"
+                "foreground": "#82D2CE"
             }
         },
         {
@@ -417,14 +417,14 @@
                 "keyword.operator.relational"
             ],
             "settings": {
-                "foreground": "#d6d6dd"
+                "foreground": "#82D2CE"
             }
         },
         {
             "name": "通道操作符",
             "scope": "keyword.operator.channel",
             "settings": {
-                "foreground": "#d6d6dd"
+                "foreground": "#82D2CE"
             }
         },
         {
@@ -440,7 +440,7 @@
                 "keyword.operator.assignment"
             ],
             "settings": {
-                "foreground": "#d6d6dd"
+                "foreground": "#82D2CE"
             }
         },
         {
@@ -458,14 +458,14 @@
                 "keyword.operator.expression.void"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
             "name": "删除操作符",
             "scope": "keyword.operator.delete",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -474,7 +474,7 @@
                 "keyword.operator.module"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -484,7 +484,7 @@
                 "token.storage"
             ],
             "settings": {
-                "foreground": "#82d2ce"
+                "foreground": "#ff8ba7"
             }
         },
         {
@@ -522,7 +522,7 @@
             "name": "数字",
             "scope": "constant.numeric",
             "settings": {
-                "foreground": "#ebc88d"
+                "foreground": "#82D2CE"
             }
         },
         {
@@ -550,7 +550,7 @@
             "name": "嵌入标点",
             "scope": "punctuation.section.embedded.begin,punctuation.section.embedded.end",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -561,7 +561,7 @@
                 "punctuation.section.embedded"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -579,7 +579,7 @@
                 "punctuation.quasi.element"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -614,7 +614,7 @@
             "name": "诊断：调试",
             "scope": "token.debug-token",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -854,7 +854,7 @@
             "name": "Markdown 斜体",
             "scope": "markup.italic, punctuation.definition.italic,todo.emphasis",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -868,7 +868,7 @@
             "name": "Markdown 强调",
             "scope": "emphasis md",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -911,7 +911,7 @@
             "name": "Markdown 链接下划线",
             "scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1016,14 +1016,14 @@
             "name": "Python: 类型",
             "scope": "support.type.python",
             "settings": {
-                "foreground": "#82d2ce"
+                "foreground": "#ff8ba7"
             }
         },
         {
             "name": "Python: 逻辑操作符",
             "scope": "keyword.operator.logical.python",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1124,7 +1124,7 @@
             "name": "C/C++: sizeof 操作符",
             "scope": "keyword.operator.sizeof.c,keyword.operator.sizeof.cpp",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1180,7 +1180,7 @@
             "name": "JavaScript: Console 函数",
             "scope": "entity.name.function.js,support.function.console.js",
             "settings": {
-                "foreground": "#ebc88d"
+                "foreground": "#82D2CE"
             }
         },
         {
@@ -1208,7 +1208,7 @@
             "name": "TypeScript: 原始/内置类型",
             "scope": "support.type.primitive.ts,support.type.builtin.ts,support.type.primitive.tsx,support.type.builtin.tsx",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1308,7 +1308,7 @@
             "name": "Java: instanceof 操作符",
             "scope": "keyword.operator.instanceof.java",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1336,7 +1336,7 @@
             "name": "Java: 包关键字",
             "scope": "token.package.keyword",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1392,7 +1392,7 @@
             "name": "Rust: sigil 操作符",
             "scope": "keyword.operator.sigil.rust",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1418,7 +1418,7 @@
                 "keyword.operator.address.go"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1448,14 +1448,14 @@
             "name": "PHP: 错误抑制",
             "scope": "keyword.operator.error-control.php",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
             "name": "PHP: instanceof 操作符",
             "scope": "keyword.operator.type.php",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1525,7 +1525,7 @@
             "name": "PHP: 正则操作符",
             "scope": "keyword.operator.regexp.php",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1539,7 +1539,7 @@
             "name": "PHP: Heredoc/Nowdoc",
             "scope": "keyword.operator.heredoc.php,keyword.operator.nowdoc.php",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1549,7 +1549,7 @@
                 "support.constant.laravel-blade"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1594,7 +1594,7 @@
             "name": "CSS: 颜色常量",
             "scope": "constant.other.color",
             "settings": {
-                "foreground": "#ebc88d"
+                "foreground": "#82D2CE"
             }
         },
         {
@@ -1622,14 +1622,14 @@
             "name": "选择器",
             "scope": "meta.selector",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
             "name": "单位",
             "scope": "keyword.other.unit",
             "settings": {
-                "foreground": "#ebc88d"
+                "foreground": "#82D2CE"
             }
         },
         {
@@ -1780,14 +1780,14 @@
             "name": "支持常量: Edge",
             "scope": "support.constant.edge",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
             "name": "Haskell: 泛型类型变量",
             "scope": "variable.other.generic-type.haskell",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -1974,7 +1974,7 @@
                 "support.type.object.hlsl"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {
@@ -2030,7 +2030,7 @@
                 "constant.regexp.xi"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#FF8BA7"
             }
         },
         {

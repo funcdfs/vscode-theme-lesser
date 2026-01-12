@@ -23,7 +23,7 @@ export const functions: Record<string, SemanticTokenColor> = {
   },
 
   /** 内置函数 - 使用关键字色（小写形式） */
-  "function.builtin": "#82d2ce",
+  "function.builtin": "#ff8ba7",
 
   /** 实体函数名 - 使用数字色（大写形式） */
   "entity.name.function": {

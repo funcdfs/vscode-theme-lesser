@@ -14,10 +14,10 @@ import type { SemanticTokenColor } from "../types";
 export const types: Record<string, SemanticTokenColor> = {
   // === 类 ===
   /** 内置类 - 使用关键字色（小写形式） */
-  "class.builtin": "#82d2ce",
+  "class.builtin": "#ff8ba7",
 
   /** 类型提示 - 使用关键字色（小写形式） */
-  "class.typeHint": "#82d2ce",
+  "class.typeHint": "#ff8ba7",
 
   // === Python 特定 ===
   /** Python 类声明 - 使用类色 */

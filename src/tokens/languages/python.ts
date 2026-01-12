@@ -54,7 +54,7 @@ export const python: TokenColor[] = [
   {
     name: "Python: 类型",
     scope: "support.type.python",
-    settings: { foreground: "#82d2ce" },
+    settings: { foreground: syntax.keywordLower },
   },
 
   // === 逻辑操作符 ===

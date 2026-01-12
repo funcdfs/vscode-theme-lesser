@@ -12,14 +12,14 @@ export const cpp: TokenColor[] = [
   {
     name: "C++: 布尔字面量",
     scope: ["constant.language.false.cpp", "constant.language.true.cpp"],
-    settings: { foreground: "#82d2ce" },
+    settings: { foreground: syntax.operatorLower },
   },
 
   // === this ===
   {
     name: "C++: this",
     scope: "variable.language.this.cpp",
-    settings: { foreground: "#82d2ce" },
+    settings: { foreground: syntax.operatorLower },
   },
 
   // === 函数 ===
@@ -42,12 +42,12 @@ export const cpp: TokenColor[] = [
     name: "C: 操作符赋值",
     scope:
       "keyword.operator.assignment.c,keyword.operator.comparison.c,keyword.operator.c,keyword.operator.increment.c,keyword.operator.decrement.c,keyword.operator.bitwise.shift.c,keyword.operator.assignment.cpp,keyword.operator.comparison.cpp,keyword.operator.cpp,keyword.operator.increment.cpp,keyword.operator.decrement.cpp,keyword.operator.bitwise.shift.cpp",
-    settings: { foreground: syntax.keyword },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "C/C++: 其他标点",
     scope: "punctuation.separator.c,punctuation.separator.cpp",
-    settings: { foreground: syntax.keyword },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "C/C++: sizeof 操作符",

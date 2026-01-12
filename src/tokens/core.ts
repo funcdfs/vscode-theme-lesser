@@ -52,17 +52,17 @@ export const core: TokenColor[] = [
   {
     name: "操作符",
     scope: "keyword.operator",
-    settings: { foreground: syntax.text },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "逻辑操作符",
     scope: "keyword.operator.logical",
-    settings: { foreground: syntax.text },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "位操作符",
     scope: "keyword.operator.bitwise",
-    settings: { foreground: syntax.text },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "算术操作符",
@@ -73,22 +73,22 @@ export const core: TokenColor[] = [
       "keyword.operator.increment",
       "keyword.operator.relational",
     ],
-    settings: { foreground: syntax.text },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "通道操作符",
     scope: "keyword.operator.channel",
-    settings: { foreground: syntax.text },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "复合赋值操作符",
     scope: "keyword.operator.assignment.compound",
-    settings: { foreground: syntax.keyword },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "赋值操作符",
     scope: ["keyword.operator.assignment"],
-    settings: { foreground: syntax.text },
+    settings: { foreground: syntax.operator },
   },
   {
     name: "特殊操作符",
@@ -121,7 +121,7 @@ export const core: TokenColor[] = [
   {
     name: "存储",
     scope: ["storage", "token.storage"],
-    settings: { foreground: "#82d2ce" },
+    settings: { foreground: syntax.keywordLower },
   },
   {
     name: "存储修饰符（引用/指针）",
@@ -152,7 +152,7 @@ export const core: TokenColor[] = [
   {
     name: "数字",
     scope: "constant.numeric",
-    settings: { foreground: syntax.number },
+    settings: { foreground: syntax.operator },
   },
 
   // === 常量 ===

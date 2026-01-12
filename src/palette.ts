@@ -107,16 +107,20 @@ export const accent = {
 export const syntax = {
   /** 普通文本/变量 */
   text: "#d6d6dd",
-  /** 关键字/特殊操作符 - 大写形式（大多数场景） */
-  keyword: "#82D2CE",
-  /** 关键字/特殊操作符 - 小写形式（特定场景） */
-  keywordLower: "#82d2ce",
+  /** 关键字/控制流 - 清脆粉红色（大写形式） */
+  keyword: "#FF8BA7",
+  /** 关键字/控制流 - 清脆粉红色（小写形式） */
+  keywordLower: "#ff8ba7",
+  /** 表达式符号/操作符 - 青绿色（大写形式） */
+  operator: "#82D2CE",
+  /** 表达式符号/操作符 - 青绿色（小写形式） */
+  operatorLower: "#82d2ce",
   /** 字符串 */
   string: "#e394dc",
   /** 函数名 */
   function: "#efb080",
-  /** 数字/函数调用 */
-  number: "#ebc88d",
+  /** 数字 - 使用表达式符号色 */
+  number: "#82D2CE",
   /** 类名 */
   class: "#87c3ff",
   /** 属性 - 大写形式 */

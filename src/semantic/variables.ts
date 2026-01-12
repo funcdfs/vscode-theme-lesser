@@ -56,5 +56,5 @@ export const variables: Record<string, SemanticTokenColor> = {
 
   // === Python 内置常量 ===
   /** Python 内置只读常量 - 使用关键字色（小写形式） */
-  "builtinConstant.readonly.builtin:python": "#82d2ce",
+  "builtinConstant.readonly.builtin:python": "#ff8ba7",
 };
