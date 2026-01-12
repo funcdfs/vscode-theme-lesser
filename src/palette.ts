@@ -139,18 +139,18 @@ export const syntax = {
   keyword: "#FF8BA7",
   /** 关键字/控制流 - 清脆粉红色（小写形式） */
   keywordLower: "#ff8ba7",
-  /** 表达式符号/操作符 - 青绿色（大写形式） */
-  operator: "#82D2CE",
-  /** 表达式符号/操作符 - 青绿色（小写形式） */
-  operatorLower: "#82d2ce",
+  /** 表达式符号/操作符 - 草绿色（大写形式） */
+  operator: "#5CA55C",
+  /** 表达式符号/操作符 - 草绿色（小写形式） */
+  operatorLower: "#5ca55c",
   /** 字符串 - 80% 不透明度，比其他元素更透明柔和 */
   string: "#e394dcCC",
-  /** 函数名 */
-  function: "#efb080",
+  /** 函数名 - 蓝色 */
+  function: "#87c3ff",
   /** 数字 - 使用表达式符号色 */
-  number: "#82D2CE",
-  /** 类名 */
-  class: "#87c3ff",
+  number: "#5CA55C",
+  /** 类名/类型名 - 橙黄色 */
+  class: "#efb080",
   /** 属性 - 大写形式 */
   property: "#AAA0FA",
   /** 属性 - 小写形式 */

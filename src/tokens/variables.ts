@@ -27,7 +27,7 @@ export const variables: TokenColor[] = [
   {
     name: "读写变量",
     scope: "variable.other.readwrite",
-    settings: { foreground: "#87C3FF" },
+    settings: { foreground: syntax.text },
   },
 
   // === 参数 ===
@@ -63,6 +63,6 @@ export const variables: TokenColor[] = [
   {
     name: "命名空间类型",
     scope: "entity.name.type.namespace",
-    settings: { foreground: syntax.function },
+    settings: { foreground: syntax.class },
   },
 ];

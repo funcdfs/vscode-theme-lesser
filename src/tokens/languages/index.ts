@@ -16,6 +16,7 @@ import { php } from "./php";
 import { css } from "./css";
 import { json } from "./json";
 import { html } from "./html";
+import { markdown } from "./markdown";
 import { misc } from "./misc";
 
 /**
@@ -34,6 +35,7 @@ export const languages: TokenColor[] = [
   ...css,
   ...json,
   ...html,
+  ...markdown,
   ...misc,
 ];
 
@@ -48,4 +50,5 @@ export { php } from "./php";
 export { css } from "./css";
 export { json } from "./json";
 export { html } from "./html";
+export { markdown } from "./markdown";
 export { misc } from "./misc";

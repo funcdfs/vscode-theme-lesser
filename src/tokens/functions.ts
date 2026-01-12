@@ -43,6 +43,6 @@ export const functions: TokenColor[] = [
       "support.module.node",
       "support.type.object.module",
     ],
-    settings: { foreground: syntax.function },
+    settings: { foreground: syntax.class },
   },
 ];

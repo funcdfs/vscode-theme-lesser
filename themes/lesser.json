@@ -225,17 +225,17 @@
         "terminal.ansiRed": "#FF8BA7",
         "terminal.ansiGreen": "#a8cc7c",
         "terminal.ansiYellow": "#f8c762",
-        "terminal.ansiBlue": "#87c3ff",
+        "terminal.ansiBlue": "#efb080",
         "terminal.ansiMagenta": "#e394dc",
-        "terminal.ansiCyan": "#82D2CE",
+        "terminal.ansiCyan": "#5CA55C",
         "terminal.ansiWhite": "#E4E4E4",
         "terminal.ansiBrightBlack": "#E4E4E442",
         "terminal.ansiBrightRed": "#CC7C8A",
-        "terminal.ansiBrightGreen": "#efb080",
+        "terminal.ansiBrightGreen": "#87c3ff",
         "terminal.ansiBrightYellow": "#fad075",
         "terminal.ansiBrightBlue": "#AAA0FA",
         "terminal.ansiBrightMagenta": "#e394dc",
-        "terminal.ansiBrightCyan": "#82D2CE",
+        "terminal.ansiBrightCyan": "#5CA55C",
         "terminal.ansiBrightWhite": "#E4E4E4",
         "gitDecoration.addedResourceForeground": "#65A27C",
         "gitDecoration.deletedResourceForeground": "#E36076",
@@ -285,76 +285,180 @@
     },
     "semanticHighlighting": true,
     "semanticTokenColors": {
-        "variable.constant": {
-            "foreground": "#FF8BA7"
-        },
-        "variable.defaultLibrary": {
-            "foreground": "#dbd6d2"
-        },
-        "variable.defaultLibrary.globalScope": {
-            "foreground": "#CCCCCC"
-        },
-        "variable.declaration.readonly:cpp": "#CCCCCC",
-        "variable.declaration.readonly:c": "#CCCCCC",
-        "variable.readonly:cpp": "#CCCCCC",
-        "variable.readonly:c": "#CCCCCC",
-        "variable.global:cpp": "#a8cc7c",
-        "variable.global:c": "#a8cc7c",
-        "variable:javascript": "#CCCCCC",
-        "enumMember": {
-            "foreground": "#dbd6d2"
-        },
-        "builtinConstant.readonly.builtin:python": "#ff8ba7",
-        "function": "#82D2CE",
-        "function.declaration": {
-            "foreground": "#efb080"
-        },
+        "variable": "#dbd6d2",
+        "parameter": "#dbd6d2",
+        "enumMember": "#dbd6d2",
+        "variable.constant": "#FF8BA7",
+        "variable.readonly": "#CCCCCC",
+        "variable.defaultLibrary": "#dbd6d2",
+        "variable.defaultLibrary.globalScope": "#CCCCCC",
+        "function": "#87c3ff",
+        "function.declaration": "#87c3ff",
         "function.builtin": "#ff8ba7",
-        "entity.name.function": {
-            "foreground": "#EBC88D"
-        },
-        "method.declaration": {
-            "foreground": "#efb080"
-        },
-        "function:cpp": {
-            "foreground": "#E4E4E4EB"
-        },
-        "function:c": {
-            "foreground": "#E4E4E4EB"
-        },
-        "method:cpp": {
-            "foreground": "#87c3ff",
-            "fontStyle": ""
-        },
-        "method:python": {
-            "foreground": "#82D2CE",
-            "fontStyle": ""
-        },
-        "function:cmake": "#87c3ff",
+        "method": "#87c3ff",
+        "method.declaration": "#87c3ff",
+        "type": "#efb080",
+        "interface": "#efb080",
+        "struct": "#efb080",
+        "enum": "#efb080",
+        "typeParameter": "#efb080",
+        "namespace": "#efb080",
+        "class": "#efb080",
         "class.builtin": "#ff8ba7",
         "class.typeHint": "#ff8ba7",
-        "class.declaration:python": "#87c3ff",
-        "class:python": {
-            "foreground": "#82D2CE",
-            "fontStyle": ""
-        },
-        "namespace:cpp": "#87c3ff",
-        "type:cpp": "#87c3ff",
-        "type:c": "#87c3ff",
-        "support.variable.property": "#AAA0FA",
-        "property:cpp": "#AAA0FA",
-        "property.declaration:cpp": "#AAA0FA",
-        "property:c": "#AAA0FA",
-        "property.declaration:c": "#AAA0FA",
+        "property": "#AAA0FA",
+        "property.declaration": "#AAA0FA",
         "selfParameter": "#cc7c8a",
+        "selfKeyword": "#cc7c8a",
         "macro": "#a8cc7c",
+        "annotation": "#a8cc7c",
+        "operatorOverload": "#CCCCCC",
+        "memberOperatorOverload": "#CCCCCC",
+        "type:cpp": "#efb080",
+        "type:c": "#efb080",
+        "class:cpp": "#efb080",
+        "class:c": "#efb080",
+        "struct:cpp": "#efb080",
+        "struct:c": "#efb080",
+        "enum:cpp": "#efb080",
+        "enum:c": "#efb080",
+        "namespace:cpp": "#efb080",
+        "typeParameter:cpp": "#efb080",
+        "function:cpp": "#87c3ff",
+        "function:c": "#87c3ff",
+        "method:cpp": "#87c3ff",
+        "method:c": "#87c3ff",
+        "variable:cpp": "#dbd6d2",
+        "variable:c": "#dbd6d2",
+        "parameter:cpp": "#dbd6d2",
+        "parameter:c": "#dbd6d2",
+        "variable.readonly:cpp": "#CCCCCC",
+        "variable.readonly:c": "#CCCCCC",
+        "variable.declaration.readonly:cpp": "#CCCCCC",
+        "variable.declaration.readonly:c": "#CCCCCC",
+        "variable.global:cpp": "#a8cc7c",
+        "variable.global:c": "#a8cc7c",
+        "property:cpp": "#AAA0FA",
+        "property:c": "#AAA0FA",
+        "property.declaration:cpp": "#AAA0FA",
+        "property.declaration:c": "#AAA0FA",
+        "macro:cpp": "#a8cc7c",
+        "macro:c": "#a8cc7c",
+        "class:dart": "#efb080",
+        "type:dart": "#efb080",
+        "enum:dart": "#efb080",
+        "typeParameter:dart": "#efb080",
+        "function:dart": "#87c3ff",
+        "method:dart": "#87c3ff",
+        "variable:dart": "#dbd6d2",
+        "parameter:dart": "#dbd6d2",
+        "property:dart": "#AAA0FA",
+        "annotation:dart": "#a8cc7c",
+        "type:go": "#efb080",
+        "interface:go": "#efb080",
+        "struct:go": "#efb080",
+        "namespace:go": "#efb080",
+        "typeParameter:go": "#efb080",
+        "function:go": "#87c3ff",
+        "method:go": "#87c3ff",
+        "variable:go": "#dbd6d2",
+        "parameter:go": "#dbd6d2",
+        "property:go": "#AAA0FA",
+        "class:java": "#efb080",
+        "type:java": "#efb080",
+        "interface:java": "#efb080",
+        "enum:java": "#efb080",
+        "typeParameter:java": "#efb080",
+        "namespace:java": "#efb080",
+        "function:java": "#87c3ff",
+        "method:java": "#87c3ff",
+        "variable:java": "#dbd6d2",
+        "parameter:java": "#dbd6d2",
+        "property:java": "#AAA0FA",
+        "annotation:java": "#a8cc7c",
+        "class:kotlin": "#efb080",
+        "type:kotlin": "#efb080",
+        "interface:kotlin": "#efb080",
+        "enum:kotlin": "#efb080",
+        "typeParameter:kotlin": "#efb080",
+        "namespace:kotlin": "#efb080",
+        "function:kotlin": "#87c3ff",
+        "method:kotlin": "#87c3ff",
+        "variable:kotlin": "#dbd6d2",
+        "parameter:kotlin": "#dbd6d2",
+        "property:kotlin": "#AAA0FA",
+        "annotation:kotlin": "#a8cc7c",
+        "type:typescript": "#efb080",
+        "type:typescriptreact": "#efb080",
+        "interface:typescript": "#efb080",
+        "interface:typescriptreact": "#efb080",
+        "enum:typescript": "#efb080",
+        "enum:typescriptreact": "#efb080",
+        "typeParameter:typescript": "#efb080",
+        "typeParameter:typescriptreact": "#efb080",
+        "namespace:typescript": "#efb080",
+        "namespace:typescriptreact": "#efb080",
+        "class:javascript": "#efb080",
+        "class:javascriptreact": "#efb080",
+        "class:typescript": "#efb080",
+        "class:typescriptreact": "#efb080",
+        "function:javascript": "#87c3ff",
+        "function:javascriptreact": "#87c3ff",
+        "function:typescript": "#87c3ff",
+        "function:typescriptreact": "#87c3ff",
+        "method:javascript": "#87c3ff",
+        "method:javascriptreact": "#87c3ff",
+        "method:typescript": "#87c3ff",
+        "method:typescriptreact": "#87c3ff",
+        "variable:javascript": "#dbd6d2",
+        "variable:typescript": "#dbd6d2",
+        "parameter:javascript": "#dbd6d2",
+        "parameter:typescript": "#dbd6d2",
+        "property:javascript": "#AAA0FA",
+        "property:typescript": "#AAA0FA",
+        "type:proto": "#efb080",
+        "type:proto3": "#efb080",
+        "class:proto": "#efb080",
+        "class:proto3": "#efb080",
+        "enum:proto": "#efb080",
+        "enum:proto3": "#efb080",
+        "namespace:proto": "#efb080",
+        "namespace:proto3": "#efb080",
+        "function:proto": "#87c3ff",
+        "function:proto3": "#87c3ff",
+        "method:proto": "#87c3ff",
+        "method:proto3": "#87c3ff",
+        "property:proto": "#AAA0FA",
+        "property:proto3": "#AAA0FA",
+        "class:python": "#efb080",
+        "class.declaration:python": "#efb080",
+        "type:python": "#efb080",
+        "function:python": "#87c3ff",
+        "method:python": "#87c3ff",
+        "variable:python": "#dbd6d2",
+        "parameter:python": "#dbd6d2",
+        "builtinConstant.readonly.builtin:python": "#ff8ba7",
+        "property:python": "#AAA0FA",
         "*.decorator:python": {
             "foreground": "#a8cc7c",
             "fontStyle": ""
         },
         "class.decorator.builtin:python": "#a8cc7c",
-        "operatorOverload": "#CCCCCC",
-        "memberOperatorOverload": "#CCCCCC"
+        "selfParameter:python": "#cc7c8a",
+        "type:rust": "#efb080",
+        "struct:rust": "#efb080",
+        "enum:rust": "#efb080",
+        "interface:rust": "#efb080",
+        "typeParameter:rust": "#efb080",
+        "namespace:rust": "#efb080",
+        "function:rust": "#87c3ff",
+        "method:rust": "#87c3ff",
+        "variable:rust": "#dbd6d2",
+        "parameter:rust": "#dbd6d2",
+        "property:rust": "#AAA0FA",
+        "macro:rust": "#a8cc7c",
+        "lifetime:rust": "#cc7c8a",
+        "selfKeyword:rust": "#cc7c8a"
     },
     "tokenColors": [
         {
@@ -400,21 +504,21 @@
             "name": "操作符",
             "scope": "keyword.operator",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
             "name": "逻辑操作符",
             "scope": "keyword.operator.logical",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
             "name": "位操作符",
             "scope": "keyword.operator.bitwise",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
@@ -427,21 +531,21 @@
                 "keyword.operator.relational"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
             "name": "通道操作符",
             "scope": "keyword.operator.channel",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
             "name": "复合赋值操作符",
             "scope": "keyword.operator.assignment.compound",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
@@ -450,7 +554,7 @@
                 "keyword.operator.assignment"
             ],
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
@@ -532,7 +636,7 @@
             "name": "数字",
             "scope": "constant.numeric",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
@@ -655,7 +759,7 @@
             "name": "读写变量",
             "scope": "variable.other.readwrite",
             "settings": {
-                "foreground": "#87C3FF"
+                "foreground": "#dbd6d2"
             }
         },
         {
@@ -711,14 +815,14 @@
                 "variable.function"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
             "name": "支持函数",
             "scope": "support.function",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -750,7 +854,7 @@
             "name": "类",
             "scope": "support.class, entity.name.type.class",
             "settings": {
-                "foreground": "#87c3ff"
+                "foreground": "#efb080"
             }
         },
         {
@@ -794,176 +898,95 @@
             }
         },
         {
-            "name": "标题",
+            "name": "通用标题",
             "scope": "markup.heading",
-            "settings": {
-                "foreground": "#dbd6d2"
-            }
-        },
-        {
-            "name": "标题标点",
-            "scope": "markup.heading punctuation.definition.heading, entity.name.section",
-            "settings": {
-                "foreground": "#aaa0fa"
-            }
-        },
-        {
-            "name": "Markdown 标题",
-            "scope": "entity.name.section.markdown",
-            "settings": {
-                "foreground": "#dbd6d2"
-            }
-        },
-        {
-            "name": "Markdown 标题标点",
-            "scope": "punctuation.definition.heading.markdown",
-            "settings": {
-                "foreground": "#dbd6d2"
-            }
-        },
-        {
-            "name": "Markdown Setext 标题",
-            "scope": "markup.heading.setext",
-            "settings": {
-                "foreground": "#dbd6d2"
-            }
-        },
-        {
-            "name": "Markdown Setext 标题（CS）",
-            "scope": [
-                "entity.name.label.cs",
-                "markup.heading.setext.1.markdown",
-                "markup.heading.setext.2.markdown"
-            ],
-            "settings": {
-                "foreground": "#dbd6d2"
-            }
-        },
-        {
-            "name": "Markdown 粗体",
-            "scope": "markup.bold,todo.bold",
-            "settings": {
-                "foreground": "#f8c762"
-            }
-        },
-        {
-            "name": "Markdown 粗体标点",
-            "scope": "punctuation.definition.bold",
             "settings": {
                 "foreground": "#efb080"
             }
         },
         {
-            "name": "Markdown 粗体标点（定义）",
-            "scope": "punctuation.definition.bold.markdown",
+            "name": "通用标题标点",
+            "scope": "markup.heading punctuation.definition.heading, entity.name.section",
             "settings": {
-                "foreground": "#f8c762"
+                "foreground": "#AAA0FA"
             }
         },
         {
-            "name": "Markdown 斜体",
-            "scope": "markup.italic, punctuation.definition.italic,todo.emphasis",
+            "name": "通用粗体",
+            "scope": "markup.bold, todo.bold",
             "settings": {
-                "foreground": "#FF8BA7"
+                "foreground": "#f8c762",
+                "fontStyle": "bold"
             }
         },
         {
-            "name": "Markdown 斜体样式",
-            "scope": "markup.italic.markdown",
+            "name": "通用斜体",
+            "scope": "markup.italic, todo.emphasis",
             "settings": {
+                "foreground": "#FF8BA7",
                 "fontStyle": "italic"
             }
         },
         {
-            "name": "Markdown 强调",
-            "scope": "emphasis md",
-            "settings": {
-                "foreground": "#FF8BA7"
-            }
-        },
-        {
-            "name": "Markdown 行内代码",
-            "scope": "markup.inline.raw.markdown, markup.inline.raw.string.markdown",
+            "name": "通用行内代码",
+            "scope": "markup.inline.raw",
             "settings": {
                 "foreground": "#e394dcCC"
             }
         },
         {
-            "name": "Markdown 列表标点",
-            "scope": [
-                "punctuation.definition.list.begin.markdown",
-                "punctuation.definition.list.markdown",
-                "beginning.punctuation.definition.list.markdown"
-            ],
+            "name": "通用引用",
+            "scope": "markup.quote",
             "settings": {
-                "foreground": "#dbd6d2"
+                "foreground": "#E4E4E442",
+                "fontStyle": "italic"
             }
         },
         {
-            "name": "Markdown 字符串标点",
-            "scope": [
-                "punctuation.definition.string.begin.markdown",
-                "punctuation.definition.string.end.markdown",
-                "punctuation.definition.metadata.markdown"
-            ],
+            "name": "通用链接",
+            "scope": "markup.underline.link",
             "settings": {
-                "foreground": "#dbd6d2"
+                "foreground": "#87c3ff"
             }
         },
         {
-            "name": "Markdown 元数据标点",
-            "scope": "punctuation.definition.metadata.markdown",
+            "name": "通用列表标点",
+            "scope": "markup.list punctuation.definition.list",
             "settings": {
-                "foreground": "#dbd6d2"
-            }
-        },
-        {
-            "name": "Markdown 链接下划线",
-            "scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
-            "settings": {
-                "foreground": "#FF8BA7"
-            }
-        },
-        {
-            "name": "Markdown 链接标题",
-            "scope": "string.other.link.title.markdown,string.other.link.description.markdown",
-            "settings": {
-                "foreground": "#aaa0fa"
-            }
-        },
-        {
-            "name": "Markdown 引用",
-            "scope": "markup.quote.markdown",
-            "settings": {
-                "foreground": "#E4E4E45E"
+                "foreground": "#5CA55C"
             }
         },
         {
             "name": "Diff 修改",
             "scope": "markup.changed.diff",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
             "name": "Diff 头部",
-            "scope": "meta.diff.header.from-file,meta.diff.header.to-file,punctuation.definition.from-file.diff,punctuation.definition.to-file.diff",
+            "scope": [
+                "meta.diff.header.from-file",
+                "meta.diff.header.to-file",
+                "punctuation.definition.from-file.diff",
+                "punctuation.definition.to-file.diff"
+            ],
             "settings": {
-                "foreground": "#aaa0fa"
+                "foreground": "#AAA0FA"
             }
         },
         {
             "name": "Diff 插入",
             "scope": "markup.inserted.diff",
             "settings": {
-                "foreground": "#e394dcCC"
+                "foreground": "#a8cc7c"
             }
         },
         {
             "name": "Diff 删除",
             "scope": "markup.deleted.diff",
             "settings": {
-                "foreground": "#dbd6d2"
+                "foreground": "#CC7C8A"
             }
         },
         {
@@ -1019,7 +1042,7 @@
             "name": "Python: Self 参数",
             "scope": "variable.parameter.function.language.special.self.python",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1092,14 +1115,14 @@
                 "constant.language.true.cpp"
             ],
             "settings": {
-                "foreground": "#82d2ce"
+                "foreground": "#5ca55c"
             }
         },
         {
             "name": "C++: this",
             "scope": "variable.language.this.cpp",
             "settings": {
-                "foreground": "#82d2ce"
+                "foreground": "#5ca55c"
             }
         },
         {
@@ -1120,14 +1143,14 @@
             "name": "C: 操作符赋值",
             "scope": "keyword.operator.assignment.c,keyword.operator.comparison.c,keyword.operator.c,keyword.operator.increment.c,keyword.operator.decrement.c,keyword.operator.bitwise.shift.c,keyword.operator.assignment.cpp,keyword.operator.comparison.cpp,keyword.operator.cpp,keyword.operator.increment.cpp,keyword.operator.decrement.cpp,keyword.operator.bitwise.shift.cpp",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
             "name": "C/C++: 其他标点",
             "scope": "punctuation.separator.c,punctuation.separator.cpp",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
@@ -1169,7 +1192,7 @@
             "name": "JavaScript/TypeScript: Math",
             "scope": "support.constant.math",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1190,7 +1213,7 @@
             "name": "JavaScript: Console 函数",
             "scope": "entity.name.function.js,support.function.console.js",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
@@ -1236,7 +1259,7 @@
                 "support.type.primitive"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1283,7 +1306,7 @@
                 "storage.type.object.array.java"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1311,7 +1334,7 @@
             "name": "Java: 修饰符和类型",
             "scope": "storage.modifier.import.java,storage.type.java,storage.type.generic.java",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1339,7 +1362,7 @@
             "name": "Java: 导入",
             "scope": "import.storage.java",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1360,7 +1383,7 @@
             "name": "Java: 存储类型",
             "scope": "token.storage.type.java",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1374,7 +1397,7 @@
             "name": "Rust: 生命周期名称",
             "scope": "entity.name.lifetime.rust",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1418,7 +1441,7 @@
                 "keyword.operator.assignment.go"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1437,7 +1460,7 @@
                 "entity.name.package.go"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1451,7 +1474,7 @@
             "name": "PHP: Use 语句",
             "scope": "support.other.namespace.use.php,support.other.namespace.use-as.php,support.other.namespace.php,entity.other.alias.php,meta.interface.php",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1493,7 +1516,7 @@
             "name": "PHP: 类型",
             "scope": "storage.type.php,meta.other.type.phpdoc.php,keyword.other.type.php,keyword.other.array.phpdoc.php",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1590,7 +1613,7 @@
             "name": "CSS: 属性名",
             "scope": "meta.property-name.css",
             "settings": {
-                "foreground": "#87c3ff"
+                "foreground": "#efb080"
             }
         },
         {
@@ -1604,7 +1627,7 @@
             "name": "CSS: 颜色常量",
             "scope": "constant.other.color",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
@@ -1639,7 +1662,7 @@
             "name": "单位",
             "scope": "keyword.other.unit",
             "settings": {
-                "foreground": "#82D2CE"
+                "foreground": "#5CA55C"
             }
         },
         {
@@ -1698,7 +1721,7 @@
             "name": "JSON: 属性名",
             "scope": "support.type.property-name.json",
             "settings": {
-                "foreground": "#82d2ce"
+                "foreground": "#5ca55c"
             }
         },
         {
@@ -1749,7 +1772,7 @@
                 "entity.name.tag.html"
             ],
             "settings": {
-                "foreground": "#87c3ff"
+                "foreground": "#efb080"
             }
         },
         {
@@ -1794,6 +1817,250 @@
             }
         },
         {
+            "name": "Markdown: 标题内容",
+            "scope": [
+                "entity.name.section.markdown",
+                "markup.heading.markdown",
+                "markup.heading.setext.1.markdown",
+                "markup.heading.setext.2.markdown"
+            ],
+            "settings": {
+                "foreground": "#efb080"
+            }
+        },
+        {
+            "name": "Markdown: 标题标点 (#)",
+            "scope": "punctuation.definition.heading.markdown",
+            "settings": {
+                "foreground": "#efb0808D"
+            }
+        },
+        {
+            "name": "Markdown: 粗体内容",
+            "scope": "markup.bold.markdown",
+            "settings": {
+                "foreground": "#f8c762",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown: 粗体标点 (** 或 __)",
+            "scope": "punctuation.definition.bold.markdown",
+            "settings": {
+                "foreground": "#f8c7628D"
+            }
+        },
+        {
+            "name": "Markdown: 斜体内容",
+            "scope": "markup.italic.markdown",
+            "settings": {
+                "foreground": "#FF8BA7",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown: 斜体标点 (* 或 _)",
+            "scope": "punctuation.definition.italic.markdown",
+            "settings": {
+                "foreground": "#FF8BA78D"
+            }
+        },
+        {
+            "name": "Markdown: 链接文本",
+            "scope": "string.other.link.title.markdown",
+            "settings": {
+                "foreground": "#87c3ff"
+            }
+        },
+        {
+            "name": "Markdown: 链接描述",
+            "scope": "string.other.link.description.markdown",
+            "settings": {
+                "foreground": "#87c3ff"
+            }
+        },
+        {
+            "name": "Markdown: 链接 URL",
+            "scope": [
+                "markup.underline.link.markdown",
+                "markup.underline.link.image.markdown"
+            ],
+            "settings": {
+                "foreground": "#87c3ff8D"
+            }
+        },
+        {
+            "name": "Markdown: 链接标点 ([] 和 ())",
+            "scope": [
+                "punctuation.definition.link.markdown",
+                "punctuation.definition.link.title.begin.markdown",
+                "punctuation.definition.link.title.end.markdown",
+                "punctuation.definition.metadata.markdown"
+            ],
+            "settings": {
+                "foreground": "#87c3ff66"
+            }
+        },
+        {
+            "name": "Markdown: 图片描述",
+            "scope": "string.other.link.description.title.markdown",
+            "settings": {
+                "foreground": "#a8cc7c"
+            }
+        },
+        {
+            "name": "Markdown: 图片标点 (!)",
+            "scope": "punctuation.definition.image.markdown",
+            "settings": {
+                "foreground": "#a8cc7c8D"
+            }
+        },
+        {
+            "name": "Markdown: 行内代码",
+            "scope": [
+                "markup.inline.raw.string.markdown",
+                "markup.inline.raw.markdown"
+            ],
+            "settings": {
+                "foreground": "#e394dcCC"
+            }
+        },
+        {
+            "name": "Markdown: 代码块",
+            "scope": "markup.fenced_code.block.markdown",
+            "settings": {
+                "foreground": "#e394dcCC"
+            }
+        },
+        {
+            "name": "Markdown: 代码标点 (` 或 ```)",
+            "scope": [
+                "punctuation.definition.raw.markdown",
+                "punctuation.definition.markdown"
+            ],
+            "settings": {
+                "foreground": "#e394dc8D"
+            }
+        },
+        {
+            "name": "Markdown: 代码块语言标识",
+            "scope": "fenced_code.block.language.markdown",
+            "settings": {
+                "foreground": "#AAA0FA"
+            }
+        },
+        {
+            "name": "Markdown: 无序列表标点 (- * +)",
+            "scope": [
+                "punctuation.definition.list.begin.markdown",
+                "beginning.punctuation.definition.list.markdown"
+            ],
+            "settings": {
+                "foreground": "#5CA55C"
+            }
+        },
+        {
+            "name": "Markdown: 有序列表数字",
+            "scope": "punctuation.definition.list.markdown",
+            "settings": {
+                "foreground": "#5CA55C"
+            }
+        },
+        {
+            "name": "Markdown: 引用内容",
+            "scope": "markup.quote.markdown",
+            "settings": {
+                "foreground": "#E4E4E442",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown: 引用标点 (>)",
+            "scope": "punctuation.definition.quote.begin.markdown",
+            "settings": {
+                "foreground": "#AAA0FA8D"
+            }
+        },
+        {
+            "name": "Markdown: 分隔线 (--- 或 ***)",
+            "scope": "meta.separator.markdown",
+            "settings": {
+                "foreground": "#E4E4E442"
+            }
+        },
+        {
+            "name": "Markdown: 删除线",
+            "scope": "markup.strikethrough.markdown",
+            "settings": {
+                "foreground": "#E4E4E45E",
+                "fontStyle": "strikethrough"
+            }
+        },
+        {
+            "name": "Markdown: 表格",
+            "scope": [
+                "meta.table.markdown",
+                "markup.table.markdown"
+            ],
+            "settings": {
+                "foreground": "#dbd6d2"
+            }
+        },
+        {
+            "name": "Markdown: 表格分隔符 (|)",
+            "scope": [
+                "punctuation.separator.table-cell.markdown",
+                "punctuation.definition.table.markdown",
+                "meta.table.header.markdown punctuation"
+            ],
+            "settings": {
+                "foreground": "#AAA0FA8D"
+            }
+        },
+        {
+            "name": "Markdown: 表格对齐标记 (---)",
+            "scope": [
+                "punctuation.definition.table-cell-alignment.markdown",
+                "punctuation.separator.table-row.markdown",
+                "meta.table.header-separator.markdown"
+            ],
+            "settings": {
+                "foreground": "#AAA0FA66"
+            }
+        },
+        {
+            "name": "Markdown: 表格表头",
+            "scope": [
+                "meta.table.header.markdown",
+                "markup.table.header.markdown"
+            ],
+            "settings": {
+                "foreground": "#AAA0FA",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown: 脚注引用",
+            "scope": "meta.link.reference.markdown",
+            "settings": {
+                "foreground": "#87C3FF"
+            }
+        },
+        {
+            "name": "Markdown: 脚注定义",
+            "scope": "meta.link.reference.def.markdown",
+            "settings": {
+                "foreground": "#87C3FF8D"
+            }
+        },
+        {
+            "name": "Markdown: 任务列表复选框",
+            "scope": "markup.list.unnumbered.markdown meta.paragraph.markdown",
+            "settings": {
+                "foreground": "#dbd6d2"
+            }
+        },
+        {
             "name": "Haskell: 泛型类型变量",
             "scope": "variable.other.generic-type.haskell",
             "settings": {
@@ -1825,7 +2092,7 @@
             "name": "C#: 存储类型",
             "scope": "storage.type.cs",
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1843,7 +2110,7 @@
                 "entity.name.scope-resolution.function.definition"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1870,7 +2137,7 @@
                 "entity.global.clojure"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1925,7 +2192,7 @@
                 "source.makefile"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1934,7 +2201,7 @@
                 "storage.modifier.import.groovy"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -1970,7 +2237,7 @@
                 "support.variable.semantic.hlsl"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -2004,7 +2271,7 @@
                 "support.type.vb.asp"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {
@@ -2013,7 +2280,7 @@
                 "entity.name.function.xi"
             ],
             "settings": {
-                "foreground": "#efb080"
+                "foreground": "#87c3ff"
             }
         },
         {

@@ -22,19 +22,19 @@ export const types: TokenColor[] = [
       "variable.other.class.ts",
       "entity.name.class.identifier.namespace.type",
     ],
-    settings: { foreground: syntax.function },
+    settings: { foreground: syntax.class },
   },
   {
     name: "继承类",
     scope: "entity.other.inherited-class",
-    settings: { foreground: syntax.function },
+    settings: { foreground: syntax.class },
   },
 
   // === 类型 ===
   {
     name: "类型名",
     scope: "entity.name.type",
-    settings: { foreground: syntax.function },
+    settings: { foreground: syntax.class },
   },
 
   // === 块作用域 ===
