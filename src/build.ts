@@ -1,98 +1,137 @@
 /**
- * Theme Build Script
- * 
- * Compiles the modular theme files into a single JSON theme file.
+ * 构建脚本
+ *
+ * 将 TypeScript 模块化主题编译为 VS Code 主题 JSON 文件
+ * 输出到 themes/ 目录
  */
 
 import * as fs from "fs";
 import * as path from "path";
-import type { Theme, ThemeColors, TokenColor } from "./theme/types";
-
-// Import UI colors
-import * as ui from "./theme/ui";
-
-// Import token colors
-import * as tokens from "./theme/tokens";
-
-// Import semantic tokens
-import { semanticTokenColors } from "./theme/semantic";
+import { theme } from "./index";
 
 /**
- * Collect all UI colors from the UI modules
+ * 输出目录
  */
-function collectUIColors(): ThemeColors {
-  const colors: ThemeColors = {};
+const OUTPUT_DIR = path.resolve(__dirname, "..", "themes");
 
-  // Iterate through all exports from UI modules
-  for (const [, moduleExports] of Object.entries(ui)) {
-    if (typeof moduleExports === "object" && moduleExports !== null) {
-      Object.assign(colors, moduleExports);
+/**
+ * 输出文件名
+ */
+const OUTPUT_FILE = "lesser.json";
+
+/**
+ * 验证颜色值格式
+ *
+ * @param color - 颜色值字符串
+ * @returns 是否为有效的十六进制颜色值
+ */
+function isValidHexColor(color: string): boolean {
+  // 支持 #RGB, #RGBA, #RRGGBB, #RRGGBBAA 格式
+  return /^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$/.test(color);
+}
+
+/**
+ * 验证主题结构
+ *
+ * @param themeObj - 主题对象
+ * @throws 如果主题结构无效则抛出错误
+ */
+function validateTheme(themeObj: typeof theme): void {
+  console.log("🔍 验证主题结构...");
+
+  // 验证必需字段
+  if (!themeObj.name || typeof themeObj.name !== "string") {
+    throw new Error("主题缺少有效的 name 字段");
+  }
+
+  if (!themeObj.colors || typeof themeObj.colors !== "object") {
+    throw new Error("主题缺少有效的 colors 字段");
+  }
+
+  if (typeof themeObj.semanticHighlighting !== "boolean") {
+    throw new Error("主题缺少有效的 semanticHighlighting 字段");
+  }
+
+  if (!themeObj.semanticTokenColors || typeof themeObj.semanticTokenColors !== "object") {
+    throw new Error("主题缺少有效的 semanticTokenColors 字段");
+  }
+
+  if (!Array.isArray(themeObj.tokenColors)) {
+    throw new Error("主题缺少有效的 tokenColors 字段");
+  }
+
+  // 验证 UI 颜色值格式
+  let invalidColors: string[] = [];
+  for (const [key, value] of Object.entries(themeObj.colors)) {
+    if (value && !isValidHexColor(value)) {
+      invalidColors.push(`${key}: ${value}`);
     }
   }
 
-  return colors;
-}
-
-/**
- * Collect all token colors from the token modules
- */
-function collectTokenColors(): TokenColor[] {
-  const tokenColors: TokenColor[] = [];
-
-  // Base tokens
-  if (Array.isArray(tokens.base)) tokenColors.push(...tokens.base);
-  if (Array.isArray(tokens.comments)) tokenColors.push(...tokens.comments);
-  if (Array.isArray(tokens.constants)) tokenColors.push(...tokens.constants);
-  if (Array.isArray(tokens.entities)) tokenColors.push(...tokens.entities);
-  if (Array.isArray(tokens.keywords)) tokenColors.push(...tokens.keywords);
-  if (Array.isArray(tokens.markup)) tokenColors.push(...tokens.markup);
-  if (Array.isArray(tokens.punctuation)) tokenColors.push(...tokens.punctuation);
-  if (Array.isArray(tokens.storage)) tokenColors.push(...tokens.storage);
-  if (Array.isArray(tokens.strings)) tokenColors.push(...tokens.strings);
-  if (Array.isArray(tokens.support)) tokenColors.push(...tokens.support);
-  if (Array.isArray(tokens.variables)) tokenColors.push(...tokens.variables);
-
-  return tokenColors;
-}
-
-/**
- * Build the complete theme object
- */
-function buildTheme(): Theme {
-  return {
-    name: "lesser",
-    type: "dark",
-    colors: collectUIColors(),
-    semanticHighlighting: true,
-    semanticTokenColors: {
-      ...semanticTokenColors,
-    },
-    tokenColors: collectTokenColors(),
-  };
-}
-
-/**
- * Main build function
- */
-function main(): void {
-  console.log("Building Lesser theme...");
-
-  const theme = buildTheme();
-
-  // Ensure themes directory exists
-  const themesDir = path.join(__dirname, "..", "themes");
-  if (!fs.existsSync(themesDir)) {
-    fs.mkdirSync(themesDir, { recursive: true });
+  if (invalidColors.length > 0) {
+    console.warn(`⚠️ 发现 ${invalidColors.length} 个无效的颜色值:`);
+    invalidColors.slice(0, 5).forEach((c) => console.warn(`   - ${c}`));
+    if (invalidColors.length > 5) {
+      console.warn(`   ... 还有 ${invalidColors.length - 5} 个`);
+    }
   }
 
-  // Write the theme file
-  const outputPath = path.join(themesDir, "lesser.json");
-  fs.writeFileSync(outputPath, JSON.stringify(theme, null, 2));
+  // 验证 token 颜色
+  for (const token of themeObj.tokenColors) {
+    if (!token.name) {
+      console.warn(`⚠️ Token 规则缺少 name 字段: ${JSON.stringify(token.scope)}`);
+    }
+    if (!token.scope) {
+      throw new Error(`Token 规则缺少 scope 字段: ${token.name}`);
+    }
+    if (token.settings.foreground && !isValidHexColor(token.settings.foreground)) {
+      console.warn(`⚠️ Token "${token.name}" 的颜色值无效: ${token.settings.foreground}`);
+    }
+  }
 
-  console.log(`Theme built successfully: ${outputPath}`);
-  console.log(`  - UI colors: ${Object.keys(theme.colors).length}`);
-  console.log(`  - Token colors: ${theme.tokenColors.length}`);
-  console.log(`  - Semantic tokens: ${Object.keys(theme.semanticTokenColors).length}`);
+  console.log("✅ 主题结构验证通过");
 }
 
-main();
+/**
+ * 构建主题 JSON 文件
+ */
+function build(): void {
+  console.log("🚀 开始构建主题...\n");
+
+  // 验证主题
+  validateTheme(theme);
+
+  // 确保输出目录存在
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+    console.log(`📁 创建输出目录: ${OUTPUT_DIR}`);
+  }
+
+  // 构建输出对象（不包含 type 字段，VS Code 主题 JSON 不需要）
+  const output = {
+    name: theme.name,
+    colors: theme.colors,
+    semanticHighlighting: theme.semanticHighlighting,
+    semanticTokenColors: theme.semanticTokenColors,
+    tokenColors: theme.tokenColors,
+  };
+
+  // 写入 JSON 文件
+  const outputPath = path.join(OUTPUT_DIR, OUTPUT_FILE);
+  const jsonContent = JSON.stringify(output, null, 4);
+
+  fs.writeFileSync(outputPath, jsonContent, "utf-8");
+
+  // 输出统计信息
+  console.log("\n📊 构建统计:");
+  console.log(`   - 主题名称: ${theme.name}`);
+  console.log(`   - UI 颜色数量: ${Object.keys(theme.colors).length}`);
+  console.log(`   - 语义 Token 数量: ${Object.keys(theme.semanticTokenColors).length}`);
+  console.log(`   - Token 规则数量: ${theme.tokenColors.length}`);
+  console.log(`   - 输出文件大小: ${(Buffer.byteLength(jsonContent) / 1024).toFixed(2)} KB`);
+
+  console.log(`\n✅ 构建完成: ${outputPath}`);
+}
+
+// 执行构建
+build();

@@ -1,128 +1,212 @@
 /**
- * Lesser Theme Color Palette
- * 
- * This file defines all the base colors used throughout the theme.
- * Colors are organized by their semantic meaning.
+ * 调色板 - 所有颜色的唯一来源
+ *
+ * 颜色值完全来自 cursor.json，按语义分组
+ * 这是整个主题的颜色基础，所有其他模块都应该引用这里的颜色常量
  */
 
-export interface Palette {
-  // Base colors
-  base: string;
-  mantle: string;
-  crust: string;
-  surface0: string;
-  surface1: string;
-  surface2: string;
-  overlay0: string;
-  overlay1: string;
-  overlay2: string;
-
-  // Text colors
-  text: string;
-  subtext0: string;
-  subtext1: string;
-
-  // Core accent colors - 核心强调色
-  lavender: string;    // 薰衣草紫 - 函数
-  pink: string;        // 玫瑰粉 - 数字/布尔
-  red: string;         // 珊瑚红 - 错误
-  peach: string;       // 赤陶橙 - 字符串
-  green: string;       // 苔藓绿 - 标签/this
-
-  // Nature palette - 自然调色盘 (主要语法色)
-  frost: string;       // 霜蓝 - 变量
-  ocean: string;       // 海蓝 - 关键字
-  moss: string;        // 苔绿 - 类型/类
-  sand: string;        // 沙褐 - 属性/字段
-  clay: string;        // 陶土 - 常量
-  dusk: string;        // 暮紫 - 特殊标识
-}
-
-export const palette: Palette = {
-  // Base colors - backgrounds
-  base: "#14101A",      // Main editor background
-  mantle: "#1A1520",    // Secondary background (widgets, panels)
-  crust: "#0D0A12",     // Deepest background (shadows)
-  surface0: "#1E1828",  // Elevated surfaces
-  surface1: "#252030",  // Hover states
-  surface2: "#2A2435",  // Active/selected states
-
-  // Border and separator colors
-  overlay0: "#3D3650",  // Borders, separators
-  overlay1: "#5A5570",  // Subtle text, line numbers
-  overlay2: "#636d83",  // Disabled text
-
-  // Text colors
-  text: "#B8BFD0",      // Primary text
-  subtext0: "#C0C5D0",  // Secondary text
-  subtext1: "#F0F0F0",  // Bright/highlighted text
-
-  // Core accent colors - 核心强调色 (保留必要的)
-  lavender: "#C2A0FD",  // 薰衣草紫 - 函数名
-  pink: "#D699B6",      // 玫瑰粉 - 数字/布尔常量
-  red: "#E67E80",       // 珊瑚红 - 错误/删除
-  peach: "#D4A373",     // 赤陶橙 - 字符串
-  green: "#7EC9A0",     // 青绿 - HTML标签 (亮而不浓)
-
-  // Nature palette - 自然调色盘 (典雅区分，色相间隔大)
-  frost: "#7EC4E6",     // 霜蓝 - 变量名 (明亮天蓝)
-  ocean: "#4A7DB8",     // 海蓝 - 关键字 (深邃纯蓝)
-  moss: "#9EBC8A",      // 苔绿 - 类型/类 (黄绿调，区别于 green)
-  sand: "#C9B89A",      // 沙褐 - 属性/字段 (暖米色)
-  clay: "#D4A190",      // 陶土 - 常量 (暖橙粉)
-  dusk: "#B8A5C8",      // 暮紫 - this/self/特殊 (淡紫，区别于 lavender)
-};
-
-// Opacity variants
-export const opacity = {
-  full: "FF",
-  high: "F0",
-  medium: "DD",
-  low: "CC",
-  subtle: "BB",
-  soft: "B3",      // 70% - 字符串专用
-  faint: "AA",
-  dim: "90",
-  muted: "77",
-  ghost: "55",
-  whisper: "40",
-  trace: "25",
-  invisible: "18",
-  none: "00",
+// === 背景色 ===
+// 用于各种 UI 元素的背景
+export const bg = {
+  /** 编辑器主背景 - editor.background */
+  base: "#181818",
+  /** 侧边栏/面板背景 - sideBar.background */
+  elevated: "#141414",
+  /** 行高亮背景 - editor.lineHighlightBackground */
+  surface: "#262626",
+  /** 选中项背景 - editorSuggestWidget.selectedBackground */
+  selection: "#343434",
+  /** 深色背景 - peekViewTitle.background */
+  deep: "#242424",
+  /** 输入框背景 - input.background */
+  input: "#E4E4E40A",
 } as const;
 
-// Helper function to apply opacity to a color
-export function withOpacity(color: string, alpha: keyof typeof opacity): string {
-  const hex = color.startsWith("#") ? color.slice(1) : color;
-  return `#${hex}${opacity[alpha]}`;
+// === 前景色 ===
+// 用于文本和图标
+export const fg = {
+  /** 主要文本 - foreground */
+  primary: "#E4E4E4EB",
+  /** 次要文本 - activityBar.foreground */
+  secondary: "#E4E4E48D",
+  /** 弱化文本 - editorLineNumber.foreground */
+  muted: "#E4E4E442",
+  /** 禁用文本 - input.placeholderForeground */
+  disabled: "#E4E4E45E",
+  /** 高亮文本 - terminal.ansiWhite */
+  bright: "#E4E4E4",
+  /** 标题栏活动前景 - titleBar.activeForeground */
+  titleActive: "#E4E4E484",
+} as const;
+
+// === 边框色 ===
+// 用于分隔线和边框
+export const border = {
+  /** 默认边框 - editorGroup.border */
+  default: "#E4E4E413",
+  /** 焦点边框 - focusBorder */
+  focus: "#E4E4E426",
+  /** 激活边框 - tree.indentGuidesStroke */
+  active: "#E4E4E430",
+  /** 微弱边框 - pickerGroup.border */
+  subtle: "#E4E4E41C",
+  /** 透明边框 */
+  transparent: "#00000000",
+} as const;
+
+
+// === 强调色 ===
+// 用于高亮、徽章、按钮等强调元素
+export const accent = {
+  /** 主强调色 - activityBarBadge.background */
+  blue: "#88C0D0",
+  /** 备选蓝色 - button.background */
+  blueAlt: "#81A1C1",
+  /** 亮蓝色 - button.hoverBackground */
+  blueBright: "#87A6C4",
+  /** 成功/添加 - progressBar.background */
+  green: "#3FA266",
+  /** 亮绿色 - gitDecoration.addedResourceForeground */
+  greenBright: "#70B489",
+  /** 警告 - editorWarning.foreground */
+  yellow: "#F1B467",
+  /** 修改 - editorGutter.modifiedBackground */
+  orange: "#D2943E",
+  /** 错误 - errorForeground */
+  red: "#E34671",
+  /** 亮红色 - terminal.ansiRed */
+  redBright: "#FC6B83",
+  /** 深红色 - editorOverviewRuler.errorForeground */
+  redDark: "#B80049",
+  /** 品红色 - terminal.ansiMagenta */
+  magenta: "#B48EAD",
+  /** 灰色 - button.secondaryBackground */
+  gray: "#626262",
+  /** 亮灰色 - button.secondaryHoverBackground */
+  grayBright: "#818181",
+} as const;
+
+// === 语法高亮色 ===
+// 用于代码语法高亮
+// 注意：cursor.json 中同一颜色有时用大写有时用小写，这里统一使用小写
+// 需要大写的地方在具体文件中直接硬编码
+export const syntax = {
+  /** 普通文本/变量 */
+  text: "#d6d6dd",
+  /** 关键字/特殊操作符 - 大写形式（大多数场景） */
+  keyword: "#82D2CE",
+  /** 关键字/特殊操作符 - 小写形式（特定场景） */
+  keywordLower: "#82d2ce",
+  /** 字符串 */
+  string: "#e394dc",
+  /** 函数名 */
+  function: "#efb080",
+  /** 数字/函数调用 */
+  number: "#ebc88d",
+  /** 类名 */
+  class: "#87c3ff",
+  /** 属性 - 大写形式 */
+  property: "#AAA0FA",
+  /** 属性 - 小写形式 */
+  propertyLower: "#aaa0fa",
+  /** 常量 */
+  constant: "#f8c762",
+  /** 指令/装饰器 */
+  directive: "#a8cc7c",
+  /** 语言变量 (this/self) - 大写形式 */
+  self: "#CC7C8A",
+  /** 语言变量 (this/self) - 小写形式 */
+  selfLower: "#cc7c8a",
+  /** 中性色 */
+  neutral: "#CCCCCC",
+  /** HTML 标签标点 */
+  tag: "#A4A4A4",
+  /** 标签名 */
+  tagName: "#fad075",
+  /** 错误诊断 */
+  error: "#F14C4C",
+  /** 变量读写 - 大写形式 */
+  readwrite: "#87C3FF",
+  /** 变量读写 - 小写形式 */
+  readwriteLower: "#87c3ff",
+} as const;
+
+// === 选择和高亮色 ===
+// 用于编辑器选择和高亮
+export const selection = {
+  /** 选择背景 - editor.selectionBackground */
+  background: "#40404099",
+  /** 选择高亮背景 - editor.selectionHighlightBackground */
+  highlight: "#404040CC",
+  /** 非活动选择背景 - editor.inactiveSelectionBackground */
+  inactive: "#40404077",
+  /** 范围高亮背景 - editor.rangeHighlightBackground */
+  range: "#40404052",
+} as const;
+
+// === 阴影色 ===
+export const shadow = {
+  /** 小部件阴影 - widget.shadow */
+  widget: "#00000066",
+  /** 无阴影 */
+  none: "#00000000",
+} as const;
+
+// === 透明度后缀 ===
+// 用于为颜色添加透明度
+export const alpha = {
+  "100": "",       // 完全不透明
+  "92": "EB",      // 高不透明度
+  "55": "8D",      // 中等不透明度
+  "52": "84",      // 中等偏低
+  "40": "66",      // 中等
+  "30": "4D",      // 低不透明度
+  "27": "44",      // 较低
+  "26": "42",      // 较低
+  "20": "33",      // 更低
+  "19": "30",      // 微弱
+  "15": "26",      // 很微弱
+  "13": "22",      // 极微弱
+  "12": "1E",      // 极微弱
+  "11": "1C",      // 几乎透明
+  "10": "1A",      // 几乎透明
+  "7": "11",       // 极淡
+  "4": "0A",       // 几乎不可见
+  "0": "00",       // 完全透明
+} as const;
+
+/**
+ * 为颜色添加透明度
+ *
+ * @param color - 6 位或 8 位十六进制颜色值（带或不带 # 前缀）
+ * @param opacity - 透明度级别（对应 alpha 对象的键）
+ * @returns 8 位十六进制颜色字符串
+ *
+ * @example
+ * withAlpha("#88C0D0", "40") // 返回 "#88C0D066"
+ * withAlpha("E4E4E4", "55")  // 返回 "#E4E4E48D"
+ */
+export function withAlpha(color: string, opacity: keyof typeof alpha): string {
+  // 移除 # 前缀（如果存在），并只取前 6 位
+  const hex = color.startsWith("#") ? color.slice(1, 7) : color.slice(0, 6);
+  return `#${hex}${alpha[opacity]}`;
 }
 
-// Semantic color mappings
-export const semantic = {
-  // UI states
-  focus: withOpacity(palette.lavender, "faint"),
-  selection: "#7E5A9E",
-  hover: palette.surface1,
-  active: palette.surface2,
-
-  // Git decorations
-  added: palette.green,
-  modified: palette.lavender,
-  deleted: palette.red,
-  renamed: palette.lavender,
-  untracked: palette.green,
-  ignored: palette.overlay1,
-  conflicting: palette.red,
-
-  // Diagnostics
-  error: palette.red,
-  warning: "#DBBC7F",
-  info: palette.ocean,
-  hint: palette.green,
-
-  // Diff
-  diffInserted: withOpacity(palette.green, "invisible"),
-  diffRemoved: withOpacity(palette.red, "invisible"),
-  diffInsertedLine: withOpacity(palette.green, "invisible"),
-  diffRemovedLine: withOpacity(palette.red, "invisible"),
-};
+// === 特殊颜色 ===
+// 一些特殊用途的颜色
+export const special = {
+  /** 代码片段高亮背景 */
+  snippetHighlight: "#CCCCCC55",
+  /** 代码片段边框 */
+  snippetBorder: "#CCCCCC",
+  /** 空白字符前景 */
+  whitespace: "#505050B3",
+  /** 标记导航背景 */
+  markerNav: "#ffffff70",
+  /** 标记导航错误背景 */
+  markerNavError: "#E34671C0",
+  /** 小地图错误高亮 */
+  minimapError: "#CD2A4F",
+  /** 小地图警告高亮 */
+  minimapWarning: "#ea7620",
+} as const;
