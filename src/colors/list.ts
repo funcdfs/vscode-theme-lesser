@@ -4,26 +4,26 @@
  * 包含列表的所有颜色配置：选择、悬浮、焦点、错误、警告等状态
  */
 
-import { fg, accent, withAlpha } from "../palette";
+import { fg, accent, withAlpha, syntax } from "../palette";
 
 export const list = {
   // === 活动选择 ===
   /** 活动选择背景 */
   "list.activeSelectionBackground": withAlpha(fg.primary, "12"),
-  /** 活动选择前景 */
-  "list.activeSelectionForeground": fg.primary,
+  /** 活动选择前景 - 金黄色，与奶白色文件名形成明显区分 */
+  "list.activeSelectionForeground": syntax.constant,
 
   // === 非活动选择 ===
   /** 非活动选择背景 */
   "list.inactiveSelectionBackground": withAlpha(fg.primary, "7"),
-  /** 非活动选择前景 */
-  "list.inactiveSelectionForeground": fg.primary,
+  /** 非活动选择前景 - 金黄色，保持一致 */
+  "list.inactiveSelectionForeground": syntax.constant,
 
   // === 焦点 ===
   /** 焦点背景 */
   "list.focusBackground": withAlpha(fg.primary, "12"),
-  /** 焦点前景 */
-  "list.focusForeground": fg.primary,
+  /** 焦点前景 - 金黄色 */
+  "list.focusForeground": syntax.constant,
 
   // === 悬浮 ===
   /** 悬浮背景 */

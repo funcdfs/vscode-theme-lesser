@@ -8,11 +8,15 @@
  * - 绿色：成功、添加 → 对应 syntax.directive (绿色系)
  * - 黄色：警告、修改 → 对应 syntax.constant (金黄色系)
  * - 蓝色：信息、链接 → 对应 syntax.class (蓝色系)
- * - 品红：特殊、装饰 → 对应 syntax.string (粉紫色系)
+ * - 品红：特殊、装饰 → 粉紫色系（不带透明度）
  * - 青色：数据、表达式 → 对应 syntax.operator (青绿色系)
  */
 
 import { fg, bg, syntax, withAlpha } from "../palette";
+
+// 终端品红色 - 与 syntax.string 同色但不带透明度
+// 终端颜色不应该有透明度，否则会影响可读性
+const terminalMagenta = "#e394dc";
 
 export const terminal = {
   // === 终端基础 ===
@@ -41,8 +45,8 @@ export const terminal = {
   "terminal.ansiYellow": syntax.constant,
   /** ANSI 蓝色 - 对应类名色，用于目录/链接 */
   "terminal.ansiBlue": syntax.class,
-  /** ANSI 品红色 - 对应字符串色，用于特殊标记 */
-  "terminal.ansiMagenta": syntax.string,
+  /** ANSI 品红色 - 粉紫色，用于特殊标记（不带透明度） */
+  "terminal.ansiMagenta": terminalMagenta,
   /** ANSI 青色 - 对应操作符色，用于数据/表达式 */
   "terminal.ansiCyan": syntax.operator,
   /** ANSI 白色 - 主要前景色 */
@@ -60,8 +64,8 @@ export const terminal = {
   "terminal.ansiBrightYellow": syntax.tagName,
   /** ANSI 亮蓝色 - 对应属性色，用于强调信息 */
   "terminal.ansiBrightBlue": syntax.property,
-  /** ANSI 亮品红色 - 对应字符串色，保持一致 */
-  "terminal.ansiBrightMagenta": syntax.string,
+  /** ANSI 亮品红色 - 粉紫色，保持一致（不带透明度） */
+  "terminal.ansiBrightMagenta": terminalMagenta,
   /** ANSI 亮青色 - 对应操作符色，保持一致 */
   "terminal.ansiBrightCyan": syntax.operator,
   /** ANSI 亮白色 - 高亮前景色 */

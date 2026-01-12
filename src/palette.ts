@@ -55,17 +55,25 @@ export const border = {
 } as const;
 
 
+// === 奶白色系 ===
+// 统一的奶白色，综合纯白(#FFFFFF)、变量名色(#dbd6d2)、文件树色
+// 用于需要温暖白色调的场景，如徽章前景、活动项前景等
+export const cream = {
+  /** 奶白色 - 温暖的白色，带有微妙的奶酪肤色调，降低亮度 */
+  base: "#D8D2CA",
+} as const;
+
 // === 徽章色 ===
 // 用于活动栏徽章、通知徽章等提示性元素
 export const badge = {
   /** 活动栏徽章背景 - 紫色半透明，用于重要通知 */
   activeBg: "#C2A0FD55",
-  /** 活动栏徽章前景 - 纯白色，确保可读性 */
-  activeFg: "#FFFFFF",
+  /** 活动栏徽章前景 - 奶白色，温暖且可读 */
+  activeFg: "#D8D2CA",
   /** 通用徽章背景 - 深紫色低透明度，用于次要提示 */
   defaultBg: "#4A3D6039",
-  /** 通用徽章前景 - 半透明白色，柔和显示 */
-  defaultFg: "#FFFFFF7F",
+  /** 通用徽章前景 - 奶白色半透明，柔和显示 */
+  defaultFg: "#D8D2CA7F",
 } as const;
 
 // === 强调色 ===
@@ -105,8 +113,8 @@ export const accent = {
 // 用于文件资源管理器中的 Git 状态显示
 // 颜色为原始强调色的 90% 浓度，视觉更柔和
 export const fileTree = {
-  /** 正常文件（无 Git 状态）- 奶酪白，温暖柔和 */
-  normal: "#C0B8A8",
+  /** 正常文件（无 Git 状态）- 奶白色，与 cream.base 协调 */
+  normal: "#D8D2CA",
   /** 已添加/新增文件 - 柔和绿色 */
   added: "#65A27C",
   /** 已修改文件 - 柔和紫色 */
@@ -125,8 +133,8 @@ export const fileTree = {
 // 用于代码语法高亮
 // 注意：同一颜色统一使用小写
 export const syntax = {
-  /** 普通文本/变量 */
-  text: "#d6d6dd",
+  /** 普通文本/变量 - 融入微妙的奶酪肤色调，温暖而不刺眼 */
+  text: "#dbd6d2",
   /** 关键字/控制流 - 清脆粉红色（大写形式） */
   keyword: "#FF8BA7",
   /** 关键字/控制流 - 清脆粉红色（小写形式） */
@@ -135,8 +143,8 @@ export const syntax = {
   operator: "#82D2CE",
   /** 表达式符号/操作符 - 青绿色（小写形式） */
   operatorLower: "#82d2ce",
-  /** 字符串 */
-  string: "#e394dc",
+  /** 字符串 - 80% 不透明度，比其他元素更透明柔和 */
+  string: "#e394dcCC",
   /** 函数名 */
   function: "#efb080",
   /** 数字 - 使用表达式符号色 */

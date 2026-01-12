@@ -4,7 +4,7 @@
  * 包含前景、背景、边框、阴影、焦点等基础颜色配置
  */
 
-import { fg, bg, border, shadow, accent, badge } from "../palette";
+import { fg, bg, border, shadow, accent, badge, cream } from "../palette";
 
 export const base = {
   // === 前景色 ===
@@ -38,6 +38,14 @@ export const base = {
   "button.secondaryForeground": fg.primary,
   /** 次要按钮悬浮背景 */
   "button.secondaryHoverBackground": accent.grayBright,
+
+  // === SCM 输入框按钮（提交按钮）===
+  /** SCM 输入框按钮背景 - 紫罗兰色，作为主题色强调提交操作 */
+  "scmInputButton.background": accent.violet,
+  /** SCM 输入框按钮前景 - 奶白色，温暖且可读 */
+  "scmInputButton.foreground": cream.base,
+  /** SCM 输入框按钮悬浮背景 - 稍亮的紫罗兰色 */
+  "scmInputButton.hoverBackground": "#B8A5F5",
 
   // === 徽章 ===
   /** 通用徽章背景 - 深紫色低透明度，用于问题数量等次要提示 */

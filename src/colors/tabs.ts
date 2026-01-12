@@ -21,8 +21,8 @@ export const tabs = {
   "tab.activeBackground": bg.base,
   /** 活动标签页底部边框 */
   "tab.activeBorder": bg.base,
-  /** 活动标签页顶部边框（透明） */
-  "tab.activeBorderTop": withAlpha(fg.primary, "0"),
+  /** 活动标签页顶部边框 - 紫罗兰色，作为主题色标识当前标签 */
+  "tab.activeBorderTop": accent.violet,
   /** 活动标签页前景 */
   "tab.activeForeground": fg.primary,
 
@@ -43,6 +43,8 @@ export const tabs = {
   // === 未聚焦状态 ===
   /** 未聚焦时活动标签页边框 */
   "tab.unfocusedActiveBorder": bg.base,
+  /** 未聚焦时活动标签页顶部边框 - 降低透明度的紫罗兰色 */
+  "tab.unfocusedActiveBorderTop": withAlpha(accent.violet, "52"),
   /** 未聚焦时活动标签页前景 */
   "tab.unfocusedActiveForeground": fg.secondary,
   /** 未聚焦时悬浮背景 */
