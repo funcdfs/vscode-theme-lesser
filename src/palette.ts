@@ -230,6 +230,24 @@ export function withAlpha(color: string, opacity: keyof typeof alpha): string {
   return `#${hex}${alpha[opacity]}`;
 }
 
+// === 自然界颜色 ===
+// 典雅的自然界风格颜色，用于括号配对等需要多层次区分的场景
+// 设计理念：从自然界中提取柔和、和谐的颜色，避免刺眼的纯色
+export const nature = {
+  /** 天空蓝 - 晴朗天空的颜色，代表开阔与基础 */
+  sky: "#7EB8DA",
+  /** 森林绿 - 松针的颜色，代表生长与嵌套 */
+  forest: "#8FBC8F",
+  /** 花朵紫 - 薰衣草的颜色，代表优雅与深层 */
+  lavender: "#B8A9C9",
+  /** 大地棕 - 秋叶的颜色，代表稳定与沉淀 */
+  earth: "#C9A86C",
+  /** 晨曦橙 - 日出的颜色，代表温暖与活力 */
+  dawn: "#E0A370",
+  /** 薄雾灰 - 山间薄雾的颜色，代表神秘与深远 */
+  mist: "#A0A0B0",
+} as const;
+
 // === 特殊颜色 ===
 // 一些特殊用途的颜色
 export const special = {

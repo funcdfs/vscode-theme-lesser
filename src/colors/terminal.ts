@@ -2,9 +2,17 @@
  * 终端颜色
  *
  * 包含集成终端的 ANSI 颜色、光标、选择、背景等颜色配置
+ *
+ * 设计理念：终端颜色与语法高亮保持语义一致
+ * - 红色：错误、删除 → 对应 syntax.keyword (粉红色系)
+ * - 绿色：成功、添加 → 对应 syntax.directive (绿色系)
+ * - 黄色：警告、修改 → 对应 syntax.constant (金黄色系)
+ * - 蓝色：信息、链接 → 对应 syntax.class (蓝色系)
+ * - 品红：特殊、装饰 → 对应 syntax.string (粉紫色系)
+ * - 青色：数据、表达式 → 对应 syntax.operator (青绿色系)
  */
 
-import { fg, bg, accent, withAlpha } from "../palette";
+import { fg, bg, syntax, withAlpha } from "../palette";
 
 export const terminal = {
   // === 终端基础 ===
@@ -22,38 +30,40 @@ export const terminal = {
   "terminalCursor.foreground": fg.primary,
 
   // === ANSI 基础颜色 ===
-  /** ANSI 黑色 */
+  // 与语法高亮保持语义一致，确保视觉统一
+  /** ANSI 黑色 - 深色背景 */
   "terminal.ansiBlack": bg.deep,
-  /** ANSI 红色 */
-  "terminal.ansiRed": accent.redBright,
-  /** ANSI 绿色 */
-  "terminal.ansiGreen": accent.green,
-  /** ANSI 黄色 */
-  "terminal.ansiYellow": accent.orange,
-  /** ANSI 蓝色 */
-  "terminal.ansiBlue": accent.blueAlt,
-  /** ANSI 品红色 */
-  "terminal.ansiMagenta": accent.magenta,
-  /** ANSI 青色 */
-  "terminal.ansiCyan": accent.blue,
-  /** ANSI 白色 */
+  /** ANSI 红色 - 对应关键字/错误色，用于错误输出 */
+  "terminal.ansiRed": syntax.keyword,
+  /** ANSI 绿色 - 对应指令色，用于成功/添加 */
+  "terminal.ansiGreen": syntax.directive,
+  /** ANSI 黄色 - 对应常量色，用于警告/路径 */
+  "terminal.ansiYellow": syntax.constant,
+  /** ANSI 蓝色 - 对应类名色，用于目录/链接 */
+  "terminal.ansiBlue": syntax.class,
+  /** ANSI 品红色 - 对应字符串色，用于特殊标记 */
+  "terminal.ansiMagenta": syntax.string,
+  /** ANSI 青色 - 对应操作符色，用于数据/表达式 */
+  "terminal.ansiCyan": syntax.operator,
+  /** ANSI 白色 - 主要前景色 */
   "terminal.ansiWhite": fg.bright,
 
   // === ANSI 亮色 ===
-  /** ANSI 亮黑色（灰色） */
+  // 亮色版本用于高亮显示，保持与基础色的语义关联
+  /** ANSI 亮黑色（灰色）- 弱化文本 */
   "terminal.ansiBrightBlack": fg.muted,
-  /** ANSI 亮红色 */
-  "terminal.ansiBrightRed": accent.redBright,
-  /** ANSI 亮绿色 */
-  "terminal.ansiBrightGreen": accent.greenBright,
-  /** ANSI 亮黄色 */
-  "terminal.ansiBrightYellow": accent.yellow,
-  /** ANSI 亮蓝色 */
-  "terminal.ansiBrightBlue": accent.blueBright,
-  /** ANSI 亮品红色 */
-  "terminal.ansiBrightMagenta": accent.magenta,
-  /** ANSI 亮青色 */
-  "terminal.ansiBrightCyan": accent.blue,
-  /** ANSI 亮白色 */
+  /** ANSI 亮红色 - 对应 self 色，用于强调错误 */
+  "terminal.ansiBrightRed": syntax.self,
+  /** ANSI 亮绿色 - 对应函数色，用于强调成功 */
+  "terminal.ansiBrightGreen": syntax.function,
+  /** ANSI 亮黄色 - 对应标签名色，用于强调警告 */
+  "terminal.ansiBrightYellow": syntax.tagName,
+  /** ANSI 亮蓝色 - 对应属性色，用于强调信息 */
+  "terminal.ansiBrightBlue": syntax.property,
+  /** ANSI 亮品红色 - 对应字符串色，保持一致 */
+  "terminal.ansiBrightMagenta": syntax.string,
+  /** ANSI 亮青色 - 对应操作符色，保持一致 */
+  "terminal.ansiBrightCyan": syntax.operator,
+  /** ANSI 亮白色 - 高亮前景色 */
   "terminal.ansiBrightWhite": fg.bright,
 } as const;
