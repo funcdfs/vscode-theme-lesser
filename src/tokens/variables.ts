@@ -17,12 +17,12 @@ export const variables: TokenColor[] = [
   {
     name: "语言变量（this/self）",
     scope: "variable.language",
-    settings: { foreground: "#CC7C8A" },
+    settings: { foreground: syntax.self },
   },
   {
     name: "其他常量变量",
     scope: "variable.other.constant",
-    settings: { foreground: "#AAA0FA" },
+    settings: { foreground: syntax.property },
   },
   {
     name: "读写变量",
@@ -51,7 +51,7 @@ export const variables: TokenColor[] = [
       "variable.other.property.ts",
       "meta.definition.property.ts",
     ],
-    settings: { foreground: "#AAA0FA" },
+    settings: { foreground: syntax.property },
   },
 
   // === 命名空间 ===

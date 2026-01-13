@@ -35,7 +35,7 @@ export const html: TokenColor[] = [
       "entity.name.tag.script",
       "entity.name.tag.style",
     ],
-    settings: { foreground: "#AAA0FA" },
+    settings: { foreground: syntax.property },
   },
 
   // === 实体 ===

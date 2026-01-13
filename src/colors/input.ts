@@ -21,23 +21,23 @@ export const input = {
   /** 输入选项激活边框 */
   "inputOption.activeBorder": withAlpha(fg.primary, "0"),
   /** 输入选项激活背景 */
-  "inputOption.activeBackground": withAlpha(fg.primary, "12"),
+  "inputOption.activeBackground": withAlpha(fg.primary, "10"),
 
   // === 验证状态 - 错误 ===
   /** 错误验证背景 */
   "inputValidation.errorBackground": bg.elevated,
   /** 错误验证边框 */
-  "inputValidation.errorBorder": accent.red,
+  "inputValidation.errorBorder": accent.coral,
   /** 错误验证前景 */
-  "inputValidation.errorForeground": accent.redBright,
+  "inputValidation.errorForeground": accent.coral,
 
   // === 验证状态 - 信息 ===
   /** 信息验证背景 */
   "inputValidation.infoBackground": bg.elevated,
   /** 信息验证边框 */
-  "inputValidation.infoBorder": accent.blue,
+  "inputValidation.infoBorder": accent.cyan,
   /** 信息验证前景 */
-  "inputValidation.infoForeground": accent.blue,
+  "inputValidation.infoForeground": accent.cyan,
 
   // === 验证状态 - 警告 ===
   /** 警告验证背景 */

@@ -11,7 +11,7 @@ export const base = {
   /** 默认前景色 */
   "foreground": fg.primary,
   /** 错误前景色 */
-  "errorForeground": accent.red,
+  "errorForeground": accent.coral,
 
   // === 焦点边框 ===
   /** 焦点边框颜色 */
@@ -27,7 +27,7 @@ export const base = {
 
   // === 按钮 ===
   /** 按钮背景 */
-  "button.background": accent.blueAlt,
+  "button.background": accent.blue,
   /** 按钮前景 */
   "button.foreground": "#191c22",
   /** 按钮悬浮背景 */
@@ -40,17 +40,17 @@ export const base = {
   "button.secondaryHoverBackground": accent.grayBright,
 
   // === SCM 输入框按钮（提交按钮）===
-  /** SCM 输入框按钮背景 - 紫罗兰色，作为主题色强调提交操作 */
+  /** SCM 输入框按钮背景 */
   "scmInputButton.background": accent.violet,
-  /** SCM 输入框按钮前景 - 奶白色，温暖且可读 */
+  /** SCM 输入框按钮前景 */
   "scmInputButton.foreground": cream.base,
-  /** SCM 输入框按钮悬浮背景 - 稍亮的紫罗兰色 */
+  /** SCM 输入框按钮悬浮背景 */
   "scmInputButton.hoverBackground": "#B8A5F5",
 
   // === 徽章 ===
-  /** 通用徽章背景 - 深紫色低透明度，用于问题数量等次要提示 */
+  /** 通用徽章背景 */
   "badge.background": badge.defaultBg,
-  /** 通用徽章前景 - 半透明白色，柔和显示 */
+  /** 通用徽章前景 */
   "badge.foreground": badge.defaultFg,
 
   // === 下拉框 ===
@@ -63,13 +63,13 @@ export const base = {
 
   // === 文本链接 ===
   /** 文本链接前景 */
-  "textLink.foreground": accent.blueAlt,
+  "textLink.foreground": accent.blue,
   /** 文本链接活动前景 */
   "textLink.activeForeground": accent.blueBright,
   /** 预格式化文本前景 */
-  "textPreformat.foreground": accent.blue,
+  "textPreformat.foreground": accent.cyan,
   /** 文本分隔符前景 */
-  "textSeparator.foreground": accent.blue,
+  "textSeparator.foreground": accent.cyan,
 
   // === 扩展按钮 ===
   /** 扩展按钮突出背景 */
@@ -99,7 +99,7 @@ export const base = {
   /** 图表绿色 */
   "charts.green": accent.green,
   /** 图表红色 */
-  "charts.red": accent.red,
+  "charts.red": accent.coral,
   /** 图表黄色 */
   "charts.yellow": accent.yellow,
 

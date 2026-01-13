@@ -9,8 +9,8 @@ import type { SemanticTokenColor } from "../types";
 
 export const special: Record<string, SemanticTokenColor> = {
   // === Self 参数 ===
-  "selfParameter": syntax.selfLower,
-  "selfKeyword": syntax.selfLower,
+  "selfParameter": syntax.self,
+  "selfKeyword": syntax.self,
 
   // === 宏/装饰器 ===
   "macro": syntax.directive,

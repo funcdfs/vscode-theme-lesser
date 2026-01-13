@@ -54,7 +54,7 @@ export const python: TokenColor[] = [
   {
     name: "Python: 类型",
     scope: "support.type.python",
-    settings: { foreground: syntax.keywordLower },
+    settings: { foreground: syntax.keyword },
   },
 
   // === 逻辑操作符 ===
@@ -78,7 +78,7 @@ export const python: TokenColor[] = [
   {
     name: "Python: 函数调用（通用）",
     scope: "meta.function-call.generic.python",
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
 
   // === 字符串占位符 ===

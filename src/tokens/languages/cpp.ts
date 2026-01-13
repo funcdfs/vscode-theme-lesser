@@ -12,14 +12,14 @@ export const cpp: TokenColor[] = [
   {
     name: "C++: 布尔字面量",
     scope: ["constant.language.false.cpp", "constant.language.true.cpp"],
-    settings: { foreground: syntax.operatorLower },
+    settings: { foreground: syntax.operator },
   },
 
   // === this ===
   {
     name: "C++: this",
     scope: "variable.language.this.cpp",
-    settings: { foreground: syntax.operatorLower },
+    settings: { foreground: syntax.operator },
   },
 
   // === 函数 ===

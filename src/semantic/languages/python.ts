@@ -18,7 +18,7 @@ export const python: Record<string, SemanticTokenColor> = {
   // === 变量 ===
   "variable:python": syntax.text,
   "parameter:python": syntax.text,
-  "builtinConstant.readonly.builtin:python": syntax.keywordLower,
+  "builtinConstant.readonly.builtin:python": syntax.keyword,
 
   // === 属性 ===
   "property:python": syntax.property,
@@ -29,5 +29,5 @@ export const python: Record<string, SemanticTokenColor> = {
     fontStyle: "",
   },
   "class.decorator.builtin:python": syntax.directive,
-  "selfParameter:python": syntax.selfLower,
+  "selfParameter:python": syntax.self,
 };

@@ -15,5 +15,5 @@ export const notifications = {
 
   // === 通知链接 ===
   /** 通知链接前景 */
-  "notificationLink.foreground": accent.blue,
+  "notificationLink.foreground": accent.cyan,
 } as const;

@@ -8,6 +8,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { theme } from "./index";
+import { validateAllContrasts } from "./palette";
 
 /**
  * 输出目录
@@ -28,6 +29,35 @@ const OUTPUT_FILE = "lesser.json";
 function isValidHexColor(color: string): boolean {
   // 支持 #RGB, #RGBA, #RRGGBB, #RRGGBBAA 格式
   return /^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$/.test(color);
+}
+
+/**
+ * 验证颜色对比度
+ */
+function validateContrasts(): boolean {
+  console.log("🎨 验证颜色对比度 (WCAG AA)...");
+  
+  const results = validateAllContrasts();
+  let allPassed = true;
+  
+  for (const result of results) {
+    const status = result.valid ? "✓" : "✗";
+    const ratioStr = result.ratio.toFixed(2);
+    const requiredStr = result.required.toFixed(1);
+    
+    if (!result.valid) {
+      allPassed = false;
+      console.log(`   ${status} ${result.name}: ${ratioStr}:1 (需要 ${requiredStr}:1)`);
+    }
+  }
+  
+  if (allPassed) {
+    console.log("✅ 所有颜色对比度验证通过");
+  } else {
+    console.log("⚠️ 部分颜色对比度不符合 WCAG AA 标准");
+  }
+  
+  return allPassed;
 }
 
 /**
@@ -97,6 +127,10 @@ function validateTheme(themeObj: typeof theme): void {
  */
 function build(): void {
   console.log("🚀 开始构建主题...\n");
+
+  // 验证对比度
+  validateContrasts();
+  console.log("");
 
   // 验证主题
   validateTheme(theme);

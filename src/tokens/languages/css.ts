@@ -57,12 +57,12 @@ export const css: TokenColor[] = [
   {
     name: "属性",
     scope: "entity.other.attribute-name",
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
   {
     name: "属性 ID",
     scope: "entity.other.attribute-name.id",
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
   {
     name: "CSS: 属性类",

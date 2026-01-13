@@ -4,7 +4,7 @@
  * 包含编辑器主区域的所有颜色配置：背景、光标、选择、高亮、行号、缩进指南等
  */
 
-import { fg, bg, border, accent, selection, special, withAlpha } from "../palette";
+import { fg, bg, border, accent, selection, special, withAlpha, syntax } from "../palette";
 
 export const editor = {
   // === 基础 ===
@@ -19,9 +19,9 @@ export const editor = {
 
   // === 行高亮 ===
   /** 行高亮背景 */
-  "editor.lineHighlightBackground": bg.surface,
+  "editor.lineHighlightBackground": selection.active,
   /** 行高亮边框 */
-  "editor.lineHighlightBorder": bg.surface,
+  "editor.lineHighlightBorder": selection.active,
 
   // === 选择 ===
   /** 选择背景 */
@@ -33,17 +33,17 @@ export const editor = {
 
   // === 查找 ===
   /** 查找匹配背景 */
-  "editor.findMatchBackground": withAlpha(accent.blue, "40"),
+  "editor.findMatchBackground": withAlpha(accent.cyan, "50"),
   /** 查找匹配高亮背景 */
-  "editor.findMatchHighlightBackground": withAlpha(accent.blue, "27"),
+  "editor.findMatchHighlightBackground": withAlpha(accent.cyan, "35"),
   /** 查找范围高亮背景 */
-  "editor.findRangeHighlightBackground": withAlpha(fg.primary, "7"),
+  "editor.findRangeHighlightBackground": withAlpha(fg.primary, "10"),
 
   // === 高亮 ===
   /** 悬浮高亮背景 */
-  "editor.hoverHighlightBackground": withAlpha(fg.primary, "12"),
+  "editor.hoverHighlightBackground": withAlpha(fg.primary, "10"),
   /** 单词高亮背景 */
-  "editor.wordHighlightBackground": withAlpha(fg.primary, "12"),
+  "editor.wordHighlightBackground": withAlpha(fg.primary, "10"),
   /** 单词强高亮背景 */
   "editor.wordHighlightStrongBackground": border.active,
   /** 范围高亮背景 */
@@ -85,15 +85,15 @@ export const editor = {
 
   // === 括号匹配 ===
   /** 括号匹配背景 */
-  "editorBracketMatch.background": withAlpha(fg.primary, "12"),
+  "editorBracketMatch.background": withAlpha(fg.primary, "10"),
   /** 括号匹配边框 */
   "editorBracketMatch.border": withAlpha(bg.elevated, "0"),
 
   // === 错误和警告 ===
   /** 错误前景 */
-  "editorError.foreground": accent.red,
+  "editorError.foreground": accent.coral,
   /** 错误边框 */
-  "editorError.border": withAlpha(accent.red, "0"),
+  "editorError.border": withAlpha(accent.coral, "0"),
   /** 警告前景 */
   "editorWarning.foreground": accent.yellow,
   /** 警告边框 */
@@ -125,7 +125,7 @@ export const editor = {
   /** 编辑器组边框 */
   "editorGroup.border": border.default,
   /** 编辑器组拖放背景 */
-  "editorGroup.dropBackground": withAlpha(fg.primary, "7"),
+  "editorGroup.dropBackground": withAlpha(fg.primary, "10"),
   /** 编辑器组空背景 */
   "editorGroup.emptyBackground": bg.elevated,
 

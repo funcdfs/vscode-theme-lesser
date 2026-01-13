@@ -16,8 +16,8 @@ export const statusBar = {
   "statusBar.border": border.default,
 
   // === 调试状态 ===
-  /** 调试时状态栏背景 - 紫色调 */
-  "statusBar.debuggingBackground": withAlpha(accent.violet, "11"),
+  /** 状态栏调试背景 - 紫色调 */
+  "statusBar.debuggingBackground": withAlpha(accent.violet, "10"),
   /** 调试时状态栏前景 */
   "statusBar.debuggingForeground": fg.primary,
 
@@ -29,13 +29,13 @@ export const statusBar = {
 
   // === 状态栏项目 ===
   /** 状态栏项目激活背景 - 紫色调 */
-  "statusBarItem.activeBackground": withAlpha(accent.violet, "15"),
+  "statusBarItem.activeBackground": withAlpha(accent.violet, "20"),
   /** 状态栏项目悬浮背景 - 紫色调 */
   "statusBarItem.hoverBackground": withAlpha(accent.violet, "10"),
   /** 状态栏突出项目背景 - 紫色调 */
   "statusBarItem.prominentBackground": withAlpha(accent.violet, "10"),
   /** 状态栏突出项目悬浮背景 - 紫色调 */
-  "statusBarItem.prominentHoverBackground": withAlpha(accent.violet, "15"),
+  "statusBarItem.prominentHoverBackground": withAlpha(accent.violet, "20"),
 
   // === 远程连接 ===
   /** 远程连接状态栏背景 */

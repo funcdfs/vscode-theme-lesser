@@ -5,7 +5,7 @@
  * 用于显示代码概览、高亮、错误、警告等
  */
 
-import { accent, bg, special, withAlpha } from "../palette";
+import { accent, bg, fg, special, withAlpha } from "../palette";
 
 export const minimap = {
   // === 小地图背景 ===
@@ -14,9 +14,9 @@ export const minimap = {
 
   // === 高亮 ===
   /** 查找匹配高亮 */
-  "minimap.findMatchHighlight": withAlpha(accent.blue, "27"),
+  "minimap.findMatchHighlight": withAlpha(accent.cyan, "35"),
   /** 选择高亮 */
-  "minimap.selectionHighlight": "#E4E4E411",
+  "minimap.selectionHighlight": withAlpha(fg.bright, "10"),
   /** 错误高亮 */
   "minimap.errorHighlight": special.minimapError,
   /** 警告高亮 */
@@ -28,5 +28,5 @@ export const minimap = {
   /** 修改标记背景 */
   "minimapGutter.modifiedBackground": accent.violet,
   /** 删除标记背景 */
-  "minimapGutter.deletedBackground": accent.red,
+  "minimapGutter.deletedBackground": accent.coral,
 } as const;

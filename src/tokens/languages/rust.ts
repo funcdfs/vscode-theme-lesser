@@ -24,7 +24,7 @@ export const rust: TokenColor[] = [
   {
     name: "Rust: 标准函数",
     scope: "support.function.std.rust",
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
 
   // === 语言变量 ===

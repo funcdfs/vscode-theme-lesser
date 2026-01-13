@@ -5,7 +5,10 @@
  * 以及标签页头部区域的颜色配置
  */
 
-import { fg, bg, border, accent, withAlpha } from "../palette";
+import { fg, bg, border, withAlpha, accent } from "../palette";
+
+// 未聚焦悬浮背景 - 半透明深灰
+const unfocusedHoverBg = withAlpha("#2a2a2a", "50");
 
 export const tabs = {
   // === 标签页头部 ===
@@ -44,13 +47,13 @@ export const tabs = {
   /** 未聚焦时活动标签页边框 */
   "tab.unfocusedActiveBorder": bg.base,
   /** 未聚焦时活动标签页顶部边框 - 降低透明度的紫罗兰色 */
-  "tab.unfocusedActiveBorderTop": withAlpha(accent.violet, "52"),
+  "tab.unfocusedActiveBorderTop": withAlpha(accent.violet, "50"),
   /** 未聚焦时活动标签页前景 */
   "tab.unfocusedActiveForeground": fg.secondary,
   /** 未聚焦时悬浮背景 */
-  "tab.unfocusedHoverBackground": "#2A2A2AB3",
+  "tab.unfocusedHoverBackground": unfocusedHoverBg,
   /** 未聚焦时悬浮边框（透明） */
-  "tab.unfocusedHoverBorder": "#88C0D000",
+  "tab.unfocusedHoverBorder": border.transparent,
   /** 未聚焦时非活动标签页前景 */
   "tab.unfocusedInactiveForeground": fg.secondary,
 
@@ -58,9 +61,9 @@ export const tabs = {
   /** 活动标签页修改边框 */
   "tab.activeModifiedBorder": accent.violet,
   /** 非活动标签页修改边框 */
-  "tab.inactiveModifiedBorder": withAlpha(accent.violet, "52"),
+  "tab.inactiveModifiedBorder": withAlpha(accent.violet, "50"),
   /** 未聚焦时活动标签页修改边框 */
-  "tab.unfocusedActiveModifiedBorder": withAlpha(accent.violet, "52"),
+  "tab.unfocusedActiveModifiedBorder": withAlpha(accent.violet, "50"),
   /** 未聚焦时非活动标签页修改边框 */
-  "tab.unfocusedInactiveModifiedBorder": withAlpha(accent.violet, "40"),
+  "tab.unfocusedInactiveModifiedBorder": withAlpha(accent.violet, "35"),
 } as const;

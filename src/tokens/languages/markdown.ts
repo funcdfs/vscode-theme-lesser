@@ -31,7 +31,7 @@ export const markdown: TokenColor[] = [
   {
     name: "Markdown: 标题标点 (#)",
     scope: "punctuation.definition.heading.markdown",
-    settings: { foreground: withAlpha(syntax.class, "55") },
+    settings: { foreground: withAlpha(syntax.class, "50") },
   },
 
   // ============================================
@@ -48,7 +48,7 @@ export const markdown: TokenColor[] = [
   {
     name: "Markdown: 粗体标点 (** 或 __)",
     scope: "punctuation.definition.bold.markdown",
-    settings: { foreground: withAlpha(syntax.constant, "55") },
+    settings: { foreground: withAlpha(syntax.constant, "50") },
   },
 
   // ============================================
@@ -65,7 +65,7 @@ export const markdown: TokenColor[] = [
   {
     name: "Markdown: 斜体标点 (* 或 _)",
     scope: "punctuation.definition.italic.markdown",
-    settings: { foreground: withAlpha(syntax.keyword, "55") },
+    settings: { foreground: withAlpha(syntax.keyword, "50") },
   },
 
   // ============================================
@@ -87,7 +87,7 @@ export const markdown: TokenColor[] = [
       "markup.underline.link.markdown",
       "markup.underline.link.image.markdown",
     ],
-    settings: { foreground: withAlpha(syntax.function, "55") },
+    settings: { foreground: withAlpha(syntax.function, "50") },
   },
   {
     name: "Markdown: 链接标点 ([] 和 ())",
@@ -97,7 +97,7 @@ export const markdown: TokenColor[] = [
       "punctuation.definition.link.title.end.markdown",
       "punctuation.definition.metadata.markdown",
     ],
-    settings: { foreground: withAlpha(syntax.function, "40") },
+    settings: { foreground: withAlpha(syntax.function, "35") },
   },
 
   // ============================================
@@ -111,7 +111,7 @@ export const markdown: TokenColor[] = [
   {
     name: "Markdown: 图片标点 (!)",
     scope: "punctuation.definition.image.markdown",
-    settings: { foreground: withAlpha(syntax.directive, "55") },
+    settings: { foreground: withAlpha(syntax.directive, "50") },
   },
 
   // ============================================
@@ -136,7 +136,7 @@ export const markdown: TokenColor[] = [
       "punctuation.definition.raw.markdown",
       "punctuation.definition.markdown",
     ],
-    settings: { foreground: withAlpha(syntax.string, "55") },
+    settings: { foreground: withAlpha(syntax.string, "50") },
   },
   {
     name: "Markdown: 代码块语言标识",
@@ -175,7 +175,7 @@ export const markdown: TokenColor[] = [
   {
     name: "Markdown: 引用标点 (>)",
     scope: "punctuation.definition.quote.begin.markdown",
-    settings: { foreground: withAlpha(syntax.property, "55") },
+    settings: { foreground: withAlpha(syntax.property, "50") },
   },
 
   // ============================================
@@ -201,8 +201,6 @@ export const markdown: TokenColor[] = [
 
   // ============================================
   // 表格 - 使用 property 色
-  // 注意：VSCode 默认 markdown 语法不支持 GFM 表格高亮
-  // 以下 scope 用于支持第三方扩展（如 Markdown All in One）
   // ============================================
   {
     name: "Markdown: 表格",
@@ -219,7 +217,7 @@ export const markdown: TokenColor[] = [
       "punctuation.definition.table.markdown",
       "meta.table.header.markdown punctuation",
     ],
-    settings: { foreground: withAlpha(syntax.property, "55") },
+    settings: { foreground: withAlpha(syntax.property, "50") },
   },
   {
     name: "Markdown: 表格对齐标记 (---)",
@@ -228,7 +226,7 @@ export const markdown: TokenColor[] = [
       "punctuation.separator.table-row.markdown",
       "meta.table.header-separator.markdown",
     ],
-    settings: { foreground: withAlpha(syntax.property, "40") },
+    settings: { foreground: withAlpha(syntax.property, "35") },
   },
   {
     name: "Markdown: 表格表头",
@@ -253,7 +251,7 @@ export const markdown: TokenColor[] = [
   {
     name: "Markdown: 脚注定义",
     scope: "meta.link.reference.def.markdown",
-    settings: { foreground: withAlpha(syntax.readwrite, "55") },
+    settings: { foreground: withAlpha(syntax.readwrite, "50") },
   },
 
   // ============================================

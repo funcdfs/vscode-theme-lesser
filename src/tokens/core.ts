@@ -120,7 +120,7 @@ export const core: TokenColor[] = [
   {
     name: "存储",
     scope: ["storage", "token.storage"],
-    settings: { foreground: syntax.keywordLower },
+    settings: { foreground: syntax.keyword },
   },
   {
     name: "存储修饰符（引用/指针）",
@@ -210,7 +210,7 @@ export const core: TokenColor[] = [
   {
     name: "诊断：信息",
     scope: "token.info-token",
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.info },
   },
   {
     name: "诊断：警告",

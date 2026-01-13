@@ -19,7 +19,7 @@ export const javascript: TokenColor[] = [
   {
     name: "JavaScript/TypeScript: 导入操作符",
     scope: "keyword.operator.expression.import",
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
 
   // === Math 对象 ===
@@ -81,7 +81,7 @@ export const javascript: TokenColor[] = [
   {
     name: "JS Flowtype",
     scope: ["support.type.type.flowtype"],
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
   {
     name: "JS Flow",

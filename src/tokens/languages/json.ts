@@ -19,7 +19,7 @@ export const json: TokenColor[] = [
   {
     name: "JSON: 属性名",
     scope: "support.type.property-name.json",
-    settings: { foreground: syntax.operatorLower },
+    settings: { foreground: syntax.operator },
   },
 
   // === 字典键 ===

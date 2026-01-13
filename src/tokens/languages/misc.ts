@@ -124,7 +124,7 @@ export const misc: TokenColor[] = [
   {
     name: "Groovy: 方法",
     scope: ["meta.method.groovy"],
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
   {
     name: "Groovy: 变量",
@@ -220,12 +220,12 @@ export const misc: TokenColor[] = [
   {
     name: "Xi: 链接字符",
     scope: ["constant.character.xi"],
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
   {
     name: "Xi: 强调",
     scope: ["accent.xi"],
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
   {
     name: "Xi: Wikiword",

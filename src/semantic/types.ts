@@ -18,6 +18,6 @@ export const types: Record<string, SemanticTokenColor> = {
   "class": syntax.class,
 
   // === 内置类型 ===
-  "class.builtin": syntax.keywordLower,
-  "class.typeHint": syntax.keywordLower,
+  "class.builtin": syntax.keyword,
+  "class.typeHint": syntax.keyword,
 };

@@ -27,6 +27,6 @@ export const rust: Record<string, SemanticTokenColor> = {
 
   // === 特殊 ===
   "macro:rust": syntax.directive,
-  "lifetime:rust": syntax.selfLower,
-  "selfKeyword:rust": syntax.selfLower,
+  "lifetime:rust": syntax.self,
+  "selfKeyword:rust": syntax.self,
 };

@@ -11,7 +11,7 @@ export const functions: Record<string, SemanticTokenColor> = {
   // === 通用函数 ===
   "function": syntax.function,
   "function.declaration": syntax.function,
-  "function.builtin": syntax.keywordLower,
+  "function.builtin": syntax.keyword,
   "method": syntax.function,
   "method.declaration": syntax.function,
 };

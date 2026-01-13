@@ -27,7 +27,7 @@ export const functions: TokenColor[] = [
   {
     name: "特殊方法",
     scope: "keyword.other.special-method",
-    settings: { foreground: "#aaa0fa" },
+    settings: { foreground: syntax.property },
   },
   {
     name: "函数花括号",

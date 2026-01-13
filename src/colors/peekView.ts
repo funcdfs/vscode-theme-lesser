@@ -15,7 +15,7 @@ export const peekView = {
   /** 预览视图编辑器背景 */
   "peekViewEditor.background": bg.elevated,
   /** 预览视图编辑器匹配高亮背景 */
-  "peekViewEditor.matchHighlightBackground": withAlpha(accent.blue, "27"),
+  "peekViewEditor.matchHighlightBackground": withAlpha(accent.cyan, "35"),
   /** 预览视图编辑器边槽背景 */
   "peekViewEditorGutter.background": bg.elevated,
 
@@ -27,7 +27,7 @@ export const peekView = {
   /** 预览视图结果行前景 */
   "peekViewResult.lineForeground": fg.secondary,
   /** 预览视图结果匹配高亮背景 */
-  "peekViewResult.matchHighlightBackground": withAlpha(accent.blue, "27"),
+  "peekViewResult.matchHighlightBackground": withAlpha(accent.cyan, "35"),
   /** 预览视图结果选中背景 */
   "peekViewResult.selectionBackground": bg.selection,
   /** 预览视图结果选中前景 */
