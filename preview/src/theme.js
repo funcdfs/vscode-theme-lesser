@@ -4,20 +4,20 @@
 
 export const colors = {
   bg: {
-    base: '#211D25',
-    elevated: '#1a161e',
-    surface: '#251E2E',
+    base: '#1F1F1F',
+    elevated: '#181818',
+    surface: '#2B2B2B',
   },
   fg: {
     primary: '#E4E4E4',
-    secondary: '#E4E4E480',
-    muted: '#E4E4E440',
+    secondary: '#B0B0B0',
+    muted: '#8A8A8A',
   },
   accent: {
     violet: '#A995F1',
   },
   border: {
-    default: '#E4E4E420',
-    subtle: '#E4E4E410',
+    default: '#33303B',
+    subtle: '#2E2B32',
   },
 }
