@@ -26,12 +26,12 @@ export const base = {
   "widget.shadow": shadow.widget,
 
   // === 按钮 ===
-  /** 按钮背景 */
-  "button.background": accent.blue,
-  /** 按钮前景 */
-  "button.foreground": "#191c22",
-  /** 按钮悬浮背景 */
-  "button.hoverBackground": accent.blueBright,
+  /** 按钮背景 - 深紫罗兰色 */
+  "button.background": "#7568B0",
+  /** 按钮前景 - 纯白确保可读性 */
+  "button.foreground": "#FFFFFF",
+  /** 按钮悬浮背景 - 稍亮 */
+  "button.hoverBackground": "#8A7BC7",
   /** 次要按钮背景 */
   "button.secondaryBackground": accent.gray,
   /** 次要按钮前景 */

@@ -20,8 +20,8 @@ export const activityBar = {
   "activityBar.activeForeground": cream.base,
   /** 活动栏活动边框 - 紫罗兰色作为左侧指示器 */
   "activityBar.activeBorder": accent.violet,
-  /** 活动栏活动背景 - 微弱的紫色背景增加对比度 */
-  "activityBar.activeBackground": withAlpha(accent.violet, "20"),
+  /** 活动栏活动背景 - 透明，去除背景色 */
+  "activityBar.activeBackground": "#00000000",
 
   // === 活动栏徽章 ===
   /** 活动栏徽章背景 - 紫色半透明，用于显示未读通知数量 */
