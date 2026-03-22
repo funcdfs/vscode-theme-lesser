@@ -9,3 +9,6 @@ dist/**
 src/**
 tsconfig.json
 build.sh
+/vim
+/nvim
+*.md
