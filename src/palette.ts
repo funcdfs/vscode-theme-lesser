@@ -101,6 +101,34 @@ export function withAlpha(color: string, opacity: keyof typeof alpha): string {
   return `#${hex}${alpha[opacity]}`;
 }
 
+/**
+ * 将带透明度的颜色压平为不透明色
+ *
+ * Vim / Neovim 的高亮不支持 alpha 通道，
+ * VS Code 主题里的半透明色需要按背景混合成实色
+ *
+ * @param color - 前景色（十六进制，忽略已有 alpha）
+ * @param background - 背景色（十六进制）
+ * @param ratio - 前景色占比，0~1
+ */
+export function blend(color: string, background: string, ratio: number): string {
+  const parse = (hex: string) => {
+    const h = hex.startsWith("#") ? hex.slice(1) : hex;
+    return [
+      parseInt(h.slice(0, 2), 16),
+      parseInt(h.slice(2, 4), 16),
+      parseInt(h.slice(4, 6), 16),
+    ];
+  };
+  const [r1, g1, b1] = parse(color);
+  const [r2, g2, b2] = parse(background);
+  const mix = (a: number, b: number) =>
+    Math.round(a * ratio + b * (1 - ratio))
+      .toString(16)
+      .padStart(2, "0");
+  return `#${mix(r1, r2)}${mix(g1, g2)}${mix(b1, b2)}`.toUpperCase();
+}
+
 // ============================================
 // 背景色
 // ============================================
