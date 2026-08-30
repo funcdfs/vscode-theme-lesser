@@ -20,4 +20,18 @@ export const menu = {
   // === 菜单栏 ===
   /** 菜单栏选择背景 - 紫色调 */
   "menubar.selectionBackground": withAlpha(accent.violet, "10"),
+  // === 菜单选中项 ===
+  /** 选中项背景 - 紫色调 */
+  "menu.selectionBackground": withAlpha(accent.violet, "20"),
+  /** 选中项前景 */
+  "menu.selectionForeground": fg.primary,
+  /** 选中项边框 - 透明 */
+  "menu.selectionBorder": border.transparent,
+
+  // === 菜单栏（补充）===
+  /** 菜单栏选中项前景 */
+  "menubar.selectionForeground": fg.primary,
+  /** 菜单栏选中项边框 - 透明 */
+  "menubar.selectionBorder": border.transparent,
+
 } as const;

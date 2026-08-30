@@ -29,4 +29,24 @@ export const minimap = {
   "minimapGutter.modifiedBackground": accent.violet,
   /** 删除标记背景 */
   "minimapGutter.deletedBackground": accent.coral,
+  // === 小地图渲染 ===
+  /** 代码不透明度 - alpha 控制小地图内容的淡出程度 */
+  "minimap.foregroundOpacity": "#000000CC",
+
+  // === 高亮（补充）===
+  /** 信息高亮 */
+  "minimap.infoHighlight": withAlpha(accent.cyan, "50"),
+  /** 选中词出现位置高亮 */
+  "minimap.selectionOccurrenceHighlight": withAlpha(fg.muted, "50"),
+  /** AI 编辑高亮 */
+  "minimap.chatEditHighlight": withAlpha(accent.violet, "35"),
+
+  // === 小地图滑块 ===
+  /** 滑块背景 */
+  "minimapSlider.background": withAlpha(fg.bright, "10"),
+  /** 滑块悬浮背景 */
+  "minimapSlider.hoverBackground": withAlpha(fg.bright, "20"),
+  /** 滑块活动背景 */
+  "minimapSlider.activeBackground": withAlpha(fg.bright, "25"),
+
 } as const;

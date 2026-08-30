@@ -56,4 +56,48 @@ export const misc = {
   "quickInputList.focusForeground": fg.primary,
   /** 快速输入标题背景 */
   "quickInputTitle.background": bg.elevated,
+  // === 滚动条（补充）===
+  /** 滚动条轨道背景 - 透明 */
+  "scrollbar.background": border.transparent,
+
+  // === 面包屑（补充）===
+  /** 面包屑焦点前景 */
+  "breadcrumb.focusForeground": fg.primary,
+
+  // === 问题面板图标 ===
+  /** 错误图标 */
+  "problemsErrorIcon.foreground": accent.coral,
+  /** 警告图标 */
+  "problemsWarningIcon.foreground": accent.yellow,
+  /** 信息图标 */
+  "problemsInfoIcon.foreground": accent.cyan,
+
+  // === 评论视图 ===
+  /** 已解决评论图标 */
+  "commentsView.resolvedIcon": fg.muted,
+  /** 未解决评论图标 */
+  "commentsView.unresolvedIcon": accent.violet,
+
+  // === 端口转发 ===
+  /** 运行中进程的端口图标 */
+  "ports.iconRunningProcessForeground": accent.green,
+
+  // === 搜索 ===
+  /** 搜索结果统计信息前景 */
+  "search.resultsInfoForeground": fg.muted,
+  /** 搜索编辑器匹配背景 */
+  "searchEditor.findMatchBackground": withAlpha(accent.cyan, "35"),
+  /** 搜索编辑器匹配边框 */
+  "searchEditor.findMatchBorder": withAlpha(accent.cyan, "50"),
+  /** 简易查找框拖动条边框 */
+  "simpleFindWidget.sashBorder": border.default,
+
+  // === 快速输入（补充）===
+  /** 列表匹配高亮前景 */
+  "quickInputList.focusHighlightForeground": accent.cyan,
+  /** 列表焦点项图标前景 */
+  "quickInputList.focusIconForeground": fg.primary,
+  /** 列表焦点背景（旧键名兼容） */
+  "quickInput.list.focusBackground": selection.active,
+
 } as const;

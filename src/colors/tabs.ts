@@ -66,4 +66,32 @@ export const tabs = {
   "tab.unfocusedActiveModifiedBorder": withAlpha(accent.violet, "50"),
   /** 未聚焦时非活动标签页修改边框 */
   "tab.unfocusedInactiveModifiedBorder": withAlpha(accent.violet, "35"),
+  // === 选中标签页（多选）===
+  /** 选中标签页背景 */
+  "tab.selectedBackground": bg.base,
+  /** 选中标签页前景 */
+  "tab.selectedForeground": fg.primary,
+  /** 选中标签页顶部边框 */
+  "tab.selectedBorderTop": withAlpha(accent.violet, "50"),
+
+  // === 悬浮（补充）===
+  /** 标签页悬浮前景 */
+  "tab.hoverForeground": fg.primary,
+  /** 标签页悬浮边框 */
+  "tab.hoverBorder": withAlpha(accent.violet, "35"),
+  /** 未聚焦时悬浮前景 */
+  "tab.unfocusedHoverForeground": fg.secondary,
+
+  // === 未聚焦背景（补充）===
+  /** 未聚焦时活动标签页背景 */
+  "tab.unfocusedActiveBackground": bg.base,
+  /** 未聚焦时非活动标签页背景 */
+  "tab.unfocusedInactiveBackground": bg.elevated,
+
+  // === 拖放与固定 ===
+  /** 拖放指示边框 */
+  "tab.dragAndDropBorder": accent.violet,
+  /** 最后一个固定标签页右边框 */
+  "tab.lastPinnedBorder": border.active,
+
 } as const;

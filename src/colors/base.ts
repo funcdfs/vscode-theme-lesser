@@ -89,12 +89,6 @@ export const base = {
   /** 调试工具栏背景 */
   "debugToolBar.background": bg.elevated,
 
-  // === 调试异常小部件 ===
-  /** 调试异常小部件背景 */
-  "debugExceptionWidget.background": bg.base,
-  /** 调试异常小部件边框 */
-  "debugExceptionWidget.border": bg.elevated,
-
   // === 图表颜色 ===
   /** 图表绿色 */
   "charts.green": accent.green,

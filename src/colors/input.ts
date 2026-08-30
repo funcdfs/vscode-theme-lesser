@@ -46,4 +46,14 @@ export const input = {
   "inputValidation.warningBorder": accent.orange,
   /** 警告验证前景 */
   "inputValidation.warningForeground": accent.yellow,
+  // === 输入选项（补充）===
+  /** 输入选项激活前景 */
+  "inputOption.activeForeground": fg.primary,
+  /** 输入选项悬浮背景 */
+  "inputOption.hoverBackground": withAlpha(fg.bright, "10"),
+
+  // === 搜索编辑器输入 ===
+  /** 搜索编辑器输入框边框 */
+  "searchEditor.textInputBorder": border.default,
+
 } as const;

@@ -40,4 +40,12 @@ export const peekView = {
   "peekViewTitleDescription.foreground": fg.primary,
   /** 预览视图标题标签前景 */
   "peekViewTitleLabel.foreground": fg.primary,
+  // === 补充 ===
+  /** 预览编辑器匹配高亮边框 */
+  "peekViewEditor.matchHighlightBorder": withAlpha(accent.cyan, "50"),
+  /** 预览编辑器粘性滚动背景 */
+  "peekViewEditorStickyScroll.background": bg.elevated,
+  /** 预览编辑器粘性滚动边槽背景 */
+  "peekViewEditorStickyScrollGutter.background": bg.elevated,
+
 } as const;

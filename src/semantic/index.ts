@@ -4,6 +4,7 @@
  * 合并所有语义高亮颜色为单一对象
  */
 
+import { core } from "./core";
 import { variables } from "./variables";
 import { functions } from "./functions";
 import { types } from "./types";
@@ -16,6 +17,7 @@ import type { SemanticTokenColors } from "../types";
  * 完整的语义高亮颜色配置
  */
 export const semanticTokenColors: SemanticTokenColors = {
+  ...core,
   ...variables,
   ...functions,
   ...types,
@@ -25,6 +27,7 @@ export const semanticTokenColors: SemanticTokenColors = {
 };
 
 // 导出子模块
+export { core } from "./core";
 export { variables } from "./variables";
 export { functions } from "./functions";
 export { types } from "./types";

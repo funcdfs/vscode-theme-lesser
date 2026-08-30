@@ -4,7 +4,7 @@
  * 包含列表的所有颜色配置：选择、悬浮、焦点、错误、警告等状态
  */
 
-import { fg, accent, withAlpha, selection } from "../palette";
+import { fg, bg, border, shadow, accent, withAlpha, selection } from "../palette";
 
 // 列表选中前景 - 稍暗的金黄色
 const listSelectionFg = "#E0B050";
@@ -51,4 +51,46 @@ export const list = {
   "list.errorForeground": accent.coral,
   /** 警告前景 */
   "list.warningForeground": accent.yellow,
+  // === 图标与匹配高亮 ===
+  /** 活动选择项图标前景 */
+  "list.activeSelectionIconForeground": listSelectionFg,
+  /** 非活动选择项图标前景 */
+  "list.inactiveSelectionIconForeground": listSelectionFg,
+  /** 焦点项匹配高亮前景 */
+  "list.focusHighlightForeground": accent.cyan,
+  /** 筛选匹配背景 */
+  "list.filterMatchBackground": withAlpha(accent.cyan, "20"),
+  /** 筛选匹配边框 */
+  "list.filterMatchBorder": withAlpha(accent.cyan, "35"),
+
+  // === 描边 ===
+  /** 焦点描边 */
+  "list.focusOutline": border.focus,
+  /** 焦点且选中描边 */
+  "list.focusAndSelectionOutline": border.focus,
+  /** 非活动焦点背景 */
+  "list.inactiveFocusBackground": withAlpha(fg.bright, "5"),
+  /** 非活动焦点描边 */
+  "list.inactiveFocusOutline": border.active,
+
+  // === 拖放 ===
+  /** 行间插入指示线 */
+  "list.dropBetweenBackground": accent.violet,
+
+  // === 列表筛选小部件 ===
+  /** 筛选框背景 */
+  "listFilterWidget.background": bg.elevated,
+  /** 筛选框描边 */
+  "listFilterWidget.outline": border.default,
+  /** 无匹配时描边 */
+  "listFilterWidget.noMatchesOutline": accent.coral,
+  /** 筛选框阴影 */
+  "listFilterWidget.shadow": shadow.widget,
+
+  // === 表格视图 ===
+  /** 列分隔线 */
+  "tree.tableColumnsBorder": border.subtle,
+  /** 奇数行背景 */
+  "tree.tableOddRowsBackground": withAlpha(fg.bright, "5"),
+
 } as const;

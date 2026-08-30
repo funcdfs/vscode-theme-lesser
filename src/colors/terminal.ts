@@ -8,7 +8,7 @@
  * - 蓝色显示为蓝色（目录）
  */
 
-import { fg, bg, ansi, withAlpha } from "../palette";
+import { fg, bg, border, accent, ansi, withAlpha } from "../palette";
 
 export const terminal = {
   // === 终端基础 ===
@@ -60,4 +60,56 @@ export const terminal = {
   "terminal.ansiBrightCyan": ansi.brightCyan,
   /** ANSI 亮白色 */
   "terminal.ansiBrightWhite": ansi.brightWhite,
+  // === 边框与拖放 ===
+  /** 终端边框（分屏分隔线） */
+  "terminal.border": border.default,
+  /** 终端拖放背景 */
+  "terminal.dropBackground": withAlpha(fg.bright, "10"),
+  /** 终端标签活动指示条 */
+  "terminal.tab.activeBorder": accent.violet,
+
+  // === 选择与悬浮 ===
+  /** 非活动选择背景 */
+  "terminal.inactiveSelectionBackground": withAlpha(fg.bright, "10"),
+  /** 悬浮高亮背景 */
+  "terminal.hoverHighlightBackground": withAlpha(accent.cyan, "20"),
+  /** 空终端初始提示前景 */
+  "terminal.initialHintForeground": fg.disabled,
+
+  // === 查找 ===
+  /** 查找匹配背景 */
+  "terminal.findMatchBackground": withAlpha(accent.cyan, "50"),
+  /** 查找匹配边框 */
+  "terminal.findMatchBorder": withAlpha(accent.cyan, "50"),
+  /** 查找匹配高亮背景 */
+  "terminal.findMatchHighlightBackground": withAlpha(accent.cyan, "35"),
+  /** 查找匹配高亮边框 */
+  "terminal.findMatchHighlightBorder": withAlpha(accent.cyan, "35"),
+
+  // === Shell 集成命令装饰 ===
+  /** 默认命令标记 */
+  "terminalCommandDecoration.defaultBackground": fg.muted,
+  /** 成功命令标记 */
+  "terminalCommandDecoration.successBackground": accent.green,
+  /** 失败命令标记 */
+  "terminalCommandDecoration.errorBackground": accent.coral,
+  /** 命令范围引导线 */
+  "terminalCommandGuide.foreground": border.active,
+
+  // === 终端概览标尺 ===
+  /** 概览标尺边框 */
+  "terminalOverviewRuler.border": border.transparent,
+  /** 光标标记 */
+  "terminalOverviewRuler.cursorForeground": fg.primary,
+  /** 查找匹配标记 */
+  "terminalOverviewRuler.findMatchForeground": withAlpha(accent.cyan, "50"),
+
+  // === 终端粘性滚动 ===
+  /** 粘性滚动背景 */
+  "terminalStickyScroll.background": bg.elevated,
+  /** 粘性滚动边框 */
+  "terminalStickyScroll.border": border.subtle,
+  /** 粘性滚动悬浮背景 */
+  "terminalStickyScrollHover.background": bg.selection,
+
 } as const;
